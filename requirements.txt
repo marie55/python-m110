@@ -1,0 +1,192 @@
+################################
+# M110 Python Programming Course
+# Requirements File
+################################
+#
+# To install all dependencies:
+# pip install -r requirements.txt
+#
+# To upgrade all packages:
+# pip install --upgrade -r requirements.txt
+#
+################################
+
+################################
+# Core Learning Tools
+################################
+
+# Jupyter notebooks for interactive learning
+jupyter==1.0.0
+notebook==7.0.6
+jupyterlab==4.0.9
+
+# IPython for enhanced interactive Python
+ipython==8.18.1
+
+################################
+# Data Science & Visualization
+################################
+
+# NumPy for numerical computing
+numpy==1.26.2
+
+# Matplotlib for plotting and visualization
+matplotlib==3.8.2
+
+# Pandas for data manipulation (optional, for advanced students)
+pandas==2.1.4
+
+# Seaborn for statistical data visualization
+seaborn==0.13.0
+
+################################
+# GUI Programming (Week 11)
+################################
+
+# Tkinter comes with Python, but we need Pillow for images in GUI
+Pillow==10.1.0
+
+# CustomTkinter for modern GUI designs (optional)
+customtkinter==5.2.1
+
+################################
+# Testing & Quality Assurance
+################################
+
+# Pytest for unit testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Flake8 for code style checking (PEP 8)
+flake8==6.1.0
+
+# Black for code formatting (optional)
+black==23.12.0
+
+# MyPy for static type checking (optional, for advanced)
+mypy==1.7.1
+
+################################
+# File Handling & Data Formats
+################################
+
+# OpenPyXL for Excel file handling
+openpyxl==3.1.2
+
+# XlsxWriter for creating Excel files
+xlsxwriter==3.1.9
+
+# Python-pptx for PowerPoint manipulation
+python-pptx==0.6.23
+
+# CSV and JSON are built-in, no extra packages needed
+
+################################
+# Web Development (Optional/Bonus)
+################################
+
+# Flask for simple web applications (optional final projects)
+Flask==3.0.0
+
+# Requests for HTTP requests (for API examples)
+requests==2.31.0
+
+################################
+# Game Development (For Fun Projects)
+################################
+
+# Pygame for game development (turtle graphics alternative)
+pygame==2.5.2
+
+################################
+# Documentation & Learning
+################################
+
+# Sphinx for documentation generation (instructor use)
+Sphinx==7.2.6
+
+# Markdown for documentation
+markdown==3.5.1
+
+################################
+# Development Tools
+################################
+
+# Python-dotenv for environment variables
+python-dotenv==1.0.0
+
+# Colorama for colored terminal output
+colorama==0.4.6
+
+# Rich for beautiful terminal formatting
+rich==13.7.0
+
+# Tabulate for pretty-printing tabular data
+tabulate==0.9.0
+
+################################
+# Database (Optional Advanced Topics)
+################################
+
+# SQLite3 is built-in, but SQLAlchemy provides ORM
+sqlalchemy==2.0.23
+
+################################
+# Mathematics & Algorithms
+################################
+
+# SymPy for symbolic mathematics (optional)
+sympy==1.12
+
+# SciPy for scientific computing (optional)
+scipy==1.11.4
+
+################################
+# Utilities
+################################
+
+# Click for command-line interfaces
+click==8.1.7
+
+# Tqdm for progress bars
+tqdm==4.66.1
+
+# Schedule for task scheduling
+schedule==1.2.0
+
+################################
+# Arabic Language Support
+################################
+
+# Arabic-reshaper for proper Arabic text display
+arabic-reshaper==3.0.0
+
+# Python-bidi for bidirectional text
+python-bidi==0.4.2
+
+################################
+# Version Control & Collaboration
+################################
+
+# GitPython for Git integration (optional)
+GitPython==3.1.40
+
+################################
+# Notes for Students:
+################################
+#
+# ESSENTIAL packages for the course:
+# - jupyter, notebook (for interactive coding)
+# - matplotlib (for plotting, Week 5+)
+# - pytest (for testing, Week 7+)
+# - Pillow (for GUI images, Week 11)
+#
+# OPTIONAL packages for projects:
+# - pygame (for games)
+# - Flask (for web apps)
+# - pandas (for data analysis)
+#
+# To install only essential packages:
+# pip install jupyter notebook matplotlib pytest Pillow
+#
+################################

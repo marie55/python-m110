@@ -1,0 +1,120 @@
+# M110 Python Programming Course Calendar
+# Spring 2024-2025 Semester
+# Arab Open University - Amman Branch
+
+course_info:
+  code: M110
+  name: Python Programming
+  institution: Arab Open University (AOU) - Amman
+  semester: Spring 2024-2025
+  start_date: 2025-10-12  # Sunday, October 12, 2025
+  level: First/Second Year Undergraduate
+
+schedule:
+  sunday_lecture:
+    time: "14:00-16:00"  # 2:00 PM - 4:00 PM
+    location: On-campus
+    format: In-person lecture
+
+  Tuseday_lab:
+    time: "1 hour"
+    location: Online
+    format: Virtual lab session for exercises and practice
+
+weeks:
+  - week: 1
+    dates: "Oct 12 - Oct 16"
+    chapter: "Chapter 1"
+    topic: "Algorithms: Flowcharts & Pseudocodes"
+    directory: "week-01-algorithms"
+
+  - week: 2
+    dates: "Oct 19 - Oct 23"
+    chapter: "Chapter 2"
+    topic: "Fundamentals of Python Programming"
+    directory: "week-02-fundamentals"
+
+  - week: 3
+    dates: "Oct 26 - Oct 30"
+    chapter: "Chapter 3"
+    topic: "Decision Structures and Boolean Logic"
+    directory: "week-03-decision-structures"
+
+  - week: 4
+    dates: "Nov 02 - Nov 06"
+    chapter: "Chapter 4"
+    topic: "Repetition Structures"
+    directory: "week-04-repetition"
+
+  - week: 5
+    dates: "Nov 09 - Nov 13"
+    chapter: "Chapter 7"
+    topic: "Collection Data Types: Lists-Tuples"
+    directory: "week-05-lists-tuples"
+
+  - week: 6
+    dates: "Nov 16 - Nov 20"
+    chapter: "Lab"
+    topic: "Lab Session 1"
+    directory: "lab-01-week06"
+
+  - week: 7
+    dates: "Nov 23 - Nov 27"
+    chapter: "Chapter 5"
+    topic: "Functions"
+    directory: "week-07-functions"
+
+  - week: 8
+    dates: "Nov 30 - Dec 04"
+    chapter: "Chapter 6"
+    topic: "Files and Exceptions"
+    directory: "week-08-files-exceptions"
+
+  - week: 9
+    dates: "Dec 07 - Dec 11"
+    chapter: "Lab"
+    topic: "Lab Session 2"
+    directory: "lab-02-week09"
+
+  - week: 10
+    dates: "Dec 14 - Dec 18"
+    chapter: "Chapter 10"
+    topic: "Classes and Object-Oriented Programming"
+    directory: "week-10-oop"
+
+  - week: 11
+    dates: "Dec 21 - Dec 25"
+    chapter: "Chapter 13"
+    topic: "GUI Programming"
+    directory: "week-11-gui"
+
+  - week: 12
+    dates: "Dec 28 - Jan 01"
+    chapter: "Lab"
+    topic: "Lab Session 3"
+    directory: "lab-03-week12"
+
+  - week: 13
+    dates: "Jan 04 - Jan 08"
+    chapter: "Revision"
+    topic: "Final Revision"
+    directory: "week-13-revision"
+
+self_study:
+  - topic: "SS1: Turtle Graphics"
+    directory: "self-study-turtle-graphics"
+  - topic: "SS2: Recursion"
+    directory: "self-study-recursion"
+  - topic: "SS3: Dictionaries and Sets"
+    directory: "self-study-dictionaries-sets"
+
+assessments:
+  mta:
+    name: "Mid-Term Assessment"
+    coverage: "Till end of Collection Data Types"
+  tma:
+    name: "Tutor-Marked Assignment (Lab Test)"
+    includes: "MTA material + SS1, SS2, SS3"
+  final:
+    name: "Final Exam"
+    coverage: "All regular meetings (without SS lectures)"
