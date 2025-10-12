@@ -277,6 +277,12 @@ test-reports/
 !sample-data/*.json
 !examples/*.csv
 
+# Exception: Allow VS Code configuration files
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 # Secret/Sensitive files
 .env
 .env.*
