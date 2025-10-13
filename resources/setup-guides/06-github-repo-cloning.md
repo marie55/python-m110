@@ -62,8 +62,8 @@ Before cloning the repository:
    🔗 **[Your instructor will provide the repository URL]**
    🔗 **[سيوفر مدرسك رابط المستودع]**
 
-   Example format: `https://github.com/username/python-m110`
-   صيغة المثال: `https://github.com/username/python-m110`
+   Example format: `https://github.com/marie55/python-m110`
+   صيغة المثال: `https://github.com/marie55/python-m110`
 
 ### Step 2: Get the Clone URL
 ### الخطوة 2: الحصول على رابط النسخ
@@ -84,7 +84,7 @@ Before cloning the repository:
    سترى رابطاً مثل:
 
    ```
-   https://github.com/username/python-m110.git
+   https://github.com/marie55/python-m110.git
    ```
 
 6. Click the **📋 Copy** icon to copy the URL
@@ -182,7 +182,7 @@ This is the easiest method!
    الصق رابط المستودع الذي نسخته سابقاً:
 
    ```
-   https://github.com/username/python-m110.git
+   https://github.com/marie55/python-m110.git
    ```
 
 6. Press **Enter**
@@ -243,7 +243,7 @@ For those comfortable with command line:
    نفذ أمر النسخ:
 
    ```bash
-   git clone https://github.com/username/python-m110.git
+   git clone https://github.com/marie55/python-m110.git
    ```
 
    Replace the URL with your actual repository URL
@@ -450,7 +450,7 @@ Pulling downloads the latest changes from GitHub and merges them into your local
    remote: Compressing objects: 100% (5/5), done.
    remote: Total 8 (delta 3), reused 6 (delta 1)
    Unpacking objects: 100% (8/8), done.
-   From https://github.com/username/python-m110
+   From https://github.com/marie55/python-m110
       abc1234..def5678  main       -> origin/main
    Updating abc1234..def5678
    Fast-forward
