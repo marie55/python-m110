@@ -327,7 +327,7 @@ END
 **Step 3: Python Code**
 **الخطوة 3: كود بايثون**
 
-See [../../code-examples/week-01-algorithms/05_grade_calculator_complete.py](../../code-examples/week-01-algorithms/05_grade_calculator_complete.py)
+See [../../code-examples/chapter-01-algorithms/05_grade_calculator_complete.py](../../code-examples/chapter-01-algorithms/05_grade_calculator_complete.py)
 
 ---
 
@@ -337,7 +337,7 @@ See [../../code-examples/week-01-algorithms/05_grade_calculator_complete.py](../
 All code examples are available in:
 جميع أمثلة الأكواد متوفرة في:
 
-[../../code-examples/week-01-algorithms/](../../code-examples/week-01-algorithms/)
+[../../code-examples/chapter-01-algorithms/](../../code-examples/chapter-01-algorithms/)
 
 1. `01_sequence_average.py` - Sequence structure example
 2. `02_decision_even_odd.py` - Decision structure example
@@ -355,7 +355,7 @@ All code examples are available in:
 Complete exercises are in:
 التمارين الكاملة في:
 
-[../../exercises/week-01/](../../exercises/week-01/)
+[../../exercises/chapter-01-algorithms/](../../exercises/chapter-01-algorithms/)
 
 ### Recommended practice order:
 ### الترتيب الموصى به للتمرين:
