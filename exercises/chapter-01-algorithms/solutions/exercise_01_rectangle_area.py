@@ -1,5 +1,5 @@
 """
-M110 - Week 1 Exercise Solutions
+M110 - Chapter 1 Exercise Solutions
 Exercise 1: Rectangle Area Calculator
 تمرين 1: حاسبة مساحة المستطيل
 

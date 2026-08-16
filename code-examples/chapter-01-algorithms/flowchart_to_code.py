@@ -1,8 +1,8 @@
 """
 M110 - Python Programming
-Week 1: Algorithms - Flowchart to Python Code
+Chapter 1: Algorithms - Flowchart to Python Code
 Topic: Translating Flowcharts to Executable Python
-الأسبوع 1: الخوارزميات - من المخطط الانسيابي إلى كود بايثون
+الفصل 1: الخوارزميات - من المخطط الانسيابي إلى كود بايثون
 
 This file demonstrates how to translate flowchart logic into Python code.
 We'll show three examples covering the three basic structures.

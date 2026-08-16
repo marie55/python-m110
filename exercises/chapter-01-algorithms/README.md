@@ -1,5 +1,5 @@
-# Week 1 Practice Exercises
-# تمارين الأسبوع الأول
+# Chapter 1 Practice Exercises
+# تمارين الفصل الأول
 
 **Topic**: Algorithms, Flowcharts & Pseudocodes
 

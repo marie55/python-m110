@@ -1,8 +1,8 @@
 """
 M110 - Python Programming
-Week 1: Algorithms - Sentinel-Controlled Repetition
+Chapter 1: Algorithms - Sentinel-Controlled Repetition
 Topic: Character Printer
-الأسبوع 1: الخوارزميات - التكرار المتحكم به بقيمة حارسة
+الفصل 1: الخوارزميات - التكرار المتحكم به بقيمة حارسة
 الموضوع: طابعة الحروف
 
 This program demonstrates SENTINEL-CONTROLLED repetition.

@@ -1,8 +1,8 @@
 """
 M110 - Python Programming
-Week 1: Algorithms - Complete Example (All Three Structures)
+Chapter 1: Algorithms - Complete Example (All Three Structures)
 Topic: Student Grade Calculator
-الأسبوع 1: الخوارزميات - مثال كامل (التراكيب الثلاثة كلها)
+الفصل 1: الخوارزميات - مثال كامل (التراكيب الثلاثة كلها)
 الموضوع: حاسبة درجات الطلاب
 
 This program demonstrates ALL THREE structures together:

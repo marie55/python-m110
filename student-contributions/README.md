@@ -4,9 +4,9 @@
 ## 🌟 Welcome to the Hall of Fame!
 ## 🌟 مرحباً بكم في قاعة الشهرة!
 
-This directory showcases exceptional work from M110 students. Share your best projects, creative solutions, and helpful resources with your classmates!
+This directory showcases contributions from M110 students and self-learners alike. Share your best projects, creative solutions, and helpful resources with the community!
 
-يعرض هذا المجلد الأعمال الاستثنائية من طلاب M110. شارك أفضل مشاريعك وحلولك الإبداعية والموارد المفيدة مع زملائك!
+يعرض هذا المجلد مساهمات من طلاب M110 والمتعلمين الذاتيين على حد سواء. شارك أفضل مشاريعك وحلولك الإبداعية ومواردك المفيدة مع المجتمع!
 
 ---
 
@@ -67,12 +67,12 @@ student-contributions/
 **Example / مثال:**
 - `2025-S200123-calculator/` ✅ Correct
 - `2025-S200456-snake-game/` ✅ Correct
-- `ahmad-calculator/` ❌ Wrong (missing student number)
+- `ahmad-calculator/` ❌ Wrong (missing an identifier)
 - `my-project/` ❌ Wrong (no identification)
 
-**Format: `YEAR-STUDENTID-PROJECTNAME`**
-- **YEAR**: Current year (2025)
-- **STUDENTID**: Your AOU student number (e.g., S200123)
+**Format: `YEAR-ID-PROJECTNAME`**
+- **YEAR**: The year you're contributing
+- **ID**: Your AOU student number (e.g., S200123) — or, if you're not an AOU student, any short handle
 - **PROJECTNAME**: Short descriptive name (no spaces, use hyphens)
 
 ---
@@ -80,12 +80,16 @@ student-contributions/
 ## 📝 How to Submit Your Contribution
 ## 📝 كيفية تقديم مساهمتك
 
-### Option 1: GitHub Pull Request (LEARN REAL-WORLD SKILLS!)
-### الخيار 1: طلب سحب GitHub (تعلم مهارات العالم الحقيقي!)
+### GitHub Pull Request
+### طلب سحب GitHub
 
-This is the professional way - and you'll learn valuable Git skills!
+This is how contributions get added here — and you'll learn valuable Git skills in the process!
 
-هذه هي الطريقة المهنية - وستتعلم مهارات Git قيمة!
+هذه هي طريقة إضافة المساهمات هنا - وستتعلم مهارات Git قيمة في هذه العملية!
+
+New to Git? The [Git guides](../resources/git-guides/) walk through everything from scratch, and Dr. Laila can guide you step by step.
+
+جديد على Git؟ تشرح [أدلة Git](../resources/git-guides/) كل شيء من الصفر، وتستطيع د. ليلى إرشادك خطوة بخطوة.
 
 #### Step-by-Step Guide / دليل خطوة بخطوة:
 
@@ -104,7 +108,7 @@ This is the professional way - and you'll learn valuable Git skills!
 3. **Create a New Branch / أنشئ فرع جديد**
    ```bash
    git checkout -b add-S200123-project
-   # Replace S200123 with YOUR student number
+   # Replace S200123 with YOUR student number or handle
    ```
 
 4. **Add Your Contribution / أضف مساهمتك**
@@ -118,8 +122,7 @@ This is the professional way - and you'll learn valuable Git skills!
 5. **Create README.md for Your Project / أنشئ README.md لمشروعك**
    ```markdown
    # Project Name
-   **Student**: S200123 - Your Name
-   **Date**: October 2025
+   **Contributor**: S200123 - Your Name
 
    ## Description
    What your project does...
@@ -152,14 +155,14 @@ This is the professional way - and you'll learn valuable Git skills!
    - Submit!
 
 8. **Wait for Review / انتظر المراجعة**
-   - Instructor will review and provide feedback
+   - The repository maintainer will review and may leave feedback
    - Make changes if requested
    - Once approved, it will be merged!
 
 #### Pull Request Template / قالب طلب السحب:
 ```markdown
-## Student Information
-- **Student ID**: S200123
+## Contributor Information
+- **Student ID (or handle)**: S200123
 - **Name**: Your Name
 - **Project**: Calculator with History
 
@@ -185,36 +188,16 @@ Brief description...
 - [ ] Includes error handling
 
 ## Checklist
-- [ ] Followed naming convention (2025-SID-projectname)
+- [ ] Followed naming convention (YEAR-ID-projectname)
 - [ ] Included README.md
 - [ ] Added comments in code
 - [ ] No copied code (all original work)
 ```
 
-### Option 2: Direct Submission (If Git seems scary)
-### الخيار 2: التقديم المباشر (إذا كان Git يبدو مخيفاً)
-
-1. Create your project folder with correct naming:
-   ```
-   2025-S200123-projectname/
-   ```
-
-2. Email as ZIP file to: m.almarie@aou.edu.jo
-
-3. Email subject: "M110 Contribution: S200123 - Project Name"
-
-4. Include in email:
-   - Your full name
-   - Brief project description
-   - What concepts you used
-
 ---
 
 ## 🏆 Featured Contributions
 ## 🏆 المساهمات المميزة
-
-### 🌟 2025 Spring Semester Stars
-### 🌟 نجوم فصل الربيع 2025
 
 *Be the first to contribute! Your project could be featured here!*
 
@@ -223,19 +206,11 @@ Brief description...
 <!--
 Future format when we have contributions:
 
-### 🥇 Gold Star Projects (95-100%)
 #### 2025-S200123-snake-game
-- **Student**: Ahmad Ali (S200123)
+- **Contributor**: Ahmad Ali (S200123)
 - **Description**: Advanced snake game with AI opponent
-- **Special Features**: AI mode, leaderboard, custom themes
-- **Instructor Notes**: "Excellent use of OOP and algorithms!"
-- **[View Project](2025-S200123-snake-game/)**
-
-### 🥈 Silver Star Projects (85-94%)
-...
-
-### 🥉 Bronze Star Projects (75-84%)
-...
+- **Highlights**: AI mode, leaderboard, custom themes
+- **View Project**: 2025-S200123-snake-game/ (folder in this directory)
 -->
 
 ---
@@ -247,8 +222,8 @@ Future format when we have contributions:
 ### ✅ المتطلبات
 
 1. **Identification** / **التعريف**
-   - MUST include student number in folder name
-   - يجب تضمين رقم الطالب في اسم المجلد
+   - MUST include an identifier in the folder name
+   - يجب تضمين معرّف في اسم المجلد
 
 2. **Original Work** / **عمل أصلي**
    - Must be YOUR own code
@@ -310,21 +285,21 @@ student-contributions/
 ## 💡 Project Ideas by Difficulty
 ## 💡 أفكار مشاريع حسب الصعوبة
 
-### 🟢 Beginner (Weeks 1-4)
+### 🟢 Beginner (Chapters 1-4)
 - Number guessing game
 - Simple calculator
 - Temperature converter
 - Rock, Paper, Scissors
 - Basic to-do list
 
-### 🟡 Intermediate (Weeks 5-8)
+### 🟡 Intermediate (Chapters 5-7)
 - Hangman game
 - Student grade manager
 - Password generator
 - Text-based adventure game
 - Shopping cart system
 
-### 🔴 Advanced (Weeks 9-13)
+### 🔴 Advanced (Chapters 10 & 13)
 - Snake game with Turtle
 - GUI calculator with Tkinter
 - File encryption tool
@@ -333,55 +308,19 @@ student-contributions/
 
 ---
 
-## 🎯 Monthly Challenges
-## 🎯 التحديات الشهرية
-
-### October 2025 Challenge: "Creative Calculator"
-### تحدي أكتوبر 2025: "الحاسبة الإبداعية"
-
-Create a calculator that does something unique!
-
-Ideas:
-- Calculator with memory/history
-- Scientific calculator with GUI
-- Unit converter calculator
-- Programmer's calculator (binary/hex)
-- Calculator that shows steps
-
-**Prize**: Featured spot + bonus points consideration
-
-**Deadline**: October 31, 2025
-
----
-
-## 🤝 Code Review Process
-## 🤝 عملية مراجعة الكود
+## 🤝 Review Process
+## 🤝 عملية المراجعة
 
 When you submit via Pull Request:
 
 1. **Automated Check**: Basic syntax and style check
-2. **Instructor Review**: I'll review within 48 hours
+2. **Maintainer Review**: The repository maintainer reads through your submission
 3. **Feedback**: You'll get comments on:
    - Code quality
    - Possible improvements
    - Good practices you used
 4. **Revision**: You can update based on feedback
 5. **Merge**: Once approved, your code joins the repository!
-
----
-
-## 📊 Evaluation Criteria
-## 📊 معايير التقييم
-
-Projects are evaluated on:
-
-| Criteria | معيار | Weight | الوزن |
-|----------|-------|--------|-------|
-| Functionality | الوظيفة | 40% | ٪40 |
-| Code Quality | جودة الكود | 25% | ٪25 |
-| Documentation | التوثيق | 15% | ٪15 |
-| Creativity | الإبداع | 10% | ٪10 |
-| Presentation | العرض | 10% | ٪10 |
 
 ---
 
@@ -401,8 +340,8 @@ Projects are evaluated on:
    - مهارة أساسية لأي مبرمج
 
 4. **Get Code Reviews** / **احصل على مراجعات الكود**
-   - Professional feedback on your code
-   - ملاحظات مهنية على كودك
+   - Real feedback on your code
+   - ملاحظات حقيقية على كودك
 
 5. **Collaboration Skills** / **مهارات التعاون**
    - Learn to work with version control
@@ -431,11 +370,11 @@ A: Yes! That's the beauty of Git. You can always improve your code.
 **س: هل يمكنني تحديث مشروعي بعد التقديم؟**
 ج: نعم! هذا جمال Git. يمكنك دائماً تحسين كودك.
 
-**Q: Do contributions affect my grade?**
-A: Not directly, but they show engagement and may be considered for borderline cases.
+**Q: Do I need to be a current M110 student to contribute?**
+A: No! This repository is a self-study archive. Anyone working through the material is welcome to contribute.
 
-**س: هل المساهمات تؤثر على درجتي؟**
-ج: ليس مباشرة، لكنها تظهر المشاركة وقد تؤخذ بعين الاعتبار في الحالات الحدية.
+**س: هل يجب أن أكون طالباً حالياً في M110 للمساهمة؟**
+ج: لا! هذا المستودع أرشيف للدراسة الذاتية. أي شخص يدرس المادة مرحب به للمساهمة.
 
 **Q: Can I contribute in Arabic?**
 A: Yes! Bilingual contributions are especially welcome.
@@ -448,18 +387,13 @@ A: Yes! Bilingual contributions are especially welcome.
 ## 📧 Need Help?
 ## 📧 تحتاج مساعدة؟
 
-- **Git/GitHub Issues**: Watch the tutorial videos in resources
+- **Git/GitHub Issues**: Watch the tutorial videos in resources, or ask Dr. Laila
 - **Project Ideas**: Ask Dr. Laila for suggestions
-- **Technical Problems**: Office hours or email
-- **Pull Request Help**: I'll guide you through it!
+- **Pull Request Help**: Open a GitHub issue and describe where you're stuck
 
-- **مشاكل Git/GitHub**: شاهد فيديوهات الشرح في الموارد
+- **مشاكل Git/GitHub**: شاهد فيديوهات الشرح في الموارد، أو اسأل د. ليلى
 - **أفكار المشاريع**: اسأل د. ليلى للاقتراحات
-- **المشاكل التقنية**: الساعات المكتبية أو البريد الإلكتروني
-- **مساعدة طلب السحب**: سأرشدك خطوة بخطوة!
-
-**Email**: m.almarie@aou.edu.jo
-**Subject**: "M110 Contribution Help - S[YourNumber]"
+- **مساعدة طلب السحب**: افتح GitHub issue وصف أين توقفت
 
 ---
 
@@ -469,10 +403,10 @@ A: Yes! Bilingual contributions are especially welcome.
 ```python
 def become_a_contributor():
     """
-    Your path to the Hall of Fame!
-    طريقك إلى قاعة الشهرة!
+    Your path to being featured here!
+    طريقك إلى أن يُعرض مشروعك هنا!
     """
-    student = "S200123"  # Your ID / معرفك
+    contributor_id = "S200123"  # Your student number or handle / معرفك
 
     # Step 1: Learn
     study_course_materials()
@@ -482,13 +416,10 @@ def become_a_contributor():
     project = create_something_awesome()
 
     # Step 3: Share
-    if confident_with_git:
-        create_pull_request(project)
-    else:
-        send_email(project)
+    create_pull_request(project)
 
     # Step 4: Celebrate!
-    print(f"🎉 {student} is now a contributor!")
+    print(f"🎉 {contributor_id} is now a contributor!")
 
     return "Ready for the job market! 💼"
 ```
@@ -501,4 +432,6 @@ def become_a_contributor():
 
 ---
 
-*Last Updated: October 2025 | آخر تحديث: أكتوبر 2025*
+*This is an open, ongoing archive — there's no deadline and no cutoff. Contribute whenever you're ready.*
+
+*هذا أرشيف مفتوح ومستمر - لا يوجد موعد نهائي أو تاريخ إغلاق. ساهم عندما تكون جاهزاً.*

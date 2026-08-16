@@ -1,8 +1,8 @@
 """
 M110 - Python Programming
-Week 1: Algorithms - Sequence Structure
+Chapter 1: Algorithms - Sequence Structure
 Topic: Calculate Average
-الأسبوع 1: الخوارزميات - بنية التسلسل
+الفصل 1: الخوارزميات - بنية التسلسل
 الموضوع: حساب المتوسط
 
 This program demonstrates the SEQUENCE structure.

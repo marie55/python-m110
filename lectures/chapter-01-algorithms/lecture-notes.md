@@ -1,11 +1,9 @@
-# Week 1 Lecture Notes: Algorithms, Flowcharts & Pseudocodes
-# ملاحظات محاضرة الأسبوع 1: الخوارزميات، المخططات الانسيابية والشفرة الزائفة
+# Chapter 1 Lecture Notes: Algorithms, Flowcharts & Pseudocodes
+# ملاحظات محاضرة الفصل 1: الخوارزميات، المخططات الانسيابية والشفرة الزائفة
 
-**Date**: Sunday, October 12, 2025 (2:00 PM - 4:00 PM)
 **Topic**: Introduction to Algorithms and Algorithm Design
 **Official Slides**: [Meeting1-Algorithms-s.pdf](../../slides-official/chapter-01-algorithms/Meeting1-Algorithms-s.pdf)
 
-**التاريخ**: الأحد، 12 أكتوبر 2025 (2:00 مساءً - 4:00 مساءً)
 **الموضوع**: مقدمة في الخوارزميات وتصميم الخوارزميات
 **الشرائح الرسمية**: [Meeting1-Algorithms-s.pdf](../../slides-official/chapter-01-algorithms/Meeting1-Algorithms-s.pdf)
 
@@ -805,10 +803,10 @@ Create an algorithm where:
 
 ---
 
-## Next Week Preview
-## معاينة الأسبوع القادم
+## Next Chapter Preview
+## معاينة الفصل القادم
 
-**Week 2: Fundamentals of Python Programming**
+**Chapter 2: Fundamentals of Python Programming**
 - Variables and data types
 - Input and output
 - Operators
@@ -820,12 +818,10 @@ Get ready to start coding! 🚀
 ---
 
 **Remember**: 
-- Attend Tuseday lab (online) for hands-on practice
 - Complete exercises in [exercises/chapter-01-algorithms/](../../exercises/chapter-01-algorithms/)
 - Use Dr. Laila (`/laila`) if you need help!
 
 **تذكر**:
-- احضر مختبر الخميس (عبر الإنترنت) للممارسة العملية
 - أكمل التمارين في [exercises/chapter-01-algorithms/](../../exercises/chapter-01-algorithms/)
 - استخدم د. ليلى (`/laila`) إذا كنت بحاجة للمساعدة!
 

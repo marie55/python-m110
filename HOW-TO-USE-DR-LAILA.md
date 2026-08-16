@@ -44,15 +44,14 @@ Dr. Laila (د. ليلى) is your **AI Teaching Assistant** for the M110 Python P
 ## What Dr. Laila Knows
 ## ما الذي تعرفه د. ليلى
 
-Dr. Laila is **time-aware** and knows:
+Dr. Laila is **chapter-aware** and knows:
 
-د. ليلى **واعية بالوقت** وتعرف:
+د. ليلى **واعية بالفصول** وتعرف:
 
-- 📅 **What week it is**: She knows the course calendar
-- 📚 **What you're learning now**: Based on current week's topic
-- 📖 **Official slides content**: She can read and explain the slides
+- 📖 **Every chapter's topic and slides**: She reads the chapter map before answering
+- 📚 **What you're working on**: Once you tell her which chapter or topic
 - 💻 **All code examples**: From the repository
-- 📝 **Exercises and labs**: She can guide you through them
+- 📝 **Exercises**: She can guide you through them
 - 🎯 **What's on exams**: Based on official course materials
 
 ---
@@ -60,7 +59,7 @@ Dr. Laila is **time-aware** and knows:
 ## Example Conversations
 ## أمثلة محادثات
 
-### Getting Started with This Week's Topic
+### Getting Started
 
 **You**: `/laila`
 
@@ -68,15 +67,21 @@ Dr. Laila is **time-aware** and knows:
 ```
 👋 Hello! I'm Dr. Laila - مرحباً! أنا د. ليلى
 
-📅 Current Week: Week 2 (Oct 19-23)
-📚 This Week's Topic: Fundamentals of Python Programming
-📖 Chapter: Chapter 2
+Welcome to your M110 Python Programming Learning Assistant!
+أهلاً بك في مساعدة التعلم لمقرر M110 برمجة بايثون!
 
-What would you like to explore today?
-1. Review this week's lecture concepts?
-2. Practice with variables and data types?
-3. Go through code examples together?
-4. Work on exercises?
+What would you like to work on?
+على ماذا تريد أن تعمل؟
+
+1. Name a chapter or topic — "Chapter 4", "while loops", "recursion", "GUI"
+   اذكر فصلاً أو موضوعاً
+
+2. Describe a problem, or paste an error — I'll help you debug it
+   صِف مشكلة أو الصق رسالة خطأ
+
+3. "I don't know where to start" — I'll walk you through the suggested
+   order, beginning with Chapter 1: Algorithms
+   "لا أعرف من أين أبدأ" — سأرشدك للترتيب المقترح، بدءاً من الفصل الأول
 ```
 
 ---
@@ -183,7 +188,7 @@ Would you like me to:
 ```
 Great! Let me create a practice exercise for you.
 
-I'll save it in student-playground/week-04-practice/
+I'll save it in student-playground/chapter-04-practice/
 
 [Creates file: loop-practice-01.py]
 
@@ -275,11 +280,11 @@ Ask Dr. Laila to create files in `student-playground/` for practice code, notes,
 
 ---
 
-### Q: What if Dr. Laila can't find this week's materials?
-**A**: Materials are added weekly. If it's not available yet, Dr. Laila will help you with what's available or review previous topics.
+### Q: What if Dr. Laila can't find written notes for my chapter?
+**A**: The official slides are there for every chapter — nothing is "not released yet." Written notes and worked examples exist in full for Chapter 1 (plus a starter for Chapter 2); for every other chapter, Dr. Laila reads the official slides and builds the walkthrough with you on the spot.
 
-### س: ماذا لو لم تجد د. ليلى مواد هذا الأسبوع؟
-**ج**: المواد تُضاف أسبوعياً. إذا لم تكن متاحة بعد، د. ليلى ستساعدك بما هو متاح أو مراجعة مواضيع سابقة.
+### س: ماذا لو لم تجد د. ليلى ملاحظات مكتوبة لفصلي؟
+**ج**: الشرائح الرسمية موجودة لكل فصل - لا شيء "لم يُنشر بعد". الملاحظات المكتوبة والأمثلة الكاملة متوفرة للفصل الأول (بالإضافة إلى بداية للفصل الثاني)؛ أما بقية الفصول، فتقرأ د. ليلى الشرائح الرسمية وتبني الشرح معك مباشرة.
 
 ---
 
@@ -308,8 +313,7 @@ See [student-playground/README.md](student-playground/README.md) for more detail
 
 ### For Course Questions:
 - Start with Dr. Laila for concept explanations
-- Attend Sunday lectures and Tuseday labs
-- Reach out to your instructor (Mohammad Al-Marie) for graded assignment questions
+- Open a GitHub issue if something in the repository looks wrong
 
 ### للمشاكل التقنية:
 - إذا لم يعمل `/laila`، تأكد من تثبيت إضافة Claude Code
@@ -317,8 +321,7 @@ See [student-playground/README.md](student-playground/README.md) for more detail
 
 ### لأسئلة المقرر:
 - ابدأ مع د. ليلى لشرح المفاهيم
-- احضر محاضرات الأحد ومختبرات الخميس
-- تواصل مع المدرس (محمد المعري) لأسئلة الواجبات المقيّمة
+- افتح GitHub issue إذا وجدت خطأ في المستودع
 
 ---
 

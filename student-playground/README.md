@@ -49,13 +49,15 @@ This is **your personal workspace** where:
 
 1. **Work with Dr. Laila**: Use `/laila` command (Claude Code) or `@learning-assistant` (GitHub Copilot)
 2. **Ask for help**: "Explain loops to me", "Create a practice exercise for functions"
-3. **Dr. Laila will create files here**: Organized by week or topic
+3. **Dr. Laila will create files here**: Organized by chapter or topic
 4. **Run the code**: All Python files here are safe to run and modify
 5. **Experiment freely**: This is YOUR space - try things, make mistakes, learn!
 
+<!-- -->
+
 1. **اعمل مع د. ليلى**: استخدم أمر `/laila` (كلود كود) أو `@learning-assistant` (جيت هب كوبايلوت)
 2. **اطلب المساعدة**: "اشرح لي الحلقات"، "أنشئ تمرين تدريبي عن الدوال"
-3. **د. ليلى ستنشئ ملفات هنا**: منظمة حسب الأسبوع أو الموضوع
+3. **د. ليلى ستنشئ ملفات هنا**: منظمة حسب الفصل أو الموضوع
 4. **شغّل الكود**: جميع ملفات بايثون هنا آمنة للتشغيل والتعديل
 5. **جرّب بحرية**: هذه مساحتك - جرّب، اخطئ، تعلّم!
 
@@ -67,10 +69,10 @@ You can organize your work like this:
 
 ```
 student-playground/
-├── week-01-algorithms/
+├── chapter-01-practice/
 │   ├── flowchart-practice.md
 │   └── pseudocode-examples.py
-├── week-02-fundamentals/
+├── chapter-02-practice/
 │   ├── variables-practice.py
 │   └── my-notes.md
 ├── exam-prep/
@@ -116,20 +118,20 @@ student-playground/
 ## Example Questions to Ask Dr. Laila
 ## أمثلة أسئلة تسألها لد. ليلى
 
-- "What are we learning this week?"
+- "Where should I start?"
 - "Explain [concept] in simple terms"
 - "Create a practice exercise for [topic]"
 - "Help me debug this code: [paste code]"
 - "Summarize Chapter X"
-- "How do I approach this week's lab?"
+- "How do I approach the exercises for Chapter X?"
 - "What should I focus on for the exam?"
 
-- "ماذا نتعلم هذا الأسبوع؟"
+- "من أين يجب أن أبدأ؟"
 - "اشرح [مفهوم] ببساطة"
 - "أنشئ تمرين تدريبي عن [موضوع]"
 - "ساعدني في إصلاح هذا الكود: [الصق الكود]"
 - "لخص الفصل X"
-- "كيف أبدأ مع مختبر هذا الأسبوع؟"
+- "كيف أبدأ بتمارين الفصل X؟"
 - "على ماذا يجب أن أركز للامتحان؟"
 
 ---

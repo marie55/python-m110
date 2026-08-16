@@ -1,8 +1,8 @@
 """
 M110 - Python Programming
-Week 1: Algorithms - Decision Structure
+Chapter 1: Algorithms - Decision Structure
 Topic: Even or Odd Checker
-الأسبوع 1: الخوارزميات - بنية القرار
+الفصل 1: الخوارزميات - بنية القرار
 الموضوع: فاحص الزوجي والفردي
 
 This program demonstrates the DECISION (IF-ELSE) structure.

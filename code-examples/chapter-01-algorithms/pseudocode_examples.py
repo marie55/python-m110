@@ -1,8 +1,8 @@
 """
 M110 - Python Programming
-Week 1: Algorithms - Pseudocode to Python
+Chapter 1: Algorithms - Pseudocode to Python
 Topic: Translating Pseudocode to Executable Python
-الأسبوع 1: الخوارزميات - من الشفرة الزائفة إلى بايثون
+الفصل 1: الخوارزميات - من الشفرة الزائفة إلى بايثون
 
 This file demonstrates how to translate pseudocode into Python code.
 Pseudocode is a way to describe algorithms using English-like statements.

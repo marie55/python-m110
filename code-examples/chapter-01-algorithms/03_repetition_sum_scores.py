@@ -1,8 +1,8 @@
 """
 M110 - Python Programming
-Week 1: Algorithms - Repetition Structure
+Chapter 1: Algorithms - Repetition Structure
 Topic: Sum of Test Scores
-الأسبوع 1: الخوارزميات - بنية التكرار
+الفصل 1: الخوارزميات - بنية التكرار
 الموضوع: مجموع درجات الاختبار
 
 This program demonstrates the REPETITION (WHILE loop) structure.

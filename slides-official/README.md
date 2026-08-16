@@ -61,6 +61,8 @@ The `.pptx.txt` files are extracted automatically and are faithful for prose, de
 2. **Smart quotes are mangled.** `print('Hello’, i)` will not parse.
 3. **Figures are absent entirely.** Chapter 1 is almost entirely flowcharts, and none of them are in the text.
 
+<!-- -->
+
 1. **مسافات إزاحة الأكواد (indentation) تُفقد جزئيًا.** ففي الفصل الرابع، يظهر السطر `print(num)` بلا إزاحة تحت حلقة `for` الخاصة به — وهذا كود بايثون غير صحيح نحويًا.
 2. **علامات الاقتباس الذكية (smart quotes) تُشوَّه.** السطر `print('Hello’, i)` لن يعمل عند تشغيله.
 3. **الأشكال (figures) غائبة تمامًا.** يتكون الفصل الأول بشكل شبه كامل من مخططات انسيابية، ولا يظهر أي منها في النص.

@@ -288,11 +288,9 @@ print(f"Diagonal / القطر: {diagonal:.2f}")
 ## Next Exercise
 ## التمرين التالي
 
-Once you complete this exercise, move on to:
-- [Exercise 02: Temperature Converter](exercise-02.md)
+Once you complete this exercise, move on to: Temperature Converter (see [README.md](README.md) for the full exercise list).
 
-بمجرد إكمال هذا التمرين، انتقل إلى:
-- [تمرين 02: محول درجة الحرارة](exercise-02.md)
+بمجرد إكمال هذا التمرين، انتقل إلى: محول درجة الحرارة (راجع [README.md](README.md) لقائمة التمارين الكاملة).
 
 ---
 

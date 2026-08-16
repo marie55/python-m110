@@ -20,9 +20,9 @@ Dr. Laila is an AI Teaching Assistant for M110 Python Programming course at AOU-
 
 ### 2. Supporting Files
 
-#### Course Calendar
-- **File**: `.claude/course-calendar.yaml`
-- **Purpose**: Time-aware context - knows which week, topic, and materials to reference
+#### Course Map
+- **File**: `.claude/course-map.yaml`
+- **Purpose**: Chapter index — every chapter's number, topic and slide paths, so Dr. Laila can ground answers without guessing
 
 #### Student Playground
 - **Directory**: `student-playground/`
@@ -40,43 +40,35 @@ Dr. Laila is an AI Teaching Assistant for M110 Python Programming course at AOU-
 - Added `.DS_Store` for macOS files
 
 #### requirements.txt
-- Already includes `python-pptx` for reading PowerPoint slides
+- `python-pptx` is commented out — it was only needed for the one-time extraction (`tools/extract_slides.py`) that produced the committed `.pptx.txt` files. Dr. Laila reads those directly and never installs or imports it.
 
 ## How It Works
 
-### Time-Aware Intelligence
+### Chapter-Aware, Not Time-Aware
 
-Dr. Laila calculates the current course week based on:
-- **Course Start**: October 12, 2025 (Week 1)
-- **Current Date**: Determines week number
-- **Week's Topic**: Loads from `.claude/course-calendar.yaml`
+The course is archived — there is no live schedule, so Dr. Laila carries no
+concept of "current week." She is chapter-aware instead: she reads the
+chapter index and lets the student tell her where they are.
 
-### Context Loading
+### Startup Sequence
 
 On startup, Dr. Laila:
-1. Calculates current week
-2. Identifies week's topic (e.g., "Fundamentals of Python Programming")
-3. Checks for official slides in `slides-official/chapter-XX-*/`
-4. Loads lecture notes from `lectures/week-XX-*/`
-5. Accesses code examples from `code-examples/week-XX-*/`
-6. Provides 3-5 contextual starter questions
+1. Reads `.claude/course-map.yaml` silently — every chapter's number, topic and slide paths
+2. Greets the student bilingually, with no date, week or schedule reference
+3. Asks which chapter or topic they want to work on, offering three ways in:
+   name a chapter, describe a problem or paste an error, or ask where to
+   start (which walks the `learning_path` order, beginning at Chapter 1)
+4. Waits for the student to choose before proceeding
 
-### Reading Official Slides
+### Reading the Official Slides
 
-**Preference Order**:
-1. PDF files (Dr. Laila can read PDFs directly)
-2. PPTX files (requires `python-pptx` library)
+Every deck is pre-extracted to `.pptx.txt` and committed to the repository —
+Dr. Laila reads that directly. No library, no installation, no conversion
+step, and she never opens a `.pptx` file.
 
-**Example**:
-```python
-from pptx import Presentation
-
-prs = Presentation('slides-official/chapter-01-algorithms/Meeting1-Algorithms-s.pptx')
-for slide in prs.slides:
-    for shape in slide.shapes:
-        if hasattr(shape, "text"):
-            print(shape.text)
-```
+**Two fidelity rules that follow from this**:
+- **Code in the `.txt` files is not reliable.** Extraction flattens indentation and mangles quote characters, so Dr. Laila retypes any code example herself rather than pasting from the extraction.
+- **Figures are invisible.** Flowcharts and diagrams are images and are simply absent from the `.txt` files. When a question depends on one, she points the student at that chapter's `slides_pdf` path instead of guessing.
 
 ### File Management
 
@@ -87,10 +79,10 @@ for slide in prs.slides:
 **File Organization**:
 ```
 student-playground/
-├── week-01-algorithms/
+├── chapter-01-practice/
 │   ├── flowchart-practice.md
 │   └── pseudocode-examples.py
-├── week-02-fundamentals/
+├── chapter-02-practice/
 │   ├── variables-practice.py
 │   └── my-notes.md
 └── exam-prep/
@@ -163,7 +155,7 @@ A variable is a named container for storing values.
 The agent configurations are complete and ready. You can:
 - Test them yourself before sharing with students
 - Modify personality/behavior in `.claude/agents/learning-assistant.md`
-- Update course calendar in `.claude/course-calendar.yaml`
+- Update the chapter map in `.claude/course-map.yaml` if chapter content changes
 - Add more starter questions based on student needs
 
 ## Customization Guide
@@ -177,15 +169,15 @@ Change sections like:
 - **Teaching style**: More hints, less hints, etc.
 - **Language preference**: More Arabic, more English, etc.
 
-### Updating Course Schedule
+### Updating the Chapter Map
 
-Edit: `.claude/course-calendar.yaml`
+Edit: `.claude/course-map.yaml`
 
 Modify:
-- Week dates
-- Topics
-- Directory mappings
-- Assessment information
+- Chapter topics or slide paths
+- `figure_refs` counts
+- `learning_path` order
+- `assessments` coverage
 
 ### Adding New Capabilities
 
@@ -199,10 +191,10 @@ In the agent files, you can add:
 
 ### Recommended Test Scenarios:
 
-1. **Week Awareness**:
-   - Test during different weeks
-   - Verify correct materials are loaded
-   - Check starter questions match the week
+1. **Chapter Resolution**:
+   - Ask about different chapters, by number, topic and id
+   - Verify she reads the right `slides_text` file and cites the chapter and heading
+   - Check all three starter options work (name a chapter, describe a problem, "where do I start")
 
 2. **Concept Explanation**:
    - Ask "Explain variables"
@@ -232,14 +224,12 @@ In the agent files, you can add:
 - Check VS Code is in repository root
 
 ### "Dr. Laila can't read slides"
-- Verify slides are in correct directory
-- For PPTX: Install `python-pptx` (`pip install python-pptx`)
-- For PDF: Should work automatically
+- Verify the chapter's `slides_text` path in `.claude/course-map.yaml` is correct and the `.pptx.txt` file exists
+- She should never need `python-pptx` or open a `.pptx` — if she tries to, that's the bug to fix
 
-### "Wrong week detected"
-- Check system date/time is correct
-- Verify dates in `.claude/course-calendar.yaml`
-- Course starts October 12, 2025
+### "Dr. Laila resolves the wrong chapter"
+- Check the student's wording against `chapters[].topic` and `.id` in `.claude/course-map.yaml`
+- If a topic could plausibly sit in more than one chapter, she should ask which one before reading
 
 ### "@learning-assistant not working (Copilot)"
 - Ensure GitHub Copilot subscription is active
@@ -250,7 +240,7 @@ In the agent files, you can add:
 
 ### What's Shared with Students:
 - ✅ Agent configuration files (`.claude/agents/`, `.github/chatmodes/`)
-- ✅ Course calendar (`.claude/course-calendar.yaml`)
+- ✅ Course map (`.claude/course-map.yaml`)
 - ✅ Student playground (but gitignored)
 - ✅ User guide (`HOW-TO-USE-DR-LAILA.md`)
 
@@ -266,10 +256,10 @@ In the agent files, you can add:
 1. **Progress Tracking**: Dr. Laila tracks student's completed topics
 2. **Personalized Hints**: Adjust difficulty based on student level
 3. **Code Review**: Provide PEP 8 feedback on student code
-4. **Quiz Generator**: Create weekly quizzes automatically
+4. **Quiz Generator**: Create per-chapter quizzes automatically
 5. **Exam Simulator**: Full practice exams with grading
 6. **Video Recommendations**: Link to relevant tutorials
-7. **Office Hours Integration**: Connect to instructor calendar
+7. **GitHub Issues Integration**: Surface open questions from the repository's Issues
 
 ### Community Contributions:
 
@@ -283,7 +273,6 @@ Students could contribute:
 
 **Created by**: Mohammad Al-Marie
 **For**: M110 Python Programming - AOU Amman
-**Semester**: Spring 2024-2025
 **Agent Name**: Dr. Laila (د. ليلى)
 **Purpose**: Bridge academia-industry gap through responsible AI-assisted learning
 
@@ -298,7 +287,7 @@ Students could contribute:
 ### Key Files:
 - Agent config (Claude): `.claude/agents/learning-assistant.md`
 - Agent config (Copilot): `.github/chatmodes/learning-assistant.chatmode.md`
-- Course calendar: `.claude/course-calendar.yaml`
+- Course map: `.claude/course-map.yaml`
 - Student guide: `HOW-TO-USE-DR-LAILA.md`
 - Playground: `student-playground/`
 
@@ -306,10 +295,10 @@ Students could contribute:
 - **Read from**: Anywhere in repository
 - **Write to**: Only `student-playground/`
 
-### Course Timeline:
-- **Start**: October 12, 2025
-- **Weeks**: 13 (plus self-study topics)
-- **Schedule**: Sunday lectures (2-4pm), Tuseday labs (1hr online)
+### Course Structure:
+- **Chapters**: 1, 2, 3, 4, 5, 6, 7, 10, 13 (non-contiguous, matching the official numbering)
+- **Self-Study**: SS1 Turtle Graphics, SS2 Recursion, SS3 Dictionaries and Sets
+- **Status**: Archived — self-paced, no fixed schedule
 
 ---
 

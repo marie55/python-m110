@@ -1,4 +1,4 @@
-# Week 1 Additional Resources
+# Chapter 1 Additional Resources
 
 ## Videos
 - [What is an Algorithm?](https://www.youtube.com/watch?v=6hfOvs8pY1k) - Khan Academy

@@ -8,7 +8,7 @@ This directory contains configuration files for Claude Code extension features.
 Custom AI sub-agents that provide specialized assistance.
 
 **learning-assistant.md** - Dr. Laila, the M110 Python Learning Assistant
-- Time-aware teaching assistant for students
+- Chapter-aware teaching assistant for students
 - Guides learning through Socratic method
 - Bilingual support (English/Arabic)
 - See [DR-LAILA-SETUP.md](DR-LAILA-SETUP.md) for details
@@ -22,10 +22,10 @@ Slash commands for quick access to features.
 
 ### Configuration Files
 
-**course-calendar.yaml** - Course schedule and timeline
-- Week-by-week topics and dates
-- Used by Dr. Laila for time-aware context
-- Update as course progresses
+**course-map.yaml** - Chapter index
+- Every chapter's number, topic and slide file paths
+- Used by Dr. Laila to ground answers in the official slides
+- Update only if chapter content or file paths change
 
 **DR-LAILA-SETUP.md** - Complete setup documentation
 - How Dr. Laila works
@@ -47,7 +47,7 @@ This directory is **shared with students** (not in .gitignore).
 
 To modify Dr. Laila's behavior:
 - Edit `agents/learning-assistant.md`
-- Update `course-calendar.yaml` as weeks progress
+- Update `course-map.yaml` if chapter content or file paths change
 - See `DR-LAILA-SETUP.md` for customization options
 
 **Note**: `CLAUDE.md` (instructor guidelines) is in root and gitignored - not shared with students.

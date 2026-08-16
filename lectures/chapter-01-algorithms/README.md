@@ -1,7 +1,6 @@
-# Week 1: Algorithms, Flowcharts & Pseudocodes
-# الأسبوع الأول: الخوارزميات، المخططات الانسيابية والشفرة الزائفة
+# Chapter 1: Algorithms, Flowcharts & Pseudocodes
+# الفصل الأول: الخوارزميات، المخططات الانسيابية والشفرة الزائفة
 
-**Week**: October 12-16, 2025
 **Chapter**: Chapter 1
 **Official Slides**: [Meeting1-Algorithms-s.pdf](../../slides-official/chapter-01-algorithms/Meeting1-Algorithms-s.pdf)
 
@@ -10,9 +9,9 @@
 ## Learning Objectives
 ## أهداف التعلم
 
-By the end of this week, you should be able to:
+By the end of this chapter, you should be able to:
 
-في نهاية هذا الأسبوع، يجب أن تكون قادراً على:
+في نهاية هذا الفصل، يجب أن تكون قادراً على:
 
 1. **Understand what an algorithm is** and why it's important in programming
    **فهم ما هي الخوارزمية** ولماذا هي مهمة في البرمجة
@@ -28,15 +27,15 @@ By the end of this week, you should be able to:
 
 ---
 
-## Why This Week Matters
-## لماذا هذا الأسبوع مهم
+## Why This Chapter Matters
+## لماذا هذا الفصل مهم
 
 **Think before you code!**
 **فكر قبل أن تكتب الكود!**
 
-Before a building is constructed, architects create blueprints. Before writing code, programmers design algorithms. This week teaches you to **think algorithmically** – a skill that separates good programmers from great ones.
+Before a building is constructed, architects create blueprints. Before writing code, programmers design algorithms. This chapter teaches you to **think algorithmically** – a skill that separates good programmers from great ones.
 
-قبل بناء المبنى، ينشئ المهندسون المخططات. قبل كتابة الكود، يصمم المبرمجون الخوارزميات. يعلمك هذا الأسبوع **التفكير الخوارزمي** – وهي مهارة تفصل المبرمجين الجيدين عن العظماء.
+قبل بناء المبنى، ينشئ المهندسون المخططات. قبل كتابة الكود، يصمم المبرمجون الخوارزميات. يعلمك هذا الفصل **التفكير الخوارزمي** – وهي مهارة تفصل المبرمجين الجيدين عن العظماء.
 
 ---
 
@@ -443,7 +442,7 @@ Complete exercises are in:
 ## موارد إضافية
 
 ### Video Tutorials
-- [Week 1 Video Guide](../../resources/video-tutorials/video-tutorials-guide.md#chapter-1)
+- [Chapter 1 Video Guide](../../resources/video-tutorials/video-tutorials-guide.md)
 
 ### Cheatsheets
 - [Control Structures Cheatsheet](../../resources/cheatsheets/control-structures-cheatsheet.md)
@@ -455,12 +454,12 @@ Complete exercises are in:
 
 ---
 
-## Week 1 Checklist
-## قائمة التحقق للأسبوع الأول
+## Chapter 1 Checklist
+## قائمة التحقق للفصل الأول
 
-Before moving to Week 2, make sure you can:
+Before moving to Chapter 2, make sure you can:
 
-قبل الانتقال إلى الأسبوع 2، تأكد من أنك تستطيع:
+قبل الانتقال إلى الفصل 2، تأكد من أنك تستطيع:
 
 - [ ] Define what an algorithm is / تعريف ما هي الخوارزمية
 - [ ] Identify the characteristics of a good algorithm / تحديد خصائص الخوارزمية الجيدة
@@ -473,9 +472,9 @@ Before moving to Week 2, make sure you can:
 
 ---
 
-**Next Week**: Week 2 - Fundamentals of Python Programming
+**Next**: Chapter 2 - Fundamentals of Python Programming
 
-**الأسبوع القادم**: الأسبوع 2 - أساسيات برمجة بايثون
+**التالي**: الفصل 2 - أساسيات برمجة بايثون
 
 ---
 
