@@ -1,0 +1,410 @@
+M110: Python ProgrammingMeeting #8Files and Exceptions
+Prepared by Dr. Ahmad Mikati
+1
+
+Contents
+8.1 Introduction to File input and output
+8.2 Using loops to Process Files
+8.3 Processing records
+8.4 Exceptions
+8.5 Summary
+AOU- M110
+2
+
+Introduction to File Input and Output
+AOU- M110
+3
+The programs you have written so far require the user to reenter data each time the program runs, because data stored in RAM (referenced by variables) disappears once the program stops running. 
+If a program is to retain data between the times it runs, it must have a way of saving it. 
+Data is saved in a file, which is usually stored on a computer’s disk. Once the data is saved in a file, it will remain there after the program stops running. Data stored in a file can be retrieved and used later.
+Programs that are used in daily business operations rely extensively on files. Payroll programs keep employee data in files, inventory programs keep data about a company’s products in files, and so on.
+Programmers usually refer to the process of saving data in a file as “writing data” to the file. When a piece of data is written to a file, it is copied from a variable in RAM to the file. The process of retrieving data from a file is known as “reading data” from the file. When a piece of data is read from a file, it is copied from the file into RAM and referenced by a variable.
+
+Introduction to File Input and Output
+AOU- M110
+4
+This chapter discusses how to write data to files and read data from files. There are always three steps that must be taken when a file is used by a program.
+
+Open the file. Opening a file creates a connection between the file and the program.
+Opening an output file usually creates the file on the disk and allows the program to write data to it. 
+Opening an input file allows the program to read data from the file.
+
+Process the file. In this step, data is either written to the file (if it is an output file) or read from the file (if it is an input file).
+
+3. Close the file. When the program is finished using the file, the file must be closed. Closing a file disconnects the file from the program.
+
+Files: Types and Access Methods
+AOU- M110
+5
+In general, there are two types of files: text and binary.
+Although Python allows you to work both text files and binary files, we will work only with text files.
+
+A text file contains data that has been encoded as text, using a scheme such as ASCII or Unicode. Even if the file contains numbers, those numbers are stored in the file as a series of characters. As a result, the file may be opened and viewed in a text editor such as Notepad. That way, you will be able to use an editor to inspect the files that your programs create.
+File Types
+
+Files: Types and Access Methods
+AOU- M110
+6
+Most programming languages provide two different ways to access data stored in a file: sequential access and direct access.
+
+We will use sequential access files. Sequential access files are easy to work
+with, and you can use them to gain an understanding of basic file operations.
+
+When you work with a sequential access file, you access data from the beginning of the file to the end of the file. If you want to read a piece of data
+that is stored at the very end of the file, you should read all the data that comes before it—you cannot jump directly to the desired data. This is similar to the way older cassette tape players work.
+File Access Methods
+
+Opening a File
+AOU- M110
+7
+You use the open function in Python to open a file. 
+The open function creates a file object and associates it with a file on the disk. Here is the general format of how the open function is used:
+file_variable = open(filename, mode)
+
+In the general format:
+file_variable is the name of the variable that will reference the file object.
+filename is a string specifying the name of the file.
+mode is a string specifying the mode (reading, writing, etc.) in which the file will be opened.
+
+The modes shown in Table 8-1 are the ones we will use.
+Table 8-1 
+
+Specifying the Location of a File
+AOU- M110
+8
+When you pass a file name that does not contain a path as an argument to the open function, the Python interpreter assumes the file’s location is the same as that of the program.
+For example, suppose a program is in the following folder on a Windows computer:    C:\Users\ABM\Documents\Python
+If the program is running and it executes the following statement, the file test.txt is created in the same folder:    test_file = open('test.txt', 'w’)
+
+If you want to open a file in a different location, you can specify a path as well as a filename in the argument that you pass to the open function. If you specify a path in a string literal (particularly on a Windows computer), be sure to prefix the string with the letter r. 
+The r prefix specifies that the string is a raw string. This causes the Python interpreter to read the backslash characters as literal backslashes. 
+Without the r prefix, the interpreter would assume that the backslash characters were part of escape sequences, and an error would occur.
+Here is an example:  test_file = open(r'C:\Users\ABM\M110\test.txt', 'w')
+
+Writing Data to a File
+AOU- M110
+9
+So far, you have worked with several of Python’s library functions, and you have even written your own functions. 
+Now, we introduce you to another type of function, which is known as a method. 
+A method is a function that belongs to an object and performs some operation using that object. 
+Once you have opened a file, you use the file object’s methods to perform operations on the file.
+For example, file objects have a method named write that can be used to write data to a file. Below is the general format of how you call the write method:
+                               file_variable.write(string)
+In the format, file_variable is a variable that references a file object, and string is a string that will be written to the file. 
+The file must be opened for writing (using the 'w’ or 'a' mode) or an error will occur.
+
+Writing Data to a File- Example
+AOU- M110
+10
+# This program writes three lines of data to a file.
+def main():
+     # Open a file named instructors.txt.
+     myfile = open(r'C:\Users\ABMikati\M110\instructors.txt', 'w’)
+                                                                                path
+     # Write the names of three instructors to the file.
+     myfile.write('Ameen Sinjer\n’)
+     myfile.write('Mazen Ali\n’)
+     myfile.write('Nawaf Abdullah\n’)
+
+     # Close the file.
+     myfile.close()
+
+# Call the main function.
+main()
+Notice each of the strings written to the file end with \n, which you will recall is the newline escape sequence. 
+The \n not only separates the items that are in the file, but also causes each of them to appear in a separate line when viewed in a text editor.
+
+Reading Data From a File
+AOU- M110
+11
+If a file has been opened for reading (using the 'r' mode) you can use the file object’s read method to read its entire contents into memory. 
+When you call the read method, it returns the file’s contents as a string.
+The statement in line 4 opens the instructors.txt file for reading, using the 'r' mode. It also creates a file object and assigns the object to the infile variable. Line 6 calls the infile.read method to read the file’s contents. The file’s contents are read into memory as a string and assigned to the file_contents variable. Then the statement in line 10 prints the string that is referenced by the variable.
+
+Reading Data From a File
+AOU- M110
+12
+Although the read method allows you to easily read the entire contents of a file with one statement, many programs need to read and process the items that are stored in a file one at a time. 
+
+For example, suppose a file contains a series of sales amounts, and you need to write a program that calculates the total of the amounts in the file. The program would read each sale amount from the file and add it to an accumulator.
+In Python, you can use the readline method to read a line from a file. 
+(A line is simply a string of characters that are terminated with a \n.) 
+The method returns the line as a string, including the \n. 
+
+The next Program shows how we can use the readline method to read the
+contents of the instructors.txt file, one line at a time.
+
+Reading Data From a File
+AOU- M110
+13
+Notice that a blank line is displayed after each line in the output.
+This is because each item that is read from the file ends with a newline character (\n).
+Later, you will learn how to remove the newline character.
+
+Dealing with the newline \n
+AOU- M110
+14
+Concatenating a Newline to a String
+Earlier, we have written three string literals to a file, and each string literal ended with a \n escape sequence. 
+In most cases, the data items that are written to a file are not string literals, but values in memory that are referenced by variables. 
+This would be the case in a program that prompts the user to enter data and then writes that data to a file.
+When a program writes data that has been entered by the user to a file, it is usually necessary to concatenate a \n escape sequence to the data before writing it. This ensures that each piece of data is written to a separate line in the file.
+
+The following code demonstrates how this is done.
+name1 = input('Friend #1: ‘)
+name2 = input('Friend #2: ')
+myfile = open('friends.txt', 'w’)
+myfile.write(name1 + '\n’)
+myfile.write(name2 + '\n')
+myfile.close()
+
+Dealing with the newline \n
+AOU- M110
+15
+Reading a String and Stripping the Newline from it
+The \n serves a necessary purpose inside a file: it separates the items that are stored in the file. 
+However, in many cases, you want to remove the \n from a string after it is read from a file. 
+
+Each string in Python has a method named rstrip that removes, or “strips,” specific characters from the end of a string. (It is named rstrip because it strips characters from the right side of a string.) 
+
+The following amended code of our last program demonstrates how the rstrip method can be used.
+As a result, the extra blank lines do not appear in the output.
+
+Appending Data to an Existing File
+AOU- M110
+16
+When you use the 'w' mode to open an output file and a file with the specified filename
+already exists on the disk, the existing file will be deleted and a new empty file with the
+same name will be created. 
+Sometimes you want to preserve an existing file and append new data to its current contents. 
+
+Appending data to a file means writing new data to the end of the data that already exists in the file.
+
+In Python, you can use the 'a' mode to open an output file in append mode, which means
+the following:
+If the file already exists, it will not be erased. If the file does not exist, it will be created.
+When data is written to the file, it will be written at the end of the file’s current contents.
+For example, consider our file friends.txt that contains the names Hani and Fadi, each in a separate line. The following code opens the file and appends additional data to its existing contents.
+After running this program, the file friends.txt will contain the following data
+
+Writing and Reading Numeric Data
+AOU- M110
+17
+Strings can be written directly to a file with the write method, but numbers must be converted to strings before they can be written. 
+Python has a built-in function named str that converts a value to a string. 
+For example, assuming the variable num is assigned the value 99, the expression str(num) will return the string '99’.
+The below Program shows an example of how you can use the str function to convert a number to a string and write the resulting string to a file.
+outfile = open('numbers.txt', 'w')
+# Get three numbers from the user.
+num1 = int(input('Enter a number: ‘)) #55
+num2 = int(input('Enter another number: ‘)) # 33
+num3 = int(input('Enter another number: ‘)) # -50
+# Write the numbers to the file.
+outfile.write(str(num1) + '\n')
+outfile.write(str(num2) + '\n')
+outfile.write(str(num3) + '\n')
+outfile.close()
+The expression str(num1) + '\n' converts the value referenced by num1 to a string and
+concatenates the \n escape sequence to the string.
+17
+
+Writing and Reading Numeric Data
+AOU- M110
+18
+When you read numbers from a text file, they are always read as strings.
+Python provides the built-in function int to convert a string to an integer, and the built-in function float to convert a string to a floating-point number.
+The value variable referenced the string ‘55\n’. 
+This caused a problem as we intend to perform math with the value variable, because we cannot perform math on strings.
+Notice in line 2 a call to the readline method is used as the argument to the int function.
+After this statement executes, the value variable will reference the integer 55, hence the displayed number will be 58.
+
+Using loops to Process Files
+AOU- M110
+19
+Although some programs use files to store only small amounts of data, files are typically used to hold large collections of data. 
+When a program uses a file to write or read a large amount of data, a loop is typically involved.
+For example, consider the below program that gets sales amounts for a series of days from the user and writes those amounts to a file named sales.txt. 
+The user specifies the number of days of sales data he or she needs to enter. In the sample run of the program, the user enters sales amounts for five days as follows: 225,255,240,135,560 .
+
+Using loops to Process Files
+AOU- M110
+20
+Reading a File with a Loop and Detecting the End of the File
+The Python language allows you to write a for loop that automatically reads the lines in a file without testing for any special condition that signals the end of the file. 
+The loop automatically stops when the end of the file has been reached.
+
+The below programs read and display all the items in the sales.txt file.
+OR
+
+Processing Records
+AOU- M110
+21
+When data is written to a file, it is often organized into records and fields. 
+A record is a complete set of data that describes one item, and a field is a single piece of data within a record. 
+
+For example, suppose we want to store data about employees in a file. The file will contain a record for each employee. Each record will be a collection of fields, such as name, ID number, and department. 
+This is illustrated in the below figure.
+
+Processing Records
+AOU- M110
+22
+Each time you write a record to a sequential access file, you write the fields that make up the record, one after the other. For example, in a file that contains three employee records, each record will consist of the employee’s name, ID number, and department. The program below shows how a specific number of records can be written to a file.
+
+Processing Records
+AOU- M110
+23
+When we read a record from a sequential access file, we read the data for each field, one after the other, until we have read the complete record. The below program demonstrates how we can read the employee records in the employee.txt file.
+
+Exceptions
+AOU- M110
+24
+An exception is an error that occurs while a program is running. In most cases, an exception causes a program to abruptly halt. Consider the below program
+In the sample running of the program, an exception occurred because the user entered zero as the second number. 
+(Division by 0 causes an exception because it is mathematically impossible.)
+The lengthy error message that is shown in the sample run is called a traceback. The traceback
+gives information regarding the line number(s) that caused the exception. The last line of the error message shows the name of the exception that was raised (ZeroDivisionError)
+
+Exceptions
+AOU- M110
+25
+You can prevent many exceptions from being raised by carefully coding your program. 
+For example, division by 0 can be prevented with a simple if statement.
+Rather than allowing the exception to be raised, the program tests the value of num2, and displays an error message if the value is 0. This is an example of gracefully avoiding an exception.
+Some exceptions, however,  cannot be avoided regardless of how carefully you write your program.
+Python, like most modern programming languages, allows you to write code that responds to exceptions when they are raised and prevents the program from abruptly crashing. 
+Such code is called an exception handler and is written with the try/except statement. 
+
+There are several ways to write a try/except statement, but the following general format shows the simplest variation:
+try:
+   statement
+   statement
+   etc.
+except ExceptionName:
+   statement
+   statement
+   etc.
+
+Exceptions
+AOU- M110
+26
+try:
+   statement
+   statement
+   etc.
+except ExceptionName:
+   statement
+   statement
+   etc.
+First, the key word try appears, followed by a colon. Next, a code block appears which we will refer to as the try suite. The try suite is one or more statements that can potentially raise an exception.
+After the try suite, an except clause appears. The except clause begins with the key word except, optionally followed by the name of an exception, and ending with a colon.
+Beginning on the next line is a block of statements that we will refer to as a handler.
+When the try/except statement executes, the statements in the try suite begin to execute.
+The following describes what happens next:
+• If a statement in the try suite raises an exception that is specified by the ExceptionName
+in an except clause, then the handler that immediately follows the except clause executes. Then, the program resumes execution with the statement immediately following the try/except statement.
+
+• If a statement in the try suite raises an exception that is not specified by the ExceptionName in an except clause, then the program will halt with a traceback error message.
+
+• If the statements in the try suite execute without raising an exception, then any except clauses and handlers in the statement are skipped, and the program resumes execution with the statement immediately following the try/except statement.
+
+Exceptions
+AOU- M110
+27
+Let’s look at an example. The below program, which does not use exception
+handling, gets the name of a file from the user then displays the contents of the file.
+
+The program works as long as the user enters the name of an existing file. An exception will be raised, however, if the file specified by the user does not exist. This is what happened in the sample run.
+The statement in line 7 raised the exception when it called the open function. 
+Notice in the traceback error message that the name of the exception that occurred is IOError. 
+This is an exception that is raised when a file I/O operation fails.
+
+Exceptions
+AOU- M110
+28
+The below program shows how we can modify the previous program with a try/except statement that gracefully responds to an IOError exception.
+Let’s look at what happened in the sample run. When line 3 executed, the user entered
+None, which was assigned to the filename variable. Inside the try suite, line 5 attempts to open the file None. Because this file does not exist, the statement raises an IOError exception. When this happens, the program exits the try suite, skipping lines 6 through 8. Because the except clause in line 9 specifies the IOError exception, the program jumps to the handler that begins in line 10.
+
+Handling Multiple Exceptions
+AOU- M110
+29
+In many cases, the code in a try suite will be capable of throwing more than one type of exception. In such a case, you need to write an except clause for each type of exception that you want to handle. For example, our next program reads the contents of a file named sales_data.txt.
+Each line in the file contains the sales amount for one month, and the file has several lines. 
+• The statement in line 7 can raise an IOError exception if the sales_data.txt file does not exist. 
+The for loop in line 8 can also raise an IOError exception if it encounters a problem reading data from the file.
+• The float function in line 9 can raise a ValueError exception if the line variable references a string that cannot be converted to a floating-point number (an alphabetic string, for example).
+• The except clause in line 13 specifies the IOError exception. Its handler in line 14 will execute if an IOError exception is raised.
+• The except clause in line 15 specifies the ValueError exception. Its handler in line
+16 will execute if a ValueError exception is raised.
+• The except clause in line 17 does not list a specific exception. Its handler in line 18 will execute if an exception that is not handled by the other except clauses is raised.
+
+Handling Multiple Exceptions
+AOU- M110
+30
+If an exception occurs in the try suite, the Python interpreter examines each of the except clauses, from top to bottom, in the try/except statement. 
+When it finds an except clause that specifies a type that matches the type of exception that occurred, it branches to that except clause. If none of the except clauses specifies a type that matches the exception, the interpreter branches to the except clause in line 17.
+Using One except Clause to Catch All Exceptions
+The previous example demonstrated how multiple types of exceptions can be handled individually in a try/except statement. 
+
+Sometimes you might want to write a try/except statement that simply catches any exception that is raised in the try suite and, regardless of the exception’s type, responds the same way. 
+
+You can accomplish that in a try/except statement by writing one except clause that does not specify a particular type of exception.
+
+What If an Exception Is Not Handled?
+AOU- M110
+31
+Unless an exception is handled, it will cause the program to halt. There are two possible ways for a thrown exception to go unhandled. The first possibility is for the try/except statement to contain no except clauses specifying an exception of the right type. 
+The second possibility is for the exception to be raised from outside a try suite. 
+In either case, the exception will cause the program to halt.
+
+In this section, you’ve seen examples of programs that can raise ZeroDivisionError exceptions, IOError exceptions, and ValueError exceptions. 
+There are many different types of exceptions that can occur in a Python program. When you are designing try/except statements, one way you can learn about the exceptions that you need to handle is to consult the Python documentation. It gives detailed information about each possible exception and the types of errors that can cause them to occur.
+
+Another way that you can learn about the exceptions that can occur in a program is through experimentation. 
+You can run a program and deliberately perform actions that will cause errors. By watching the traceback error messages that are displayed, you will see the names of the exceptions that are raised. You can then write except clauses to handle these exceptions.
+
+Exercise 1
+AOU- M110
+32
+Assume a file containing a series of integers is named numbers.txt and exists on the computer’s disk. 
+Write a program that calculates the average of all the numbers stored in the file.
+
+
+
+
+Exercise 1- Solution
+AOU- M110
+33
+def main():
+    # Declare variables
+    total = 0.0
+    number = 0.0
+    counter = 0
+    # Open numbers.txt file for reading
+    infile = open('numbers.txt', 'r')
+    for line in infile:
+        counter = counter + 1
+        number = float(line)
+        total += number
+    # Close file
+    infile.close()
+   # Calculate average
+    average = total / counter
+    # Display the average of the numbers in the file
+    print(f'Average: {average}')
+
+# Call the main function.
+main()
+
+Exercise 2
+AOU- M110
+34
+
+Modify the program that you wrote for Exercise 1, so it handles the following exceptions:
+• It should handle any IOError exceptions that are raised when the file is opened, and data is read from it.
+• It should handle any ValueError exceptions that are raised when the items that are read from the file are converted to a number.
+
+
+Exercise 2- Solution
+AOU- M110
+35

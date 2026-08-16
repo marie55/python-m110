@@ -1,0 +1,438 @@
+M110: Python ProgrammingMeeting #7Functions
+Prepared by Dr. Ahmad Mikati
+1
+
+Content
+AOU- M110
+2
+Introduction to Functions
+Defining and Calling a Void Function
+Designing a Program to Use Functions
+Local Variables
+Passing Arguments to Functions
+Global Variables and Global Constants
+Reusing Code
+
+Modular Programming
+AOU- M110
+3
+Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.
+Modular Programming helps develop programs that are much easier to read since they can be enabled as user-defined functions. 
+A program that carries multiple functions benefits in the following ways:
+Simpler Code
+Code Reuse
+Faster Development
+Better Testing
+Better Teamwork 
+
+Introduction to Functions
+Most programs perform tasks that are large enough to be broken down into several subtasks.
+For this reason, programmers usually break down their programs into small manageable pieces known as functions. 
+A function is a group of statements that exist within a program for the purpose of performing a specific task. 
+Instead of writing a large program as one long sequence of statements, it can be written as several small functions, each one performing a specific part of the task. 
+These small functions can then be executed in the desired order to perform the overall task.
+AOU- M110
+4
+
+Functions in Python
+AOU- M110
+5
+You may recall being told that you can find the size of a list my_list by using len(my_list). This involved a Python function, len(). 
+
+The len() function is a built-in Python function: the Python interpreter will know how to handle it, without you needing to add any additional code to your program. 
+
+When we talk about a function, we use its name – in this case, len – followed by a pair of parentheses: len(). This way, you can see at once that we are talking about a function rather than, for instance, a variable.
+ In addition to a name, a function can have arguments (though not all functions have arguments). In the example len(my_list), the variable my_list is the argument of the function. 
+
+When a function name is combined with its argument, the result is an expression. 
+len(my_list)
+Function name
+argument
+expression
+
+Functions in Python
+AOU- M110
+6
+Creating a Function
+In Python a function is defined using the def keyword. Here is the general format of a function definition in Python:
+def function_name():
+      block (a set of statements)
+The first line is known as the function header. It marks the beginning of the function definition.
+The function header begins with the key word def, followed by the name of the function, followed by a set of parentheses, followed by a colon.
+def  printHello():
+    print("Hello! ")
+Beginning at the next line is a set of indented statements known as a block. A block is simply a set of statements that belong together as a group. These statements are performed any time the function is executed.
+
+Functions in Python
+AOU- M110
+7
+Calling a Function
+A function definition specifies what a function does, but it does not cause the function to execute. 
+To execute a function, you should call it.
+def  printHello():
+    print("Hello! ")
+printHello()
+When a function is called, the interpreter jumps to that function and executes the statements in its block. 
+When the end of the block is reached, the interpreter jumps back to the part of the program that called the function, and the program resumes execution at
+that point.
+Function call
+
+Functions
+Four parts of function’s definition:
+ The reserved word def which indicates that what follows is a function definition.
+ The name of the function.
+ List of arguments enclosed in parentheses.
+ The body of the function, which is the set of statements that carry out the work of the function, noting that:
+Use colon ( : ) to start the body of the function.
+Use indentation for the body of the function .
+AOU- M110
+8
+ def  printHello():
+    print("Hello! ")
+It is a good practice to keep functions short and focused.
+8
+
+Functions in Python
+AOU- M110
+9
+Arguments
+Information can be passed into functions as arguments.
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+The following example has a function with one argument (aname). 
+def my_function(aname):
+  print('Hello, '+ aname )
+
+name=input('Enter a name: ')
+my_function(name)
+Enter a name: Jamal
+Hello, Jamal
+Number of Arguments
+By default, a function must be called with the correct number of arguments. This means that if your function expects 2 arguments, you should call the function with 2 arguments, not more, and not less.
+
+Functions in Python
+AOU- M110
+10
+Passing a List as an Argument
+You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+def my_function(names):
+   for x in names:
+      print(x)
+
+families = [“Badr", “Jomaa", “Hamad"]
+my_function(families)
+
+Functions without return
+Some functions perform simple procedural tasks (specified in their bodies) but do not return any information when they are called.
+AOU- M110
+11
+Example: Write a function that will display a welcome message to a student with his/her name. Then, use the function in your program.
+
+
+
+
+When the function is called, an actual value for the argument must be used.
+For example, when the function call welcome('Ahmad') is executed, the actual string 'Ahmad' replaces the argument aName resulting in the following output:
+
+def welcome(aName):
+  print("Hello" , aName)
+  print("Welcome to AOU")
+
+welcome("Ahmad")  #Function call
+-----output-----
+Hello Ahmad
+Welcome to AOU
+
+Functions with return
+AOU- M110
+12
+Some functions provide a value as the result of some calculations made in the function’s body.
+Python provides us with the return statement:
+return followed by the value it needs to return
+In order not to lose the returned value , you need to:
+assign it to a variable (for further calculations, if needed)
+OR 
+print it immediately.
+
+-----output-----
+
+Enter the height: 4 
+Enter the width: 6
+Area = 24
+def recArea(aHeight, aWidth) :
+     
+     area = aHeight * aWidth
+     
+     return area
+
+ 
+h = eval(input("Enter the height: " ))
+    
+w = eval(input("Enter the width: "))
+
+print("Area = ",recArea(h,w)) #Function call inside print()
+4
+6
+6
+4
+Functions with return
+AOU- M110
+13
+Example : Write a function that takes the height and width as arguments, calculates the area of a rectangle, and returns it. Then display the area in the output window. Use the function in your program. 
+
+Functions with return
+Problem: Write a function that accepts two numbers as arguments and returns the sum of these two numbers.
+AOU- M110
+def sum_of_numbers(a, b):
+    return a + b
+def sum_of_numbers(a, b):
+    return a + b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Sum of two numbers: ", sum_of_numbers(num1, num2))
+The complete program:
+The function:
+
+AOU- M110
+15
+
+Functions with Multiple return values
+
+So, what if you want to return two variables from a function instead of one? There are a couple of approaches which new programmers take. 
+Let’s take a look at a simple example:
+Enter your name: Naji
+Enter your year of birth: 1999
+Name:  Naji
+Age:  23
+Enter your name: Naji
+Enter your year of birth: 1999
+Name:  Naji
+Age:  23
+# example on multiple return values
+def profile():
+    name = input('Enter your name: ')
+    YOB = int(input('Enter your year of birth: '))
+    age= 2022- YOB
+    return [name, age]
+
+profile_data = profile()
+print('Name: ',profile_data[0])
+print('Age: ',profile_data[1])
+The returned values are now in a list
+Capturing the returned values in the list profile_data
+Retrieving each item by its index
+# example on multiple return values
+def profile():
+    name = input('Enter your name: ‘)
+    YOB = int(input('Enter your year of birth: '))
+    age= 2022- YOB
+    return name, age
+
+name, age = profile()
+print('Name: ',name)
+print('Age: ',age)
+The returned values are assigned to variables
+
+Functions in Python
+AOU- M110
+16
+Local Variables
+A local variable is created inside a function and cannot be accessed by statements that are outside the function. Different functions can have local variables with the same names because the functions cannot see each other's local variables.
+Anytime you assign a value to a variable inside a function, you create a local variable. 
+A local variable belongs to the function in which it is created, and only statements inside that function can access the variable. 
+def  printHello():
+    aname = input('Enter your name: ')
+    print("Hello,", aname)
+printHello()
+Enter your name: Fadi
+Hello, Fadi
+
+Functions in Python
+AOU- M110
+17
+Local Variables
+An error will occur if a statement in one function tries to access a local variable that belongs to another function or any part other than this function.
+The statement in line 4 tries to access the aname variable. This results in an error because the aname variable is local to the printHello() function, and statement in line 4 cannot access it.
+
+Functions in Python
+AOU- M110
+18
+Making Changes to Parameters
+When an argument is passed to a function in Python, the function parameter variable will reference the argument’s value. 
+However, any changes that are made to the parameter variable will not affect the argument.
+
+Functions in Python
+AOU- M110
+19
+Global Variables
+A global variable can be accessed by any statement in the program file, including the statements in any function.
+When a variable is created by an assignment statement that is written outside all the functions in a program file, the variable is global.
+name="Ahmad"
+def printHello():
+   print("Hello",name)
+printHello()
+Hello Ahmad
+
+Functions in Python
+AOU- M110
+20
+Global Variables
+An additional step is required if you want a statement in a function to assign a value to a global variable. In the function, you must declare the global variable.
+
+Functions in Python
+AOU- M110
+21
+Global Variables
+Also, use the global keyword if you want to change a global variable inside a function.
+To change the value of a global variable inside a function, refer to the variable by using the global keyword:
+
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+print("Python is " + x)
+Python is fantastic
+Python is fantastic
+
+AOU- M110
+22
+Hiding Complexity: Interfaces and Implementations
+To use a function, all you need to know are: 
+
+the name of the function.
+what kind of argument(s) it needs.
+what it gives back as a return value.
+what other effects calling the function has. 
+
+There is a name for the items you need to know: the interface of the function. To use a function, knowing the interface is enough. There’s no need to know what goes on under the bonnet-its implementation. 
+
+When the implementation is separated from the interface, thereby hiding some of the complexity, we also say that an abstraction has been created. 
+When a function is called, the resulting value is referred to as the return value of the function. 
+
+AOU- M110
+23
+The Python Interpreter and Functions
+The Python interpreter deals with a program one line after the other, starting with the very first line. A normal program line is executed when the interpreter gets to it. However, functions do receive special treatment, which we examine in this section. 
+
+When the Python interpreter encounters a function definition, it reads this definition into memory for later use.  
+
+The interpreter only executes the lines of a function definition, when the function is called. 
+
+AOU- M110
+24
+The Python Interpreter and Functions
+On those occasions where a function is called, the parameters are initialized with the actual arguments and then the statements in its body are executed. 
+On encountering the keyword return, Python does two things: 
+
+the function stops executing (control is handed back to the point where the function was called originally) 
+the value of the expression following return is passed back. In other words, the evaluation of the function expression is complete, and the result is the return value of the function. 
+
+AOU- M110
+25
+Using Functions- The Benefits
+Replacing duplicate code with a function can make a program shorter and more readable. 
+
+A further advantage is that it makes it much easier to modify the code, if needed. 
+
+In short, functions can help us write code that:
+
+is shorter and consequently more readable.
+is easier to change, making it less likely that errors are introduced.
+explicitly mirrors the decomposition of a problem and consequently is easier to understand.
+
+Functions in Python
+AOU- M110
+26
+The math Module
+The math module in the Python standard library contains several functions that are useful for performing mathematical operations.
+Some math Module functions:
+function
+ Description
+ceil(x)
+Returns the smallest integer that is greater than or equal to x.
+exp(x)
+Returns ex
+floor(x)
+Returns the largest integer that is less than or equal to x.
+hypot(x, y)
+Returns the length of a hypotenuse that extends from (0, 0) to (x, y).
+log(x)
+Returns the natural logarithm of x.
+log10(x)
+Returns the base-10 logarithm of x.
+radians(x)
+Assuming x is an angle in degrees, the function returns the angle converted to radians.
+degrees(x)
+Assuming x is an angle in radians, the function returns the angle converted to degrees.
+sqrt(x)
+Returns the square root of x.
+
+Functions in Python
+AOU- M110
+27
+The math Module
+Some math Module functions examples:
+3
+2
+9.210340371976184
+4.0
+2.718281828459045
+
+Exercise 1
+AOU- M110
+28
+Write a program that asks the user to enter a distance in kilometers, then using a function showMiles that accepts the entered distance in kilometers and displays the converted distance in miles rounded to 2 decimal places. The conversion formula is as follows:
+Miles = Kilometers * 0.6214
+
+Solution
+def showMiles(kilometers):
+    miles = kilometers * 0.6214
+    print(f"{kilometers} kilometers is equal to {round(miles,2)} miles.")
+
+kilometers = float(input("Enter distance in kilometers: "))
+showMiles(kilometers)
+
+Exercise 2
+AOU- M110
+29
+Python allows you to repeat a string by multiplying it by an integer, e.g. 'Hi' * 3 will give 'HiHiHi’. 
+Pretend that this feature does not exist, and instead write a function named       repeat that accepts a string and an integer as arguments. 
+The function should return a string of the original string repeated the specified number of times, e.g. repeat('Hi', 3) should return 'HiHiHi’.
+Use a main functions that enters the string to be repeated and the number of repetitions, then calls the function and prints the result.
+
+Ex. 2 Solution
+AOU- M110
+30
+def repeat(string, times):
+    repeated_string = ''
+    for i in range(times):
+        repeated_string += string
+    return repeated_string
+
+
+def main():
+    string = input("Enter a string: ")
+    times = int(input("Enter the number of times to repeat: "))
+    result = repeat(string, times)
+    print("Result:", result)
+
+main()
+
+Exercise 3
+AOU- M110
+31
+Write a program that generates a random number in the range of 1 through 100 and asks the user to guess what the number is. 
+If the user’s guess is higher than the random number, the program should display “Too high, try again.” 
+If the user’s guess is lower than the random number, the program should display “Too low, try again.” 
+If the user guesses the number, the application should congratulate the user and generate a new random number so the game can start over.
+
+Exercise 3- Solution
+AOU- M110
+32
+Try to modify the program so that the user can have only 5 guesses. 
+If the user fails to guess after the allowed trials , a proper message should be displayed, and the program terminates.

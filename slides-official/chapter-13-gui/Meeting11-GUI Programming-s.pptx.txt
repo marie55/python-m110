@@ -1,0 +1,350 @@
+M110: Python ProgrammingMeeting #11GUI Programming
+Prepared by Dr. Ahmad Mikati
+1
+
+Topics
+Graphical User Interfaces
+Using the tkinter Module
+Displaying Text with Label Widgets
+Organizing Widgets with Frames
+Button Widgets and Info Dialog Boxes
+Getting Input with the Entry Widget
+Using Labels as Output Fields
+AOU- M110
+2
+
+Graphical User Interfaces (1 of 3)
+User Interface: the part of the computer with which the user interacts
+Command line interface: it displays a prompt, and the user types a command that is then executed
+Graphical User Interface (GUI): allows users to interact with a program through graphical elements on the screen.
+AOU- M110
+3
+A computer’s user interface is the part of the computer with which the user interacts. One part of the user interface consists of hardware devices, such as the keyboard and the video display. Another part of the user interface lies in the way that the computer’s operating system accepts commands from the user. 
+For many years, the only way that the user could interact with an operating system was through a command line interface.
+In the 1980s, a new type of interface known as a graphical user interface came into use in commercial operating systems, called the graphical user interface
+
+Graphical User Interfaces (2 of 3)
+Command line interface: displays a prompt and the user types a command that is then executed
+AOU- M110
+4
+Figure 1 A command line interface
+4
+
+Graphical User Interfaces (3 of 3)
+AOU- M110
+5
+Graphical User Interface (GUI): (GUI; pronounced “gooey”), allows the user to interact with the operating system and other programs through graphical elements on the screen. 
+GUIs also popularized the use of the mouse as an input device.
+GUIs allow the user to point at graphical elements and click the mouse button to activate them.
+Much of the interaction with a GUI is done through dialog boxes, which are small windows that display information and allow the user to perform actions.
+Responsible for most of the interaction through GUI
+User interacts with graphical elements such as icons, buttons, and slider bars
+
+
+GUI Programs Are Event-Driven
+In text-based environments, programs determine the order in which things happen
+The user can only enter data in the order requested by the program
+GUI environment is event-driven
+The user determines the order in which things happen
+User causes events to take place and the program responds to the events
+
+AOU- M110
+6
+
+Using the tkinter Module (1 of 3)
+Python does not have GUI programming features built into the language itself. However, it comes with a module named tkinter that allows you to create simple GUI programs. 
+The name “tkinter” is short for “Tk interface.”
+tkinter module allows you to create simple GUI programs
+A GUI program presents a window with various graphical widgets with which the user can interact or view. The tkinter module provides 15 widgets, which are described in Table 1. 
+We won’t cover all the tkinter widgets in this chapter, but we will demonstrate how to create simple GUI programs that gather input and display data
+Widget: A graphical element that the user can interact with or view (Known also as control)
+Presented by a GUI program
+AOU- M110
+7
+
+Using the tkinter Module (2 of 3)
+Widget
+Description
+Button
+A button that can cause an action to occur when it is clicked.
+Canvas
+A rectangular area that can be used to display graphics.
+Checkbutton
+A button that may be in either the “on” or “off” position.
+Entry
+An area in which the user may type a single line of input from the keyboard.
+Frame
+A container that can hold other widgets.
+Label
+An area that displays one line of text or an image.
+Listbox
+A list from which the user may select an item
+Menu
+A list of menu choices displayed when the user clicks a Menubutton widget.
+Menubutton
+A menu that is displayed on the screen and may be clicked by the user
+Message
+Displays multiple lines of text.
+Radiobutton
+A widget that can be either selected or deselected. Radiobutton widgets usually appear in groups and allow the user to select one of several options.
+Scale
+A widget that allows the user to select a value by moving a slider along a track.
+Scrollbar
+Can be used with some other types of widgets to provide scrolling ability.
+Text
+A widget that allows the user to enter multiple lines of text input.
+Toplevel
+A container, like a Frame, but displayed in its own window.
+AOU- M110
+8
+Table 1 tkinter widgets
+
+Using the tkinter Module
+AOU- M110
+9
+The simplest GUI program that we can demonstrate is one that displays an empty window. The below program shows how we can do this using the tkinter module. When the program runs, the window shown in  the figure is displayed. To exit the program, simply click the standard Windows close button (×) in the upper right corner of the window.
+# This program displays an empty window.
+import tkinter  
+def main():
+    # Create the main window widget.
+    main_window = Tk()
+    # Enter the tkinter main loop.
+    tkinter.mainloop()
+# Call the main function.
+main()
+main_window = Tk() creates an instance of the tkinter module’s Tk class and assigns it to the main_window variable. This object is the root widget, which is the main window in the program.
+
+tkinter.mainloop()  calls the tkinter module’s mainloop function. This function runs like an indefinite loop until you close the main window.
+
+import <module> vs. from <module> import *
+AOU- M110
+10
+import tkinter
+tkinter.mainloop()
+from tkinter import *
+mainloop()
+OR
+Example: in order to avoid writing tkinter. before each command, you can use  from tkinter import * instead of  import tkinter at the beginning of your program. 
+In general, we use from <module>import * when we want to save ourselves from typing the module name repeatedly. 
+In other words, use from <module> import * when referring to a member of the module many times in the code.
+
+Using the tkinter Module (OOP)
+Programs that use tkinter do not always run reliably under IDLE
+For best results run them from operating system command prompt
+Most programmers take an object-oriented approach when writing GUI programs.
+__init__ method builds the GUI
+When an instance is created the GUI appears on the screen.
+
+AOU- M110
+11
+# This program displays a window with a title.
+from tkinter import *
+class MyGUI:
+    def __init__(self):
+        # Create the main window widget.
+        self.main_window = Tk()
+        # Enter the tkinter main loop.
+        mainloop()
+# Create an instance of the MyGUI class.
+my_gui = MyGUI()
+# This program displays an empty window.
+from tkinter  import *
+def main():
+    # Create the main window widget.
+    main_window = Tk()
+    # Enter the tkinter main loop.
+    mainloop()
+# Call the main function.
+main()
+object-oriented approach 
+Output
+
+Changing the Tkinter GUI Window Title
+AOU- M110
+To change the title of the GUI window in Tkinter, use the title() method to set the title of the window:
+Format: self.root.title(“Your Title")
+Example 1
+ # This program displays a window with a title.
+
+from tkinter import *
+class MyGUI:
+    def __init__(self):
+        # Create the main window widget.
+        self.main_window = Tk()
+        # Display a title.
+        self.main_window.title('My First GUI')
+        # Enter the tkinter main loop.
+        mainloop()
+# Create an instance of the MyGUI class.
+my_gui = MyGUI()
+Output
+
+Display Text with Label Widgets
+Label widget: displays a single line of text in a window
+Made by creating an instance of tkinter module’s Label class
+Format: Label(self.main_window,text='my text')
+First argument references the root widget, second argument shows text that should appear in label
+AOU- M110
+13
+pack method: determines where a widget should be positioned and makes it visible when the main window is displayed
+Called for each widget in a window
+Receives an argument to specify positioning
+Positioning depends on the order in which widgets were added to the main window
+Valid arguments: side='top', side='left’, side='right’, side=‘bottom’
+                                 (or side=TOP, side= LEFT, side= RIGHT, side= BOTTOM). 
+N.B:  if no argument included, then TOP, or “top”, is considered the default case.
+
+Example 2
+AOU- M110
+14
+# This program displays a title and a label with text.
+from tkinter import *
+class MyGUI:
+    def __init__(self):
+        # Create the main window widget.
+        self.main_window = Tk()
+        # Display a title.
+        self.main_window.title('My First GUI')
+        # Create a Label widget containing the text 'Hello World!'
+        self.label = Label(self.main_window, text='Hello World!')
+
+        # Call the Label widget's pack method.
+        self.label.pack()
+        # Enter the tkinter main loop.
+        mainloop()
+# Create an instance of the MyGUI class.
+my_gui = MyGUI()
+The pack method determines where a widget should be positioned and makes the widget visible when the main window is displayed. (You call the pack method for each widget in a window.)
+Output
+
+Example 3
+AOU- M110
+15
+Notice the two Label widgets are displayed with one stacked on top of the other. We can change this layout by specifying an argument to pack method
+Output
+
+Example 4
+AOU- M110
+16
+In lines 16 and 17, label1 widget was added to the main window first, it will appear at the leftmost edge. The label2 widget was added next, so it appears next to the label1 widget. 
+As a result, the labels appear side by side.
+Output
+
+Adding Borders to Labels
+When creating a Label widget, you can use the borderwidth and relief arguments to display a border around the label
+The borderwidth argument specifies the width of the border, in pixels
+The relief argument specifies the border style
+AOU- M110
+17
+self.label = Label(self.main_window,
+                           text='Hello World',
+                           borderwidth=1,
+                           relief='solid')
+self.label = Label(self.main_window,
+                           text='Hello World',
+                           borderwidth=4,
+                           relief='solid')
+
+Values for relief Argument (1 of 2)
+AOU- M110
+18
+relief Argument
+Description
+relief='flat'
+The border is hidden and there is no 3D effect.
+relief='raised'
+The widget has a raised 3D appearance.
+relief='sunken'
+The widget has a sunken 3D appearance.
+relief='ridge'
+The border around the widget has a raised 3D appearance.
+relief='solid'
+The border appears as a solid line with no 3D effect.
+relief='groove'
+The border around the widget appears as a groove.
+
+Example 5
+AOU- M110
+19
+Output
+
+Padding
+Padding: space that appears around a widget
+Internal padding appears around the inside edge of a widget
+External padding appears around the outside edge of a widget
+AOU- M110
+20
+
+Internal Padding (1 of 2)
+To add horizontal internal padding to a widget, pass the argument ipadx=n to the widget's pack method
+To add vertical internal padding to a widget, pass the argument ipady=n to the widget's pack method
+
+
+AOU- M110
+21
+
+Internal Padding- Example (2 of 2)
+AOU- M110
+22
+Notice that when used import tkinter at the beginning of the program we had to add tkinter. before each command
+Output
+
+External Padding (1 of 2)
+To add horizontal external padding to a widget, pass the argument padx=n to the widget's pack method
+To add vertical external padding to a widget, pass the argument pady=n to the widget's pack method
+AOU- M110
+23
+
+External Padding- Example (2 of 2)
+AOU- M110
+24
+Output
+
+Internal and External Padding- Example
+AOU- M110
+25
+Output
+
+Organizing Widgets with Frames (1 of 2)
+Frame widget: A container that holds other widgets
+Useful for organizing and arranging groups of widgets in a window. 
+For example, you can place a set of widgets in one Frame and arrange them in a particular way, then place a set of widgets in another Frame and arrange them in a different way.
+Example:
+	Label(self.top_frame,text = 'hi')
+
+AOU- M110
+26
+
+Organizing Widgets with Frames (2 of 2)
+AOU- M110
+27
+
+AOU- M110
+28
+Output
+
+Exercise
+AOU- M110
+Create a GUI application using a class in Python that displays a label and a frame. The label should show a message, and the frame should contain some content with a solid relief and an external padding .
+from tkinter import *
+class MyGUIApp:
+    def __init__(self):
+        self.window = Tk()
+        self.window.title("GUI App")
+
+        self.label = Label(self.window, text="Hello, World!")
+        self.label.pack()
+
+        self.frame = Frame(self.window, borderwidth=2, relief="solid")
+        self.frame.pack(padx=10,pady=10)
+
+        self.content_label = Label(self.frame, text="This is the content inside the frame.")
+        self.content_label.pack()
+
+        self.window.mainloop()
+
+# Create an instance of the class to start the GUI app
+my_app = MyGUIApp()
+Initializer method
+Label part
+Frame with a label inside it
