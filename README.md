@@ -98,13 +98,19 @@ M110 runs on Python's standard library. `turtle` and `tkinter` ship with Python 
 
 **تأكد أن كل شيء يعمل** — شغّل أول برنامج في المستودع:
 
+**Windows:**
 ```bash
-python code-examples/chapter-01-algorithms/01_sequence_average.py
+python code-examples/chapter-02-fundamentals/01_hello_world.py
 ```
 
-If it asks you for input, you are set. If it does not, the [troubleshooting guide](resources/setup-guides/10-troubleshooting-common-issues.md) and [running your first program](resources/setup-guides/07-running-first-program.md) cover the usual causes.
+**Mac/Linux:**
+```bash
+python3 code-examples/chapter-02-fundamentals/01_hello_world.py
+```
 
-إذا طلب منك إدخال بيانات، فأنت جاهز. وإذا لم يعمل، فإن [دليل حل المشكلات الشائعة](resources/setup-guides/10-troubleshooting-common-issues.md) و[تشغيل أول برنامج لك](resources/setup-guides/07-running-first-program.md) يغطيان الأسباب المعتادة.
+You should see `Hello, World!` print immediately, followed by a welcome message. If nothing prints, the [troubleshooting guide](resources/setup-guides/10-troubleshooting-common-issues.md) and [running your first program](resources/setup-guides/07-running-first-program.md) cover the usual causes.
+
+يجب أن ترى عبارة `Hello, World!` تُطبع على الفور، تتبعها رسالة ترحيب. وإذا لم يظهر شيء، فإن [دليل حل المشكلات الشائعة](resources/setup-guides/10-troubleshooting-common-issues.md) و[تشغيل أول برنامج لك](resources/setup-guides/07-running-first-program.md) يغطيان الأسباب المعتادة.
 
 ### 3. Meet Dr. Laila
 ### 3. تعرّف على د. ليلى

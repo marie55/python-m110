@@ -148,6 +148,29 @@ sudo apt update
 sudo apt install python3 python3-pip python3-venv
 ```
 
+### ❌ Problem: "python: command not found" (Mac/Linux)
+### ❌ المشكلة: "python: command not found" (ماك/لينكس)
+
+**Symptom:** You typed `python` and see:
+**العَرَض:** كتبت `python` ورأيت:
+
+```
+python: command not found
+```
+
+**Cause:** macOS and most Linux distributions do not ship a `python` command at all — only `python3`. This is expected behavior, not a broken install.
+**السبب:** لا يوفر macOS ومعظم توزيعات Linux أمر `python` على الإطلاق — بل `python3` فقط. هذا سلوك متوقع، وليس تثبيتاً معطوباً.
+
+**Solution:** Use `python3` instead of `python` for every command in this repository:
+**الحل:** استخدم `python3` بدلاً من `python` في كل أمر تشغّله في هذا المستودع:
+
+```bash
+python3 code-examples/chapter-02-fundamentals/01_hello_world.py
+```
+
+If `python3` also fails, Python itself is not installed yet — see "python3: command not found" above.
+إذا فشل `python3` أيضاً، فإن بايثون نفسه غير مثبت بعد — راجع "python3: command not found" أعلاه.
+
 ### ❌ Problem: Old Python Version
 ### ❌ المشكلة: إصدار Python قديم
 

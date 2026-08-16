@@ -550,7 +550,7 @@ git diff
 git checkout -- .
 
 # Or discard specific file
-git checkout -- exercises/chapter-03-decision-structures/loops.py
+git checkout -- code-examples/chapter-01-algorithms/01_sequence_average.py
 ```
 
 ### Scenario 2: "I want to save my changes but also pull"
@@ -558,7 +558,7 @@ git checkout -- exercises/chapter-03-decision-structures/loops.py
 
 ```bash
 # Option 1: Copy to playground
-cp exercises/chapter-03-decision-structures/loops.py student-playground/my_loops.py
+cp code-examples/chapter-01-algorithms/01_sequence_average.py student-playground/my_sequence_average.py
 
 # Option 2: Stash temporarily
 git stash

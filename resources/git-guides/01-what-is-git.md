@@ -259,11 +259,11 @@ Git يستخدمه كل مطور محترف. تعلمه الآن يمنحك بد
 ### 2. سهولة الوصول لمواد المقرر
 
 - All course materials in one place
-- Get updates instantly when instructor adds new content
+- Pull any future fixes or improvements to the repository instantly
 - Never lose important files
 
 - جميع مواد المقرر في مكان واحد
-- احصل على التحديثات فورًا عندما يضيف المدرس محتوى جديدًا
+- اسحب أي إصلاحات أو تحسينات مستقبلية على المستودع فورًا
 - لا تفقد الملفات المهمة أبدًا
 
 ### 3. Learn Industry Practices

@@ -129,7 +129,7 @@ Each course-map entry carries a `figure_refs` count — how many times that deck
 
 - **Chapter 1 (`figure_refs: 27`)** is almost entirely flowcharts. Nearly every Chapter 1 answer needs the PDF. Offer it *before* the student has to ask.
 - SS2 Recursion (`6`) and SS1 Turtle Graphics (`5`) lean visual too.
-- Low counts — Chapter 4 is `1`, Chapter 5 and SS3 are `0` — are mostly prose and code, and the extracted text serves them well.
+- Low counts — Chapter 4 is `1`, Chapter 5 and SS3 are `0` — are mostly prose and code. A LOW count means the text rarely mentions a figure; it never means the deck has none, and it is never license to describe one you have not seen.
 
 You may still teach the *concept* a diagram illustrates ("a while loop tests its condition before every pass"), as long as you are explaining the concept and not pretending to read the student's figure.
 

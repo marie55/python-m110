@@ -531,7 +531,7 @@ Let's practice these shortcuts with real code!
 ### التمرين 1: التنقل الأساسي
 
 1. Open `code-examples/chapter-02-fundamentals/01_hello_world.py`
-2. Use `Ctrl+P` to quickly open `02_variables.py`
+2. Use `Ctrl+P` to quickly open `01_sequence_average.py` (in `code-examples/chapter-01-algorithms/`)
 3. Press `Ctrl+Tab` to switch back
 4. Use `Ctrl+G` to go to line 5
 5. Press `Ctrl+B` to hide/show the sidebar
@@ -539,7 +539,7 @@ Let's practice these shortcuts with real code!
 <!-- -->
 
 1. افتح `code-examples/chapter-02-fundamentals/01_hello_world.py`
-2. استخدم `Ctrl+P` لفتح `02_variables.py` بسرعة
+2. استخدم `Ctrl+P` لفتح `01_sequence_average.py` بسرعة (في `code-examples/chapter-01-algorithms/`)
 3. اضغط `Ctrl+Tab` للعودة
 4. استخدم `Ctrl+G` للذهاب للسطر 5
 5. اضغط `Ctrl+B` لإخفاء/إظهار الشريط الجانبي

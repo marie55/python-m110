@@ -288,9 +288,9 @@ print(f"Diagonal / القطر: {diagonal:.2f}")
 ## Next Exercise
 ## التمرين التالي
 
-Once you complete this exercise, move on to: Temperature Converter (see [README.md](README.md) for the full exercise list).
+You just finished the only exercise built out in full. For more practice, ask Dr. Laila (`/laila`) to build the next prompt — Temperature Converter is next on the list — the same way this one was built. See [README.md](README.md) for all 13 practice prompts.
 
-بمجرد إكمال هذا التمرين، انتقل إلى: محول درجة الحرارة (راجع [README.md](README.md) لقائمة التمارين الكاملة).
+لقد أنهيت للتو التمرين الوحيد المبني بالكامل. للمزيد من التدريب، اطلب من الدكتورة ليلى (`/laila`) أن تبني التمرين التالي — محول درجة الحرارة هو التالي في القائمة — بنفس الطريقة التي بُني بها هذا التمرين. راجع [README.md](README.md) لرؤية أفكار التمارين الثلاثة عشر كاملة.
 
 ---
 

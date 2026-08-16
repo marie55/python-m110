@@ -293,18 +293,18 @@ From https://github.com/YOUR_USERNAME/python-m110
    a1b2c3d..e4f5g6h  main     -> origin/main
 Updating a1b2c3d..e4f5g6h
 Fast-forward
- lectures/chapter-03-decision-structures/README.md | 125 +++++++++++++++++++
- exercises/chapter-03-decision-structures/loops.py |  45 +++++++
+ resources/faq.md                                         | 125 +++++++++++++++++
+ code-examples/chapter-01-algorithms/flowchart_to_code.py |  45 ++++++
  2 files changed, 170 insertions(+)
 ```
 
 **What this tells you:**
-- ✅ Files updated: `lectures/chapter-03-decision-structures/README.md` and `exercises/chapter-03-decision-structures/loops.py`
+- ✅ Files updated: `resources/faq.md` and `code-examples/chapter-01-algorithms/flowchart_to_code.py`
 - ✅ 170 new lines added
 - ✅ Successfully updated!
 
 **ماذا يخبرك هذا:**
-- ✅ الملفات المحدثة: `lectures/chapter-03-decision-structures/README.md` و `exercises/chapter-03-decision-structures/loops.py`
+- ✅ الملفات المحدثة: `resources/faq.md` و `code-examples/chapter-01-algorithms/flowchart_to_code.py`
 - ✅ تم إضافة 170 سطرًا جديدًا
 - ✅ تم التحديث بنجاح!
 

@@ -7,6 +7,10 @@
 # figure_refs counts mentions of figures/diagrams in the extracted slide text.
 # ALL figures are images and are absent from the .txt files. A high count means
 # answers about that chapter should send students to the PDF.
+#
+# Caveat: this counts textual mentions only - it does not track how many
+# images a deck actually contains. A low or zero figure_refs must never be
+# read as evidence that a deck is text-sufficient.
 
 course:
   code: M110

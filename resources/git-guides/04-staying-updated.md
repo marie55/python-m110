@@ -203,9 +203,9 @@ From https://github.com/YOUR_USERNAME/python-m110
    abc123d..def456e  main -> origin/main
 Updating abc123d..def456e
 Fast-forward
- lectures/chapter-03-decision-structures/README.md      |  89 +++++++++++
- code-examples/chapter-03-decision-structures/loops.py  |  45 ++++++
- exercises/chapter-03-decision-structures/practice.py   |  32 ++++
+ lectures/chapter-01-algorithms/lecture-notes.md                     |  89 +++++++++++
+ code-examples/chapter-01-algorithms/05_grade_calculator_complete.py |  45 ++++++
+ resources/setup-guides/10-troubleshooting-common-issues.md          |  32 ++++
  3 files changed, 166 insertions(+)
 ```
 
