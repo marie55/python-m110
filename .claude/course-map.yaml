@@ -1,0 +1,140 @@
+# M110 Python Programming - Course Map
+# خريطة مقرر M110 برمجة بايثون
+#
+# The single source of truth for chapter structure. Contains no dates:
+# the course is archived and no longer taught on a schedule.
+#
+# figure_refs counts mentions of figures/diagrams in the extracted slide text.
+# ALL figures are images and are absent from the .txt files. A high count means
+# answers about that chapter should send students to the PDF.
+
+course:
+  code: M110
+  name: Python Programming
+  institution: Arab Open University (AOU) - Amman
+  status: archived
+
+chapters:
+  - number: 1
+    id: chapter-01-algorithms
+    topic: "Algorithms: Flowcharts & Pseudocodes"
+    slides_dir: "slides-official/chapter-01-algorithms"
+    slides_pdf: "slides-official/chapter-01-algorithms/Meeting1-Algorithms-s.pdf"
+    slides_text: "slides-official/chapter-01-algorithms/Meeting1-Algorithms-s.pptx.txt"
+    figure_refs: 27
+
+  - number: 2
+    id: chapter-02-fundamentals
+    topic: "Fundamentals of Python Programming"
+    slides_dir: "slides-official/chapter-02-fundamentals"
+    slides_pdf: "slides-official/chapter-02-fundamentals/Meeting2-Fundamentals of Python Programming-s.pdf"
+    slides_text: "slides-official/chapter-02-fundamentals/Meeting2-Fundamentals of Python Programming-s.pptx.txt"
+    figure_refs: 4
+
+  - number: 3
+    id: chapter-03-decision-structures
+    topic: "Decision Structures and Boolean Logic"
+    slides_dir: "slides-official/chapter-03-decision-structures"
+    slides_pdf: "slides-official/chapter-03-decision-structures/Meeting3-Decision Structures and Boolean Logic-s.pdf"
+    slides_text: "slides-official/chapter-03-decision-structures/Meeting3-Decision Structures and Boolean Logic-s.pptx.txt"
+    figure_refs: 2
+
+  - number: 4
+    id: chapter-04-repetition
+    topic: "Repetition Structures"
+    slides_dir: "slides-official/chapter-04-repetition"
+    slides_pdf: "slides-official/chapter-04-repetition/Meeting4-Repetition Structures-s.pdf"
+    slides_text: "slides-official/chapter-04-repetition/Meeting4-Repetition Structures-s.pptx.txt"
+    figure_refs: 1
+
+  - number: 5
+    id: chapter-05-functions
+    topic: "Functions"
+    slides_dir: "slides-official/chapter-05-functions"
+    slides_pdf: "slides-official/chapter-05-functions/Meeting7-Functions-s.pdf"
+    slides_text: "slides-official/chapter-05-functions/Meeting7-Functions-s.pptx.txt"
+    figure_refs: 0
+
+  - number: 6
+    id: chapter-06-files-exceptions
+    topic: "Files and Exceptions"
+    slides_dir: "slides-official/chapter-06-files-exceptions"
+    slides_pdf: "slides-official/chapter-06-files-exceptions/Meeting8-Files and Exceptions-s.pdf"
+    slides_text: "slides-official/chapter-06-files-exceptions/Meeting8-Files and Exceptions-s.pptx.txt"
+    figure_refs: 2
+
+  - number: 7
+    id: chapter-07-lists-tuples
+    topic: "Collection Data Types: Lists and Tuples"
+    slides_dir: "slides-official/chapter-07-lists-tuples"
+    slides_pdf: "slides-official/chapter-07-lists-tuples/Meeting5 Collection Data Types-s.pdf"
+    slides_text: "slides-official/chapter-07-lists-tuples/Meeting5 Collection Data Types-s .pptx.txt"
+    figure_refs: 1
+
+  - number: 10
+    id: chapter-10-oop
+    topic: "Classes and Object-Oriented Programming"
+    slides_dir: "slides-official/chapter-10-oop"
+    slides_pdf: "slides-official/chapter-10-oop/Meeting10-Classes and Object-Oriented Programming-s.pdf"
+    slides_text: "slides-official/chapter-10-oop/Meeting10-Classes and Object-Oriented Programming-s.pptx.txt"
+    figure_refs: 4
+
+  - number: 13
+    id: chapter-13-gui
+    topic: "GUI Programming"
+    slides_dir: "slides-official/chapter-13-gui"
+    slides_pdf: "slides-official/chapter-13-gui/Meeting11-GUI Programming-s.pdf"
+    slides_text: "slides-official/chapter-13-gui/Meeting11-GUI Programming-s.pptx.txt"
+    figure_refs: 2
+
+self_study:
+  - id: ss1-turtle-graphics
+    topic: "Turtle Graphics"
+    slides_dir: "slides-official/ss1-turtle-graphics"
+    slides_pdf: "slides-official/ss1-turtle-graphics/SS1-Turtle Graphics.pdf"
+    slides_text: "slides-official/ss1-turtle-graphics/SS1-Turtle Graphics.pptx.txt"
+    figure_refs: 5
+
+  - id: ss2-recursion
+    topic: "Recursion"
+    slides_dir: "slides-official/ss2-recursion"
+    slides_pdf: "slides-official/ss2-recursion/SS2-Recursion.pdf"
+    slides_text: "slides-official/ss2-recursion/SS2-Recursion.pptx.txt"
+    figure_refs: 6
+
+  - id: ss3-dictionaries-sets
+    topic: "Dictionaries and Sets"
+    slides_dir: "slides-official/ss3-dictionaries-sets"
+    slides_pdf: "slides-official/ss3-dictionaries-sets/SS3-Dictionaries and Sets.pdf"
+    slides_text: "slides-official/ss3-dictionaries-sets/SS3-Dictionaries and Sets.pptx.txt"
+    figure_refs: 0
+
+assessments:
+  # Coverage only. Grade weightings and dates applied to one specific
+  # offering of the course and are deliberately omitted.
+  - id: mta
+    name: "Mid-Term Assessment"
+    covers: "Through Collection Data Types (Chapters 1-4 and 7)"
+  - id: tma
+    name: "Tutor-Marked Assignment (Lab Test)"
+    covers: "MTA material plus SS1, SS2 and SS3"
+  - id: final
+    name: "Final Exam"
+    covers: "All regular chapters; excludes the self-study topics"
+
+learning_path:
+  # Suggested order. Deliberately differs from chapter numbering -- this was
+  # the original teaching sequence, with self-study topics slotted where they
+  # reinforce what precedes them.
+  - chapter-01-algorithms
+  - chapter-02-fundamentals
+  - chapter-03-decision-structures
+  - chapter-04-repetition
+  - ss1-turtle-graphics        # visual reinforcement of loops
+  - chapter-07-lists-tuples
+  - ss3-dictionaries-sets      # natural follow-on from collections
+  - chapter-05-functions
+  - ss2-recursion              # requires functions
+  - chapter-06-files-exceptions
+  - chapter-10-oop
+  - chapter-13-gui
