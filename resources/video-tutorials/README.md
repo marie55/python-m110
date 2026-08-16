@@ -17,14 +17,14 @@ Welcome to the video tutorials section of the M110 Python Programming course!
 This guide includes:
 - Recommended English YouTube channels (Corey Schafer, Mosh, freeCodeCamp, Tech With Tim)
 - Recommended Arabic YouTube channels (Elzero Web School, Codezilla, Python Arabic Community, etc.)
-- Week-by-week video recommendations aligned with course topics
+- Chapter-by-chapter video recommendations aligned with course topics
 - Learning strategies and best practices
 - How to effectively use video tutorials
 
 يتضمن هذا الدليل:
 - قنوات يوتيوب إنجليزية موصى بها (Corey Schafer، Mosh، freeCodeCamp، Tech With Tim)
 - قنوات يوتيوب عربية موصى بها (Elzero Web School، Codezilla، مجتمع بايثون العربي، إلخ)
-- توصيات فيديوهات أسبوعية متوافقة مع موضوعات المقرر
+- توصيات فيديوهات لكل فصل متوافقة مع موضوعات المقرر
 - استراتيجيات التعلم وأفضل الممارسات
 - كيفية استخدام الفيديوهات التعليمية بفعالية
 
@@ -54,14 +54,14 @@ The main video tutorials guide is organized by:
 
 الدليل الرئيسي للفيديوهات منظم حسب:
 
-- **Course weeks** (Week 1-13)
+- **Course chapters**
 - **Topics** (Algorithms, Functions, OOP, etc.)
 - **Language** (English and Arabic resources)
 - **Difficulty level** (Beginner to Advanced)
 
-Find the week or topic you're studying, and follow the recommended videos!
+Find the chapter or topic you're studying, and follow the recommended videos!
 
-ابحث عن الأسبوع أو الموضوع الذي تدرسه، واتبع الفيديوهات الموصى بها!
+ابحث عن الفصل أو الموضوع الذي تدرسه، واتبع الفيديوهات الموصى بها!
 
 ---
 
@@ -73,12 +73,12 @@ Found a great Python tutorial that helped you? Share it with your classmates!
 
 You can:
 - Create a GitHub issue with video recommendations
-- Share links in class discussion groups
+- Share links with other learners working through this repository
 - Add comments to the repository
 
 يمكنك:
 - إنشاء issue في GitHub مع توصيات فيديوهات
-- مشاركة الروابط في مجموعات النقاش الصفية
+- مشاركة الروابط مع متعلمين آخرين يدرسون من هذا المستودع
 - إضافة تعليقات على المستودع
 
 ---
@@ -113,7 +113,6 @@ You can:
 ---
 
 **Course:** M110 Python Programming
-**Instructor:** Mohammad Al-Marie
 **Institution:** Arab Open University - Amman Branch
 
 **Last Updated:** October 2025

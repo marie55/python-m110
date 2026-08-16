@@ -7,14 +7,14 @@
 By the end of this guide, you'll know how to use:
 - ✅ `git clone` - Get a copy of the course repository
 - ✅ `git status` - Check what's happening in your repository
-- ✅ `git pull` - Get updates from the instructor
+- ✅ `git pull` - Get the latest updates
 - ✅ `git log` - View the history of changes
 - ✅ `git diff` - See what changed in files
 
 بنهاية هذا الدليل، ستعرف كيفية استخدام:
 - ✅ `git clone` - الحصول على نسخة من مستودع المقرر
 - ✅ `git status` - التحقق مما يحدث في مستودعك
-- ✅ `git pull` - الحصول على التحديثات من المدرس
+- ✅ `git pull` - الحصول على أحدث التحديثات
 - ✅ `git log` - عرض تاريخ التغييرات
 - ✅ `git diff` - رؤية ما تغير في الملفات
 
@@ -200,7 +200,7 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes not staged for commit:
-  modified:   exercises/week-02/practice.py
+  modified:   exercises/chapter-02-fundamentals/practice.py
 
 Untracked files:
   student-playground/my_test.py
@@ -239,14 +239,12 @@ Downloads the latest changes from GitHub to your computer. Like refreshing a web
 ### When to Use It
 ### متى تستخدمه
 
-- Every Sunday before lecture
-- Every Thursday before lab
-- Whenever instructor announces new materials
+- Before starting a new study session
+- Before asking Dr. Laila a question, so you're working from the latest guides
 - When `git status` says "Your branch is behind"
 
-- كل يوم أحد قبل المحاضرة
-- كل يوم خميس قبل المختبر
-- كلما أعلن المدرس عن مواد جديدة
+- قبل بدء جلسة دراسة جديدة
+- قبل سؤال الدكتورة ليلى، لتتأكد أنك تعمل على أحدث الأدلة
 - عندما يقول `git status` "Your branch is behind"
 
 ### How to Use It
@@ -295,18 +293,18 @@ From https://github.com/YOUR_USERNAME/python-m110
    a1b2c3d..e4f5g6h  main     -> origin/main
 Updating a1b2c3d..e4f5g6h
 Fast-forward
- lectures/week-03/README.md | 125 +++++++++++++++++++
- exercises/week-03/loops.py |  45 +++++++
+ lectures/chapter-03-decision-structures/README.md | 125 +++++++++++++++++++
+ exercises/chapter-03-decision-structures/loops.py |  45 +++++++
  2 files changed, 170 insertions(+)
 ```
 
 **What this tells you:**
-- ✅ Files updated: `lectures/week-03/README.md` and `exercises/week-03/loops.py`
+- ✅ Files updated: `lectures/chapter-03-decision-structures/README.md` and `exercises/chapter-03-decision-structures/loops.py`
 - ✅ 170 new lines added
 - ✅ Successfully updated!
 
 **ماذا يخبرك هذا:**
-- ✅ الملفات المحدثة: `lectures/week-03/README.md` و `exercises/week-03/loops.py`
+- ✅ الملفات المحدثة: `lectures/chapter-03-decision-structures/README.md` و `exercises/chapter-03-decision-structures/loops.py`
 - ✅ تم إضافة 170 سطرًا جديدًا
 - ✅ تم التحديث بنجاح!
 
@@ -391,8 +389,8 @@ git log --oneline -5
 
 ```bash
 $ git log --oneline -5
-e4f5g6h (HEAD -> main, origin/main) Add week 3 exercises
-a1b2c3d Update lecture notes for week 2
+e4f5g6h (HEAD -> main, origin/main) Add chapter 3 exercises
+a1b2c3d Update lecture notes for chapter 2
 7h8i9j0 Fix typo in README
 k1l2m3n Add installation guide
 o4p5q6r Initial course setup
@@ -402,7 +400,7 @@ o4p5q6r Initial course setup
 ### فهم المخرجات
 
 ```
-e4f5g6h (HEAD -> main) Add week 3 exercises
+e4f5g6h (HEAD -> main) Add chapter 3 exercises
 │        │       │      └── Commit message (what changed)
 │        │       │          رسالة الالتزام (ما تغير)
 │        │       └── Current branch
@@ -436,11 +434,11 @@ Shows exactly what changed in files. Like "Track Changes" in Microsoft Word!
 ### متى تستخدمه
 
 - Before saving changes (to review what you did)
-- To understand what instructor changed
+- To understand what changed after a pull
 - To compare versions
 
 - قبل حفظ التغييرات (لمراجعة ما فعلته)
-- لفهم ما غيّره المدرس
+- لفهم ما تغيّر بعد السحب
 - لمقارنة الإصدارات
 
 ### How to Use It
@@ -457,18 +455,18 @@ See changes in specific file:
 رؤية التغييرات في ملف محدد:
 
 ```bash
-git diff exercises/week-02/practice.py
+git diff exercises/chapter-02-fundamentals/practice.py
 ```
 
 ### Example with Output
 ### مثال مع المخرجات
 
 ```diff
-$ git diff exercises/week-02/practice.py
-diff --git a/exercises/week-02/practice.py b/exercises/week-02/practice.py
+$ git diff exercises/chapter-02-fundamentals/practice.py
+diff --git a/exercises/chapter-02-fundamentals/practice.py b/exercises/chapter-02-fundamentals/practice.py
 index a1b2c3d..e4f5g6h 100644
---- a/exercises/week-02/practice.py
-+++ b/exercises/week-02/practice.py
+--- a/exercises/chapter-02-fundamentals/practice.py
++++ b/exercises/chapter-02-fundamentals/practice.py
 @@ -10,7 +10,7 @@ def calculate_average(numbers):
      total = sum(numbers)
      count = len(numbers)
@@ -507,17 +505,17 @@ Press `q` to quit viewing the diff.
 |---------|---------|-------------|---------|
 | `git clone [URL]` | Get repository | Once, at the beginning | مرة واحدة، في البداية |
 | `git status` | Check current state | Anytime, frequently | في أي وقت، بكثرة |
-| `git pull` | Get updates | Weekly (Sun & Thu) | أسبوعيًا (الأحد والخميس) |
+| `git pull` | Get updates | Whenever you like | كلما أردت |
 | `git log` | View history | To see what's new | لرؤية ما هو جديد |
 | `git diff` | See changes | To review modifications | لمراجعة التعديلات |
 
 ---
 
-## Your Weekly Git Routine
-## روتين Git الأسبوعي
+## Your Git Routine
+## روتين Git الخاص بك
 
-### Sunday (Before Lecture)
-### الأحد (قبل المحاضرة)
+### Before a Study Session
+### قبل جلسة دراسة
 
 ```bash
 cd python-m110          # Go to course folder
@@ -525,12 +523,12 @@ git pull               # Get latest materials
 git status             # Verify everything is clean
 ```
 
-### Thursday (Before Lab)
-### الخميس (قبل المختبر)
+### Checking What's New
+### التحقق مما هو جديد
 
 ```bash
 cd python-m110          # Go to course folder
-git pull               # Get lab materials
+git pull               # Get any updates
 git log --oneline -3   # See what's new
 ```
 
@@ -639,12 +637,12 @@ git log --oneline --graph  # Visual branch structure
 git log --since="1 week"   # Recent commits only
 ```
 
-### Exercise 3: Practice the Weekly Routine
-### التمرين 3: مارس الروتين الأسبوعي
+### Exercise 3: Practice the Pull Routine
+### التمرين 3: مارس روتين السحب
 
-Simulate your weekly workflow:
+Simulate your regular workflow:
 
-حاكي سير عملك الأسبوعي:
+حاكي سير عملك المعتاد:
 
 1. Check status: `git status`
 2. Pull updates: `git pull`

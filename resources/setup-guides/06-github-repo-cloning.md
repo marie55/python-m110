@@ -19,8 +19,8 @@ Cloning means creating a local copy of a GitHub repository on your computer. Thi
 - 📚 **Access all course materials** - Lectures, code examples, exercises
 - 📚 **الوصول إلى جميع مواد المقرر** - المحاضرات، أمثلة الكود، التمارين
 
-- 🔄 **Get weekly updates** - Pull new materials as they're added
-- 🔄 **الحصول على تحديثات أسبوعية** - سحب المواد الجديدة عند إضافتها
+- 🔄 **Get updates** - Pull fixes and new materials as they're added
+- 🔄 **الحصول على التحديثات** - سحب الإصلاحات والمواد الجديدة عند إضافتها
 
 - 💻 **Work offline** - Everything is on your computer
 - 💻 **العمل بدون إنترنت** - كل شيء على حاسوبك
@@ -59,11 +59,8 @@ Before cloning the repository:
 2. Go to the course repository on GitHub:
    اذهب إلى مستودع المقرر على GitHub:
 
-   🔗 **[Your instructor will provide the repository URL]**
-   🔗 **[سيوفر مدرسك رابط المستودع]**
-
-   Example format: `https://github.com/marie55/python-m110`
-   صيغة المثال: `https://github.com/marie55/python-m110`
+   🔗 **This course's repository:** `https://github.com/marie55/python-m110`
+   🔗 **مستودع هذا المقرر:** `https://github.com/marie55/python-m110`
 
 ### Step 2: Get the Clone URL
 ### الخطوة 2: الحصول على رابط النسخ
@@ -324,13 +321,11 @@ python-m110/
 ├── .gitignore              # Files Git should ignore
 ├── README.md               # Course overview
 ├── requirements.txt        # Python packages needed
-├── lectures/               # Weekly lecture notes
+├── slides-official/         # Official course slides
+├── lectures/               # Lecture notes
 ├── code-examples/          # Runnable Python examples
 ├── exercises/              # Practice problems
-├── labs/                   # Lab sessions
-├── projects/               # Semester projects
 ├── resources/              # Setup guides and cheatsheets
-├── assessments/            # Exam prep materials
 └── student-contributions/  # Student work showcase
 ```
 
@@ -371,8 +366,8 @@ If you don't see `.git` in VS Code:
 ## Part 5: Pulling Updates
 ## الجزء 5: سحب التحديثات
 
-Your instructor will add new materials weekly. Here's how to get them!
-سيضيف مدرسك مواد جديدة أسبوعياً. إليك كيفية الحصول عليها!
+This repository can receive fixes and new materials over time. Here's how to get them!
+يمكن أن يستقبل هذا المستودع إصلاحات ومواد جديدة بمرور الوقت. إليك كيفية الحصول عليها!
 
 ### What is Pulling?
 ### ما هو السحب (Pulling)؟
@@ -454,18 +449,18 @@ Pulling downloads the latest changes from GitHub and merges them into your local
       abc1234..def5678  main       -> origin/main
    Updating abc1234..def5678
    Fast-forward
-    lectures/week-02/README.md | 50 +++++++++++++++++++++++++++++++++
+    lectures/chapter-02-fundamentals/README.md | 50 +++++++++++++++++++++++++++++++++
     1 file changed, 50 insertions(+)
    ```
 
 ### When to Pull
 ### متى تسحب
 
-- 📅 **Weekly** - At the start of each week to get new lecture materials
-- 📅 **أسبوعياً** - في بداية كل أسبوع للحصول على مواد محاضرات جديدة
+- 📅 **Before a study session** - so you're working from the latest version
+- 📅 **قبل جلسة دراسة** - لتعمل على أحدث نسخة
 
-- 🔔 **When notified** - When your instructor announces new materials
-- 🔔 **عند الإشعار** - عندما يعلن مدرسك عن مواد جديدة
+- 🔔 **When you suspect something changed** - check the repository for updates
+- 🔔 **عندما تشك أن شيئاً تغيّر** - تحقق من المستودع بحثاً عن تحديثات
 
 - 🐛 **Before reporting issues** - Make sure you have the latest version
 - 🐛 **قبل الإبلاغ عن مشاكل** - تأكد من أن لديك أحدث إصدار
@@ -542,11 +537,11 @@ As a student, you'll use a **read-only workflow** - you can view and pull update
 ### Your Workflow
 ### سير عملك
 
-1. **Clone once** - At the start of the semester
-   **انسخ مرة واحدة** - في بداية الفصل الدراسي
+1. **Clone once** - When you start the course
+   **انسخ مرة واحدة** - عند بدء المقرر
 
-2. **Pull regularly** - Weekly or when notified
-   **اسحب بانتظام** - أسبوعياً أو عند الإشعار
+2. **Pull regularly** - Before each study session
+   **اسحب بانتظام** - قبل كل جلسة دراسة
 
 3. **Explore and run code** - Experiment with examples
    **استكشف وشغّل الكود** - جرب الأمثلة
@@ -618,8 +613,8 @@ git reset --hard
 2. Make sure you're logged into GitHub
    تأكد من أنك مسجل دخول إلى GitHub
 
-3. Contact your instructor if the repository is private
-   اتصل بمدرسك إذا كان المستودع خاصاً
+3. This course's repository is public — if it still won't clone, open a GitHub issue on the repository
+   مستودع هذا المقرر عام - إذا استمرت المشكلة، افتح GitHub issue على المستودع
 
 ### ❌ "Authentication failed" error
 ### ❌ خطأ "Authentication failed"
@@ -781,8 +776,8 @@ Perfect! You've cloned the course repository! Now:
 2. **Run Your First Program** - [07-running-first-program.md](07-running-first-program.md)
    **تشغيل برنامجك الأول** - [07-running-first-program.md](07-running-first-program.md)
 
-3. **Explore Week 1 Materials** - Check `lectures/week-01/`
-   **استكشف مواد الأسبوع 1** - راجع `lectures/week-01/`
+3. **Explore Chapter 1 Materials** - Check `lectures/chapter-01-algorithms/`
+   **استكشف مواد الفصل الأول** - راجع `lectures/chapter-01-algorithms/`
 
 ---
 

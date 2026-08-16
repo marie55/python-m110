@@ -443,7 +443,7 @@ Complete exercises are in:
 ## موارد إضافية
 
 ### Video Tutorials
-- [Week 1 Video Guide](../../resources/video-tutorials/video-tutorials-guide.md#week-1)
+- [Week 1 Video Guide](../../resources/video-tutorials/video-tutorials-guide.md#chapter-1)
 
 ### Cheatsheets
 - [Control Structures Cheatsheet](../../resources/cheatsheets/control-structures-cheatsheet.md)

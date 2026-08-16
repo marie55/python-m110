@@ -46,7 +46,7 @@
 | Create file | `type nul > file.txt` | `touch file.txt` | Create empty file / إنشاء ملف فارغ | `touch homework.py` |
 | **Copy** / **نسخ** | | | | |
 | Copy file | `copy source dest` | `cp source dest` | Copy file / نسخ ملف | `cp exercise.py backup.py` |
-| Copy folder | `xcopy /s source dest` | `cp -r source dest` | Copy folder / نسخ مجلد | `cp -r week1 week1-backup` |
+| Copy folder | `xcopy /s source dest` | `cp -r source dest` | Copy folder / نسخ مجلد | `cp -r chapter1 chapter1-backup` |
 | **Move/Rename** / **نقل/إعادة تسمية** | | | | |
 | Move/rename | `move old new` | `mv old new` | Move or rename / نقل أو إعادة تسمية | `mv test.py final.py` |
 | **Delete** / **حذف** | | | | |
@@ -147,7 +147,7 @@
 ### Task 1: Navigate to project and run Python
 ### المهمة 1: التنقل للمشروع وتشغيل بايثون
 ```bash
-cd ~/python-m110/exercises/week-03
+cd ~/python-m110/exercises/chapter-03-decision-structures
 python exercise1.py
 ```
 

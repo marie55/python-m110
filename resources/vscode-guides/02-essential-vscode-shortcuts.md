@@ -411,6 +411,8 @@ Make VS Code work the way YOU want!
 1. **`Ctrl+K` then `Ctrl+S`** (Mac: `Cmd+K` then `Cmd+S`)
 2. Or: File → Preferences → Keyboard Shortcuts
 
+<!-- -->
+
 1. **`Ctrl+K` ثم `Ctrl+S`** (Mac: `Cmd+K` ثم `Cmd+S`)
 2. أو: File → Preferences → Keyboard Shortcuts
 
@@ -421,6 +423,8 @@ Make VS Code work the way YOU want!
 2. Click the pencil icon ✏️
 3. Press your new key combination
 4. Press `Enter` to save
+
+<!-- -->
 
 1. ابحث عن الأمر
 2. انقر على أيقونة القلم ✏️
@@ -526,13 +530,15 @@ Let's practice these shortcuts with real code!
 ### Exercise 1: Basic Navigation
 ### التمرين 1: التنقل الأساسي
 
-1. Open `code-examples/week-02-fundamentals/01_hello_world.py`
+1. Open `code-examples/chapter-02-fundamentals/01_hello_world.py`
 2. Use `Ctrl+P` to quickly open `02_variables.py`
 3. Press `Ctrl+Tab` to switch back
 4. Use `Ctrl+G` to go to line 5
 5. Press `Ctrl+B` to hide/show the sidebar
 
-1. افتح `code-examples/week-02-fundamentals/01_hello_world.py`
+<!-- -->
+
+1. افتح `code-examples/chapter-02-fundamentals/01_hello_world.py`
 2. استخدم `Ctrl+P` لفتح `02_variables.py` بسرعة
 3. اضغط `Ctrl+Tab` للعودة
 4. استخدم `Ctrl+G` للذهاب للسطر 5

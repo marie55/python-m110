@@ -447,11 +447,11 @@ If you encounter any issues:
 1. Check the [Troubleshooting Guide](10-troubleshooting-common-issues.md)
    راجع [دليل استكشاف الأخطاء](10-troubleshooting-common-issues.md)
 
-2. Ask your instructor during office hours
-   اسأل مدرسك خلال الساعات المكتبية
+2. Ask Dr. Laila
+   اسأل الدكتورة ليلى
 
-3. Post in the course forum
-   انشر في منتدى المقرر
+3. Open a GitHub issue on the course repository
+   افتح GitHub issue على مستودع المقرر
 
 Remember: Everyone encounters installation issues. It's part of learning! Don't hesitate to ask for help.
 تذكر: الجميع يواجه مشاكل في التثبيت. إنها جزء من التعلم! لا تتردد في طلب المساعدة.

@@ -6,7 +6,7 @@
 
 This guide brings everything together:
 - ✅ Complete Git workflow for the course
-- ✅ Progressive learning path (Week 1-12)
+- ✅ Progressive learning path (from your first clone to contributing)
 - ✅ Read-only vs. experimental workflows
 - ✅ How to safely experiment with code
 - ✅ Optional: Contributing back to the course
@@ -14,7 +14,7 @@ This guide brings everything together:
 
 هذا الدليل يجمع كل شيء معًا:
 - ✅ سير عمل Git الكامل للمقرر
-- ✅ مسار التعلم التدريجي (الأسبوع 1-12)
+- ✅ مسار التعلم التدريجي (من أول استنساخ إلى المساهمة)
 - ✅ سير العمل للقراءة فقط مقابل التجريبي
 - ✅ كيفية التجربة بأمان مع الكود
 - ✅ اختياري: المساهمة في المقرر
@@ -27,31 +27,35 @@ This guide brings everything together:
 
 Understanding the complete workflow helps you:
 - Focus on learning Python without Git confusion
-- Know exactly what to do each week
+- Know exactly what to do as you progress through the chapters
 - Safely experiment without breaking anything
 - Build professional habits early
 - Prepare for real-world development
 
 فهم سير العمل الكامل يساعدك على:
 - التركيز على تعلم Python دون ارتباك Git
-- معرفة بالضبط ما يجب فعله كل أسبوع
+- معرفة بالضبط ما يجب فعله مع تقدمك في الفصول
 - التجربة بأمان دون كسر أي شيء
 - بناء عادات مهنية مبكرًا
 - الاستعداد للتطوير في العالم الحقيقي
 
 ---
 
-## Course Timeline & Git Skills
-## الجدول الزمني للمقرر ومهارات Git
+## Chapter Progression & Git Skills
+## تقدم الفصول ومهارات Git
 
-### Phase 1: Read-Only (Weeks 1-5)
-### المرحلة 1: القراءة فقط (الأسابيع 1-5)
+There's no fixed weekly schedule here — work through the chapters at your own pace. As a guide, Git skills naturally get more advanced as the Python gets more advanced:
+
+لا يوجد جدول أسبوعي ثابت هنا - تقدم في الفصول بالسرعة التي تناسبك. كدليل، تصبح مهارات Git أكثر تقدمًا بشكل طبيعي مع تقدم بايثون:
+
+### Stage 1: Read-Only (Chapters 1-4)
+### المرحلة 1: القراءة فقط (الفصول 1-4)
 
 Focus: Learning Python basics, getting comfortable with Git
 
 التركيز: تعلم أساسيات Python، الارتياح مع Git
 
-| Week | Python Topic | Git Skills |
+| Chapter | Python Topic | Git Skills |
 |------|-------------|------------|
 | 1 | Algorithms | Clone repository |
 | 1 | الخوارزميات | استنساخ المستودع |
@@ -59,52 +63,50 @@ Focus: Learning Python basics, getting comfortable with Git
 | 2 | الأساسيات | سحب التحديثات، التنقل بين المجلدات |
 | 3 | Decision Structures | Regular pull routine |
 | 3 | هياكل القرار | روتين السحب المنتظم |
-| 4 | Loops | Check status, view logs |
-| 4 | الحلقات | التحقق من الحالة، عرض السجلات |
-| 5 | Lists & Tuples | Understand diffs |
-| 5 | القوائم والصفوف | فهم الفروقات |
+| 4 | Repetition Structures | Check status, view logs |
+| 4 | هياكل التكرار | التحقق من الحالة، عرض السجلات |
 
-### Phase 2: Local Experiments (Weeks 6-9)
-### المرحلة 2: التجارب المحلية (الأسابيع 6-9)
+### Stage 2: Local Experiments (Chapters 7, 5, 6)
+### المرحلة 2: التجارب المحلية (الفصول 7، 5، 6)
 
 Focus: More complex Python, safe local modifications
 
 التركيز: Python أكثر تعقيدًا، تعديلات محلية آمنة
 
-| Week | Python Topic | Git Skills |
+| Chapter | Python Topic | Git Skills |
 |------|-------------|------------|
-| 6 | Lab Session | Work in student-playground |
-| 6 | جلسة المختبر | العمل في student-playground |
-| 7 | Functions | Create local branches (optional) |
-| 7 | الدوال | إنشاء فروع محلية (اختياري) |
-| 8 | Files & Exceptions | Stash changes |
-| 8 | الملفات والاستثناءات | تخزين التغييرات |
-| 9 | Lab Session | Compare versions |
-| 9 | جلسة المختبر | مقارنة الإصدارات |
+| 7 | Lists & Tuples | Understand diffs |
+| 7 | القوائم والصفوف | فهم الفروقات |
+| 5 | Functions | Create local branches (optional) |
+| 5 | الدوال | إنشاء فروع محلية (اختياري) |
+| 6 | Files & Exceptions | Stash changes |
+| 6 | الملفات والاستثناءات | تخزين التغييرات |
 
-### Phase 3: Advanced (Weeks 10-12)
-### المرحلة 3: متقدم (الأسابيع 10-12)
+### Stage 3: Advanced (Chapters 10, 13)
+### المرحلة 3: متقدم (الفصول 10، 13)
 
 Focus: OOP, GUI, potential contributions
 
 التركيز: البرمجة الكائنية، واجهات المستخدم، المساهمات المحتملة
 
-| Week | Python Topic | Git Skills |
+| Chapter | Python Topic | Git Skills |
 |------|-------------|------------|
 | 10 | OOP | Create feature branches |
 | 10 | البرمجة الكائنية | إنشاء فروع الميزات |
-| 11 | GUI Programming | Optional: Fork & PR |
-| 11 | برمجة الواجهات | اختياري: Fork و PR |
-| 12 | Lab & Review | Portfolio building |
-| 12 | المختبر والمراجعة | بناء المحفظة |
+| 13 | GUI Programming | Optional: Fork & PR |
+| 13 | برمجة الواجهات | اختياري: Fork و PR |
+
+The self-study topics (Turtle Graphics, Recursion, Dictionaries & Sets) fit in wherever you like — they don't need any new Git skills.
+
+مواضيع الدراسة الذاتية (رسومات السلحفاة، العودية، القواميس والمجموعات) تناسب أي مكان تريده - فهي لا تحتاج أي مهارات Git جديدة.
 
 ---
 
 ## The Three Workflows
 ## سيرات العمل الثلاثة
 
-### Workflow 1: Read-Only (Weeks 1-5)
-### سير العمل 1: القراءة فقط (الأسابيع 1-5)
+### Workflow 1: Read-Only (Chapters 1-4)
+### سير العمل 1: القراءة فقط (الفصول 1-4)
 
 Perfect for beginners. No risk, just learning!
 
@@ -122,7 +124,7 @@ Perfect for beginners. No risk, just learning!
 │         ↓                           │
 │  [Your Computer]                    │
 │         ↓                           │
-│    git pull (weekly)                │
+│    git pull (whenever you like)     │
 │         ↓                           │
 │  [Updated Materials]                │
 │         ↓                           │
@@ -134,7 +136,7 @@ Perfect for beginners. No risk, just learning!
 **Commands you need:**
 ```bash
 git clone [URL]    # Once at start
-git pull           # Every Sun & Thu
+git pull           # Whenever you like
 git status         # Check state
 git log            # See history
 ```
@@ -142,41 +144,41 @@ git log            # See history
 **الأوامر التي تحتاجها:**
 ```bash
 git clone [URL]    # مرة في البداية
-git pull           # كل أحد وخميس
+git pull           # كلما أردت
 git status         # تحقق من الحالة
 git log            # رؤية التاريخ
 ```
 
-### Workflow 2: Safe Experimentation (Weeks 6-9)
-### سير العمل 2: التجربة الآمنة (الأسابيع 6-9)
+### Workflow 2: Safe Experimentation (Chapters 5-7)
+### سير العمل 2: التجربة الآمنة (الفصول 5-7)
 
 Make changes without affecting course materials!
 
 قم بالتغييرات دون التأثير على مواد المقرر!
 
 ```
-┌─────────────────────────────────────┐
-│     SAFE EXPERIMENTATION WORKFLOW   │
-│      سير عمل التجربة الآمنة        │
-├─────────────────────────────────────┤
-│                                     │
-│  Course Files → Copy → Playground   │
-│                                     │
-│  exercises/week-07/functions.py     │
-│         ↓ (copy)                    │
-│  student-playground/my_functions.py │
-│         ↓ (edit freely)             │
-│     Your experiments!               │
-│                                     │
-│  git pull still works perfectly!    │
-│                                     │
-└─────────────────────────────────────┘
+┌────────────────────────────────────────────────┐
+│          SAFE EXPERIMENTATION WORKFLOW          │
+│           سير عمل التجربة الآمنة                │
+├────────────────────────────────────────────────┤
+│                                                  │
+│  Course Files → Copy → Playground               │
+│                                                  │
+│  exercises/chapter-05-functions/functions.py    │
+│         ↓ (copy)                                │
+│  student-playground/my_functions.py             │
+│         ↓ (edit freely)                         │
+│     Your experiments!                           │
+│                                                  │
+│  git pull still works perfectly!                │
+│                                                  │
+└────────────────────────────────────────────────┘
 ```
 
 **Your safe workflow:**
 ```bash
 # Copy exercise to playground
-cp exercises/week-07/functions.py student-playground/my_solution.py
+cp exercises/chapter-05-functions/functions.py student-playground/my_solution.py
 
 # Work on your copy
 code student-playground/my_solution.py
@@ -188,7 +190,7 @@ git pull  # Never conflicts!
 **سير عملك الآمن:**
 ```bash
 # انسخ التمرين إلى الملعب
-cp exercises/week-07/functions.py student-playground/my_solution.py
+cp exercises/chapter-05-functions/functions.py student-playground/my_solution.py
 
 # اعمل على نسختك
 code student-playground/my_solution.py
@@ -197,8 +199,8 @@ code student-playground/my_solution.py
 git pull  # لا تعارضات أبدًا!
 ```
 
-### Workflow 3: Advanced Contribution (Optional, Weeks 10+)
-### سير العمل 3: المساهمة المتقدمة (اختياري، الأسابيع 10+)
+### Workflow 3: Advanced Contribution (Optional, later chapters)
+### سير العمل 3: المساهمة المتقدمة (اختياري، الفصول المتقدمة)
 
 For students who want to contribute improvements!
 
@@ -232,13 +234,11 @@ Understanding what you can and cannot modify:
 ```
 python-m110/
 │
-├── 📚 lectures/          ❌ Don't modify (instructor updates)
+├── 📽️ slides-official/   ❌ Don't modify (source of truth)
+├── 📚 lectures/          ❌ Don't modify (reference material)
 ├── 💻 code-examples/     ❌ Don't modify (reference code)
 ├── ✏️ exercises/         ⚠️ Can modify locally (but pull overwrites)
-├── 🧪 labs/             ⚠️ Can modify locally (but pull overwrites)
-├── 🎯 projects/         ✅ Your project work
 ├── 📖 resources/        ❌ Don't modify (course resources)
-├── 📝 assessments/      ❌ Don't modify (exam prep)
 ├── 🌟 student-contributions/ ✅ Can contribute via PR
 └── 🎮 student-playground/    ✅ YOUR SPACE! (Git ignores this)
 ```
@@ -268,9 +268,9 @@ Your personal workspace that Git completely ignores!
 ```
 student-playground/
 ├── my_solutions/        # Your exercise solutions
-│   ├── week01_practice.py
-│   ├── week02_loops.py
-│   └── week03_functions.py
+│   ├── chapter01_practice.py
+│   ├── chapter02_loops.py
+│   └── chapter03_functions.py
 ├── experiments/         # Try new things
 │   ├── test_gui.py
 │   └── database_test.py
@@ -288,6 +288,8 @@ student-playground/
 2. **Freedom to experiment** - Break things, it's OK!
 3. **Organize your way** - Create any structure
 4. **Keep your work** - Survives all pulls
+
+<!-- -->
 
 1. **لا تعارضات Git أبدًا** - Git يتجاهل هذا المجلد
 2. **حرية التجربة** - اكسر الأشياء، لا بأس!
@@ -313,51 +315,44 @@ echo "This is my personal workspace" >> README.md
 
 ---
 
-## Weekly Student Routine
-## روتين الطالب الأسبوعي
+## Your Study Session Routine
+## روتين جلسة الدراسة الخاصة بك
 
-### Complete Week Schedule
-### جدول الأسبوع الكامل
+### A Typical Study Session
+### جلسة دراسة نموذجية
 
 ```
 ┌────────────────────────────────────────┐
-│        WEEKLY GIT ROUTINE              │
-│        روتين Git الأسبوعي             │
+│        STUDY SESSION ROUTINE           │
+│        روتين جلسة الدراسة             │
 ├────────────────────────────────────────┤
 │                                        │
-│ SUNDAY (Lecture Day)                  │
-│ الأحد (يوم المحاضرة)                  │
-│ ├─ 8:00 AM: git pull                  │
-│ ├─ 8:15 AM: Review new materials      │
-│ ├─ 9:00 AM: Attend lecture            │
-│ └─ After: Copy exercises to playground│
+│ STARTING A SESSION                    │
+│ بدء الجلسة                            │
+│ ├─ git pull                           │
+│ ├─ Review what's new (if anything)    │
+│ └─ Pick a chapter to work on          │
 │                                        │
-│ MONDAY-WEDNESDAY (Practice)            │
-│ الإثنين-الأربعاء (الممارسة)          │
-│ ├─ Work on exercises in playground    │
-│ ├─ Experiment with code examples      │
-│ └─ Review lecture materials           │
+│ DURING THE SESSION                    │
+│ أثناء الجلسة                          │
+│ ├─ Read the chapter slides            │
+│ ├─ Ask Dr. Laila to walk you through  │
+│ ├─ Copy exercises to playground       │
+│ └─ Work on exercises in playground    │
 │                                        │
-│ THURSDAY (Lab Day)                    │
-│ الخميس (يوم المختبر)                  │
-│ ├─ 8:00 AM: git pull                  │
-│ ├─ 8:15 AM: Read lab instructions     │
-│ ├─ 9:00 AM: Attend lab               │
-│ └─ After: Complete lab in playground  │
-│                                        │
-│ FRIDAY-SATURDAY (Review & Catch-up)   │
-│ الجمعة-السبت (المراجعة واللحاق)      │
-│ ├─ Review week's materials            │
-│ ├─ Complete any pending exercises     │
-│ └─ Prepare questions for next week    │
+│ WRAPPING UP                           │
+│ الختام                                │
+│ ├─ Your work stays in student-        │
+│ │  playground/ automatically          │
+│ └─ Note what to pick up next time     │
 │                                        │
 └────────────────────────────────────────┘
 ```
 
-### Daily Commands Cheatsheet
-### ورقة غش الأوامر اليومية
+### Commands Cheatsheet
+### ورقة غش الأوامر
 
-**Sunday & Thursday:**
+**Starting a session:**
 ```bash
 cd ~/Documents/AOU/python-m110
 git pull
@@ -365,7 +360,7 @@ git status
 code .
 ```
 
-**Working Days:**
+**During the session:**
 ```bash
 cd ~/Documents/AOU/python-m110
 code .
@@ -428,8 +423,8 @@ A separate timeline for your experiments. Like a parallel universe for your code
 
 خط زمني منفصل لتجاربك. مثل كون موازٍ لكودك!
 
-### When to Use Branches (Week 7+)
-### متى تستخدم الفروع (الأسبوع 7+)
+### When to Use Branches (once you're comfortable with pull and status)
+### متى تستخدم الفروع (بعد أن تصبح مرتاحًا مع pull و status)
 
 ```bash
 # Create and switch to new branch
@@ -452,7 +447,7 @@ git checkout my-experiments
 ### مفهوم الفرع المرئي
 
 ```
-main:     A → B → C → D → E (instructor updates)
+main:     A → B → C → D → E (updates from upstream)
               ↓
 my-branch:    B → X → Y → Z (your experiments)
 ```
@@ -487,7 +482,7 @@ cd python-m110-fork
 git checkout -b fix-typo
 # Make your fix
 git add .
-git commit -m "Fix typo in week-3 README"
+git commit -m "Fix typo in chapter 3 README"
 git push origin fix-typo
 # Create PR on GitHub
 ```
@@ -555,7 +550,7 @@ git diff
 git checkout -- .
 
 # Or discard specific file
-git checkout -- exercises/week-03/loops.py
+git checkout -- exercises/chapter-03-decision-structures/loops.py
 ```
 
 ### Scenario 2: "I want to save my changes but also pull"
@@ -563,7 +558,7 @@ git checkout -- exercises/week-03/loops.py
 
 ```bash
 # Option 1: Copy to playground
-cp exercises/week-03/loops.py student-playground/my_loops.py
+cp exercises/chapter-03-decision-structures/loops.py student-playground/my_loops.py
 
 # Option 2: Stash temporarily
 git stash
@@ -598,8 +593,8 @@ git clone https://github.com/YOUR_USERNAME/python-m110.git
 ## Git Commands Progressive Learning
 ## تعلم أوامر Git التدريجي
 
-### Level 1: Essential (Weeks 1-3)
-### المستوى 1: الأساسي (الأسابيع 1-3)
+### Level 1: Essential (start here)
+### المستوى 1: الأساسي (ابدأ هنا)
 
 ```bash
 git clone [URL]    # Get repository
@@ -607,8 +602,8 @@ git pull           # Get updates
 git status         # Check state
 ```
 
-### Level 2: Useful (Weeks 4-6)
-### المستوى 2: مفيد (الأسابيع 4-6)
+### Level 2: Useful (once Level 1 feels natural)
+### المستوى 2: مفيد (بمجرد أن يصبح المستوى 1 طبيعيًا)
 
 ```bash
 git log --oneline       # View history
@@ -616,8 +611,8 @@ git diff               # See changes
 git fetch              # Check for updates
 ```
 
-### Level 3: Intermediate (Weeks 7-9)
-### المستوى 3: متوسط (الأسابيع 7-9)
+### Level 3: Intermediate (when you start experimenting more)
+### المستوى 3: متوسط (عندما تبدأ بالتجربة أكثر)
 
 ```bash
 git stash              # Save changes temporarily
@@ -625,8 +620,8 @@ git stash pop          # Restore changes
 git checkout -- [file] # Discard changes
 ```
 
-### Level 4: Advanced (Weeks 10+)
-### المستوى 4: متقدم (الأسابيع 10+)
+### Level 4: Advanced (optional, whenever you're ready)
+### المستوى 4: متقدم (اختياري، متى ما كنت مستعدًا)
 
 ```bash
 git checkout -b [branch]  # Create branch
@@ -643,13 +638,15 @@ git push                 # Upload changes
 ### DO ✅
 ### افعل ✅
 
-1. **Pull regularly** - Sunday & Thursday minimum
+1. **Pull regularly** - before each study session
 2. **Check status** before any operation
 3. **Work in playground** for experiments
 4. **Keep organized** folder structure
 5. **Ask for help** when confused
 
-1. **اسحب بانتظام** - الأحد والخميس كحد أدنى
+<!-- -->
+
+1. **اسحب بانتظام** - قبل كل جلسة دراسة
 2. **تحقق من الحالة** قبل أي عملية
 3. **اعمل في الملعب** للتجارب
 4. **حافظ على التنظيم** في بنية المجلدات
@@ -664,6 +661,8 @@ git push                 # Upload changes
 4. **Don't panic** about Git errors
 5. **Don't skip pulls** - You'll miss content
 
+<!-- -->
+
 1. **لا تدفع إلى main** - لا يمكنك على أي حال
 2. **لا تحرر ملفات المقرر** مباشرة
 3. **لا تستنسخ عدة مرات** - اسحب بدلاً من ذلك
@@ -676,17 +675,17 @@ git push                 # Upload changes
 ## رحلة تعلم Git الخاصة بك
 
 ```
-Week 1-3:  "What is Git?" → "I can clone and pull!"
-الأسبوع 1-3: "ما هو Git؟" ← "يمكنني الاستنساخ والسحب!"
+At first:    "What is Git?" → "I can clone and pull!"
+في البداية: "ما هو Git؟" ← "يمكنني الاستنساخ والسحب!"
 
-Week 4-6:  "I understand status" → "I can work safely"
-الأسبوع 4-6: "أفهم الحالة" ← "يمكنني العمل بأمان"
+Later:       "I understand status" → "I can work safely"
+لاحقًا:      "أفهم الحالة" ← "يمكنني العمل بأمان"
 
-Week 7-9:  "I can handle conflicts" → "I'm comfortable"
-الأسبوع 7-9: "يمكنني التعامل مع التعارضات" ← "أنا مرتاح"
+Then:        "I can handle conflicts" → "I'm comfortable"
+ثم:          "يمكنني التعامل مع التعارضات" ← "أنا مرتاح"
 
-Week 10-12: "I can contribute" → "I'm Git confident!"
-الأسبوع 10-12: "يمكنني المساهمة" ← "أنا واثق في Git!"
+Eventually:  "I can contribute" → "I'm Git confident!"
+في النهاية:  "يمكنني المساهمة" ← "أنا واثق في Git!"
 ```
 
 ---
@@ -734,13 +733,13 @@ You now understand the complete Git workflow for M110! You have:
 
 أنت الآن تفهم سير عمل Git الكامل لـ M110! لديك:
 
-- ✅ **Clear weekly routine** to follow
+- ✅ **Clear routine** to follow
 - ✅ **Safe workspace** in student-playground/
 - ✅ **Progressive path** from beginner to advanced
 - ✅ **Troubleshooting guide** for common issues
 - ✅ **Optional paths** for going beyond basics
 
-- ✅ **روتين أسبوعي واضح** للمتابعة
+- ✅ **روتين واضح** للمتابعة
 - ✅ **مساحة عمل آمنة** في student-playground/
 - ✅ **مسار تدريجي** من المبتدئ إلى المتقدم
 - ✅ **دليل استكشاف الأخطاء** للمشاكل الشائعة
@@ -754,13 +753,15 @@ You now understand the complete Git workflow for M110! You have:
 1. **Git is a tool, not the goal** - Focus on Python first
 2. **Mistakes are OK** - You can always reset
 3. **Practice makes perfect** - Use Git daily
-4. **Build habits** - Same routine every week
+4. **Build habits** - Same routine every session
 5. **Help others** - Teaching reinforces learning
+
+<!-- -->
 
 1. **Git أداة، وليس الهدف** - ركز على Python أولاً
 2. **الأخطاء مقبولة** - يمكنك دائمًا إعادة التعيين
 3. **الممارسة تصنع الكمال** - استخدم Git يوميًا
-4. **ابن العادات** - نفس الروتين كل أسبوع
+4. **ابن العادات** - نفس الروتين كل جلسة
 5. **ساعد الآخرين** - التعليم يعزز التعلم
 
 ---
@@ -770,14 +771,14 @@ You now understand the complete Git workflow for M110! You have:
 
 - **Course Repository:** Your main resource
 - **These Guides:** Keep them bookmarked
-- **Instructor Office Hours:** Don't hesitate to ask
-- **Classmates:** Learn together
+- **Dr. Laila:** Don't hesitate to ask her
+- **GitHub Issues:** Report a problem or ask a question
 - **Stack Overflow:** For specific Git questions
 
 - **مستودع المقرر:** موردك الرئيسي
 - **هذه الأدلة:** احتفظ بها في المفضلة
-- **ساعات مكتب المدرس:** لا تتردد في السؤال
-- **زملاء الصف:** تعلموا معًا
+- **الدكتورة ليلى:** لا تتردد في سؤالها
+- **GitHub Issues:** أبلغ عن مشكلة أو اطرح سؤالاً
 - **Stack Overflow:** لأسئلة Git المحددة
 
 ---

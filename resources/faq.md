@@ -214,9 +214,9 @@ cd python-m110
 ### Q14: How often is the repository updated?
 ### س14: كم مرة يتم تحديث المستودع؟
 
-**A:** Weekly! New materials are added every Sunday before the lecture. Always run `git pull` before each week to get the latest content.
+**A:** There's no fixed schedule - this repository can receive fixes and improvements over time. Run `git pull` whenever you want the latest content.
 
-**ج:** أسبوعياً! تُضاف مواد جديدة كل أحد قبل المحاضرة. دائماً شغّل `git pull` قبل كل أسبوع للحصول على أحدث المحتوى.
+**ج:** لا يوجد جدول ثابت - يمكن أن يستقبل هذا المستودع إصلاحات وتحسينات بمرور الوقت. شغّل `git pull` كلما أردت الحصول على أحدث محتوى.
 
 ---
 
@@ -226,21 +226,19 @@ cd python-m110
 ### Q15: How many hours should I study per week?
 ### س15: كم ساعة يجب أن أدرس أسبوعياً؟
 
-**A:** Plan for:
-- 2 hours lecture (Sunday)
-- 1 hour lab (Tuesday)
+**A:** There's no fixed schedule, but as a guide, plan for:
+- 2-3 hours working through each chapter (slides + Dr. Laila)
 - 3-4 hours self-study and practice
-- **Total: 6-7 hours per week minimum**
+- **Total: 5-7 hours per chapter, at whatever pace suits you**
 
-Programming is like learning a musical instrument - daily practice is key!
+Programming is like learning a musical instrument - regular practice is key, more than any specific number of hours!
 
-**ج:** خطط لـ:
-- ساعتان محاضرة (الأحد)
-- ساعة مختبر (الثلاثاء)
+**ج:** لا يوجد جدول ثابت، لكن كدليل، خطط لـ:
+- 2-3 ساعات لدراسة كل فصل (الشرائح + الدكتورة ليلى)
 - 3-4 ساعات دراسة ذاتية وممارسة
-- **المجموع: 6-7 ساعات أسبوعياً كحد أدنى**
+- **المجموع: 5-7 ساعات لكل فصل، بالسرعة التي تناسبك**
 
-البرمجة مثل تعلم آلة موسيقية - الممارسة اليومية هي المفتاح!
+البرمجة مثل تعلم آلة موسيقية - الممارسة المنتظمة هي المفتاح، أكثر من أي عدد ساعات محدد!
 
 ---
 
@@ -253,7 +251,7 @@ Programming is like learning a musical instrument - daily practice is key!
 3. **Use Dr. Laila** - Ask for hints, not solutions
 4. **Check the examples** - Similar code in `code-examples/`
 5. **Take a break** - Sometimes stepping away helps
-6. **Ask for help** - Office hours, email, or class discussion
+6. **Ask for help** - Open a GitHub issue, or search Stack Overflow
 
 **ج:** اتبع هذه العملية:
 1. **اقرأ رسالة الخطأ** - بايثون يخبرك ما الخطأ
@@ -261,7 +259,7 @@ Programming is like learning a musical instrument - daily practice is key!
 3. **استخدم د. ليلى** - اطلب تلميحات، ليس حلولاً
 4. **تحقق من الأمثلة** - كود مشابه في `code-examples/`
 5. **خذ استراحة** - أحياناً الابتعاد يساعد
-6. **اطلب المساعدة** - الساعات المكتبية، البريد الإلكتروني، أو نقاش الصف
+6. **اطلب المساعدة** - افتح GitHub issue، أو ابحث في Stack Overflow
 
 ---
 
@@ -287,20 +285,12 @@ Even professional programmers Google things daily!
 ## 🎯 Project Questions
 ## 🎯 أسئلة المشاريع
 
-### Q18: When are projects due?
-### س18: متى موعد تسليم المشاريع؟
+### Q18: Are there project deadlines?
+### س18: هل هناك مواعيد تسليم للمشاريع؟
 
-**A:**
-- **Mini Project**: Week 7 (after learning functions)
-- **Final Project**: Week 12 (before final exam)
+**A:** No fixed deadlines here - this is self-paced. Once you've covered functions (Chapter 5) you have enough to build small projects, and once you've covered files and classes you can build bigger ones. Ask Dr. Laila for project ideas that match what you've learned so far.
 
-Check `projects/` directory for detailed requirements.
-
-**ج:**
-- **المشروع الصغير**: الأسبوع 7 (بعد تعلم الدوال)
-- **المشروع النهائي**: الأسبوع 12 (قبل الامتحان النهائي)
-
-تحقق من مجلد `projects/` للمتطلبات التفصيلية.
+**ج:** لا توجد مواعيد تسليم ثابتة هنا - هذه دراسة ذاتية. بمجرد أن تغطي الدوال (الفصل الخامس) يكون لديك ما يكفي لبناء مشاريع صغيرة، وبمجرد أن تغطي الملفات والفئات يمكنك بناء مشاريع أكبر. اطلب من الدكتورة ليلى أفكار مشاريع تناسب ما تعلمته حتى الآن.
 
 ---
 
@@ -375,15 +365,11 @@ def succeed_in_m110():
 ## 📞 Still Have Questions?
 ## 📞 لا زلت لديك أسئلة؟
 
-- **Office Hours**: Sundays 4:00-5:00 PM (after lecture)
-- **Email**: m.almarie@aou.edu.jo
 - **Dr. Laila**: Available 24/7 via `/laila` command
-- **GitHub Issues**: Report problems with the repository
+- **GitHub Issues**: Report problems with the repository or ask a question
 
-**الساعات المكتبية**: الأحد 4:00-5:00 مساءً (بعد المحاضرة)
-**البريد الإلكتروني**: m.almarie@aou.edu.jo
 **د. ليلى**: متاحة 24/7 عبر أمر `/laila`
-**GitHub Issues**: أبلغ عن مشاكل المستودع
+**GitHub Issues**: أبلغ عن مشاكل المستودع أو اطرح سؤالاً
 
 ---
 

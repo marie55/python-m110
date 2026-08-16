@@ -210,7 +210,7 @@ for num in range(2, 21):
 **Mini-projects solidify learning:**
 **المشاريع الصغيرة تثبت التعلم:**
 
-Week 1-2 Project: Calculator
+Early Project: Calculator
 ```python
 # Simple calculator you can build
 print("Simple Calculator")
@@ -338,14 +338,14 @@ Your only competition is yesterday's you. Are you better than last week?
 **حقيقة منحنى التعلم:**
 
 ```
-Week 1-2: "I don't understand anything" 😵
-Week 3-4: "I kind of get it" 🤔
-Week 5-6: "Oh, this makes sense!" 😊
-Week 7-8: "I can actually do this!" 🎉
+At first:     "I don't understand anything" 😵
+A bit later:  "I kind of get it" 🤔
+Later still:  "Oh, this makes sense!" 😊
+Eventually:   "I can actually do this!" 🎉
 ```
 
-**Don't quit in week 2!**
-**لا تستسلم في الأسبوع 2!**
+**Don't quit when it feels confusing - that's normal!**
+**لا تستسلم عندما يبدو الأمر محيراً - هذا طبيعي!**
 
 ---
 
@@ -573,8 +573,8 @@ Day 21: ✅ Habit formed! 🎉
 - فهمت مفهوماً محيراً
 - Helped classmate with code
 - ساعدت زميلاً بالكود
-- Completed week's exercises
-- أكملت تمارين الأسبوع
+- Completed a chapter's exercises
+- أكملت تمارين فصل كامل
 
 ---
 
@@ -604,8 +604,8 @@ Day 21: ✅ Habit formed! 🎉
 ## Practice Challenge
 ## تحدي الممارسة
 
-**Week 1 Challenge: Build a Grade Calculator**
-**تحدي الأسبوع 1: ابنِ حاسبة درجات**
+**Chapter 1 Challenge: Build a Grade Calculator**
+**تحدي الفصل الأول: ابنِ حاسبة درجات**
 
 Requirements:
 - Ask user for 3 test scores

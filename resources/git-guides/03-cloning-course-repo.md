@@ -25,16 +25,14 @@ By the end of this guide, you will have:
 
 Cloning is your first step to accessing all course materials. Once you clone, you'll have:
 - All lecture notes and slides references
-- Code examples for each week
+- Code examples for each chapter
 - Exercises and solutions
-- Lab materials
 - Setup guides and resources
 
 الاستنساخ هو خطوتك الأولى للوصول إلى جميع مواد المقرر. بمجرد الاستنساخ، سيكون لديك:
 - جميع ملاحظات المحاضرات ومراجع الشرائح
-- أمثلة الكود لكل أسبوع
+- أمثلة الكود لكل فصل
 - التمارين والحلول
-- مواد المختبر
 - أدلة الإعداد والموارد
 
 ---
@@ -73,21 +71,31 @@ Before cloning, make sure you have:
    - Check: Run `git --version` in terminal
    - If not installed: Download from [git-scm.com](https://git-scm.com)
 
+<!-- -->
+
 1. ✅ **Git مثبت** على حاسوبك
    - تحقق: شغّل `git --version` في المحطة الطرفية
    - إذا لم يكن مثبتًا: حمّله من [git-scm.com](https://git-scm.com)
 
+<!-- -->
+
 2. ✅ **VS Code installed** (recommended editor)
    - Download from [code.visualstudio.com](https://code.visualstudio.com)
+
+<!-- -->
 
 2. ✅ **VS Code مثبت** (المحرر الموصى به)
    - حمّله من [code.visualstudio.com](https://code.visualstudio.com)
 
-3. ✅ **Repository URL** from your instructor
-   - Example: `https://github.com/YOUR_USERNAME/python-m110.git`
+<!-- -->
 
-3. ✅ **عنوان URL للمستودع** من مدرسك
-   - مثال: `https://github.com/YOUR_USERNAME/python-m110.git`
+3. ✅ **The repository URL**
+   - This course's repository: `https://github.com/marie55/python-m110.git`
+
+<!-- -->
+
+3. ✅ **عنوان URL للمستودع**
+   - مستودع هذا المقرر: `https://github.com/marie55/python-m110.git`
 
 ---
 
@@ -134,6 +142,8 @@ cd AOU
 1. Open VS Code
 2. Click `Terminal` → `New Terminal`
 3. Or press `Ctrl + ` ` (backtick key)
+
+<!-- -->
 
 1. افتح VS Code
 2. انقر `Terminal` → `New Terminal`
@@ -242,14 +252,13 @@ You should see folders like:
 يجب أن ترى مجلدات مثل:
 
 ```
+slides-official/
 lectures/
 code-examples/
 exercises/
-labs/
-projects/
 resources/
-assessments/
 student-contributions/
+student-playground/
 README.md
 ```
 
@@ -281,6 +290,8 @@ The dot (.) means "current folder"
 3. Navigate to `Documents/AOU/python-m110`
 4. Click `Select Folder`
 
+<!-- -->
+
 1. افتح VS Code
 2. انقر `File` → `Open Folder`
 3. انتقل إلى `Documents/AOU/python-m110`
@@ -292,6 +303,8 @@ The dot (.) means "current folder"
 1. Open VS Code
 2. Find the python-m110 folder in File Explorer/Finder
 3. Drag the folder onto the VS Code window
+
+<!-- -->
 
 1. افتح VS Code
 2. ابحث عن مجلد python-m110 في مستكشف الملفات/Finder
@@ -309,34 +322,25 @@ Once opened in VS Code, you'll see this structure:
 ```
 python-m110/
 │
-├── 📚 lectures/           # Weekly lecture materials
-│   ├── week-01-algorithms/
-│   ├── week-02-fundamentals/
+├── 📽️ slides-official/    # Official slides - source of truth for all chapters
+│   ├── chapter-01-algorithms/
+│   ├── chapter-02-fundamentals/
 │   └── ...
 │
-├── 💻 code-examples/      # Example code for each week
-│   ├── week-01-algorithms/
-│   ├── week-02-fundamentals/
-│   └── ...
+├── 📚 lectures/           # Written notes (Chapter 1 so far)
+│   └── chapter-01-algorithms/
 │
-├── ✏️ exercises/          # Practice problems
-│   ├── week-01/
-│   ├── week-02/
-│   └── ...
+├── 💻 code-examples/      # Example code (Chapters 1-2 so far)
+│   ├── chapter-01-algorithms/
+│   └── chapter-02-fundamentals/
 │
-├── 🧪 labs/              # Lab sessions
-│   ├── lab-01-week06/
-│   ├── lab-02-week09/
-│   └── lab-03-week12/
-│
-├── 🎯 projects/          # Course projects
+├── ✏️ exercises/          # Practice problems (Chapter 1 so far)
+│   └── chapter-01-algorithms/
 │
 ├── 📖 resources/         # Guides and references
 │   ├── setup-guides/
 │   ├── git-guides/       # You are here!
 │   └── cheatsheets/
-│
-├── 📝 assessments/       # Exam preparation
 │
 ├── 🌟 student-contributions/  # Student showcase
 │
@@ -344,6 +348,10 @@ python-m110/
 │
 └── 📄 README.md          # Course overview
 ```
+
+For every chapter beyond what's already written out, Dr. Laila builds the walkthrough from the official slides when you ask her.
+
+بالنسبة لأي فصل غير مكتوب بعد، تبني لك الدكتورة ليلى الشرح من الشرائح الرسمية عندما تطلب منها ذلك.
 
 **Important:** The `student-playground/` folder is YOUR space to experiment safely!
 
@@ -399,6 +407,8 @@ print("مرحباً، M110!")
 
 1. Save the file: `Ctrl + S` (Windows/Linux) or `Cmd + S` (Mac)
 2. In terminal, run:
+
+<!-- -->
 
 1. احفظ الملف: `Ctrl + S` (Windows/Linux) أو `Cmd + S` (Mac)
 2. في المحطة الطرفية، شغّل:
@@ -544,13 +554,13 @@ Make sure you've completed everything:
 ### التمرين 1: استكشف المستودع
 
 Navigate through the folders and:
-1. Find the Week 2 lecture materials
-2. Open a code example from Week 1
+1. Find the Chapter 1 lecture notes
+2. Open a code example from Chapter 2
 3. Check what exercises are available
 
 تنقل عبر المجلدات و:
-1. ابحث عن مواد محاضرة الأسبوع 2
-2. افتح مثال كود من الأسبوع 1
+1. ابحث عن ملاحظات محاضرة الفصل الأول
+2. افتح مثال كود من الفصل الثاني
 3. تحقق من التمارين المتاحة
 
 ### Exercise 2: Practice Git Commands
@@ -578,8 +588,8 @@ In `student-playground/`, create `learning_journal.md`:
 # My M110 Learning Journal
 # يومية تعلمي في M110
 
-## Week 1 Reflections
-## تأملات الأسبوع 1
+## Chapter 1 Reflections
+## تأملات الفصل الأول
 
 What I learned:
 - How to clone a repository
@@ -601,9 +611,9 @@ Congratulations! You've successfully cloned the course repository. Next, learn h
 
 تهانينا! لقد نجحت في استنساخ مستودع المقرر. بعد ذلك، تعلم كيفية البقاء محدثًا:
 
-➡️ **[04-staying-updated.md](04-staying-updated.md)** - Learn how to get weekly updates
+➡️ **[04-staying-updated.md](04-staying-updated.md)** - Learn how to stay updated
 
-➡️ **[04-staying-updated.md](04-staying-updated.md)** - تعلم كيفية الحصول على التحديثات الأسبوعية
+➡️ **[04-staying-updated.md](04-staying-updated.md)** - تعلم كيفية البقاء محدثًا
 
 ---
 

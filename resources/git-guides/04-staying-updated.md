@@ -6,77 +6,60 @@
 
 By the end of this guide, you'll know:
 - ✅ Why pulling updates regularly is important
-- ✅ When to pull updates (course schedule)
+- ✅ When to pull updates (and how often)
 - ✅ How to pull updates safely
 - ✅ How to handle conflicts with your local changes
-- ✅ How to set up a weekly update routine
+- ✅ How to set up a regular update routine
 
 بنهاية هذا الدليل، ستعرف:
 - ✅ لماذا سحب التحديثات بانتظام مهم
-- ✅ متى تسحب التحديثات (جدول المقرر)
+- ✅ متى تسحب التحديثات (ومتى)
 - ✅ كيفية سحب التحديثات بأمان
 - ✅ كيفية التعامل مع التعارضات مع تغييراتك المحلية
-- ✅ كيفية إعداد روتين تحديث أسبوعي
+- ✅ كيفية إعداد روتين تحديث منتظم
 
 ---
 
 ## Why This Matters
 ## لماذا هذا مهم
 
-Your instructor adds new materials every week:
-- 📚 New lecture notes every Sunday
-- 💻 Code examples for each topic
-- ✏️ Practice exercises with solutions
-- 🧪 Lab materials before lab sessions
-- 📢 Important announcements and updates
+This repository can receive updates over time:
+- 📚 Fixes and improvements to existing chapters
+- 💻 New or updated code examples
+- ✏️ Additional practice exercises and solutions
+- 📢 Corrections to guides like this one
 
-مدرسك يضيف مواد جديدة كل أسبوع:
-- 📚 ملاحظات محاضرة جديدة كل أحد
-- 💻 أمثلة كود لكل موضوع
-- ✏️ تمارين تدريبية مع الحلول
-- 🧪 مواد المختبر قبل جلسات المختبر
-- 📢 إعلانات وتحديثات مهمة
+يمكن أن يستقبل هذا المستودع تحديثات بمرور الوقت:
+- 📚 إصلاحات وتحسينات على الفصول الحالية
+- 💻 أمثلة كود جديدة أو محدثة
+- ✏️ تمارين تدريبية إضافية وحلول
+- 📢 تصحيحات على أدلة مثل هذا الدليل
 
-**Without regular pulls, you'll miss important content!**
+**Without pulling occasionally, you'll be working from an outdated copy!**
 
-**بدون السحب المنتظم، ستفوتك محتويات مهمة!**
+**بدون السحب من حين لآخر، ستعمل على نسخة قديمة!**
 
 ---
 
 ## The Update Cycle
 ## دورة التحديث
 
-### Your Instructor's Schedule
-### جدول مدرسك
+### There's No Fixed Schedule
+### لا يوجد جدول ثابت
+
+This is a self-study repository - there's no live class schedule to follow. A simple habit works well:
+
+هذا مستودع للدراسة الذاتية - لا يوجد جدول حصص مباشرة لاتباعه. عادة بسيطة تعمل بشكل جيد:
 
 ```
-Saturday Evening: Instructor prepares materials
-السبت مساءً: المدرس يحضر المواد
+Before you start a study session: git pull
+قبل أن تبدأ جلسة دراسة: git pull
         ↓
-Sunday Morning: Materials pushed to GitHub
-الأحد صباحًا: المواد تُدفع إلى GitHub
+Study the chapter, run the examples, do the exercises
+ادرس الفصل، شغّل الأمثلة، نفّذ التمارين
         ↓
-Sunday (You): Pull updates before lecture
-الأحد (أنت): اسحب التحديثات قبل المحاضرة
-        ↓
-Wednesday Evening: Lab materials added
-الأربعاء مساءً: مواد المختبر تُضاف
-        ↓
-Thursday (You): Pull updates before lab
-الخميس (أنت): اسحب التحديثات قبل المختبر
-```
-
-### Visual Timeline
-### الخط الزمني المرئي
-
-```
-Week Schedule / جدول الأسبوع:
-
-Sat | Sun | Mon | Tue | Wed | Thu | Fri
-السبت | الأحد | الإثنين | الثلاثاء | الأربعاء | الخميس | الجمعة
-     | 📚  |     |     |      | 🧪  |
-     | PULL |     |     |      | PULL|
-     | سحب  |     |     |      | سحب |
+Next session: git pull again
+الجلسة التالية: اسحب التحديثات مرة أخرى
 ```
 
 ---
@@ -84,36 +67,29 @@ Sat | Sun | Mon | Tue | Wed | Thu | Fri
 ## When to Pull Updates
 ## متى تسحب التحديثات
 
-### Essential Pull Times (Required)
-### أوقات السحب الأساسية (مطلوبة)
+### Good Habits (no fixed schedule required)
+### عادات جيدة (لا يوجد جدول ثابت مطلوب)
 
-1. **Sunday Morning** - Before lecture
-2. **Thursday Morning** - Before lab
+1. **Before starting a new chapter** - Get the latest version first
+2. **Before asking Dr. Laila a question** - Make sure you have the newest guides
+3. **Whenever you resume studying after a break**
+4. **If you hit an issue and suspect it might already be fixed**
 
-1. **الأحد صباحًا** - قبل المحاضرة
-2. **الخميس صباحًا** - قبل المختبر
+<!-- -->
 
-### Additional Pull Times (Recommended)
-### أوقات سحب إضافية (موصى بها)
+1. **قبل بدء فصل جديد** - احصل على أحدث نسخة أولاً
+2. **قبل سؤال الدكتورة ليلى** - تأكد من أن لديك أحدث الأدلة
+3. **كلما استأنفت الدراسة بعد انقطاع**
+4. **إذا واجهت مشكلة وتشك أنها ربما أُصلحت بالفعل**
 
-3. **When instructor announces updates** via email/LMS
-4. **Before starting homework** to get latest exercises
-5. **When you see classmates discussing new content**
+### Make It a Habit
+### اجعلها عادة
 
-3. **عندما يعلن المدرس عن تحديثات** عبر البريد الإلكتروني/نظام إدارة التعلم
-4. **قبل بدء الواجبات المنزلية** للحصول على أحدث التمارين
-5. **عندما ترى زملاءك يناقشون محتوى جديدًا**
+Add a reminder that fits your own study rhythm:
+- 📱 "Git Pull - M110" at the start of every study session
 
-### Set Reminders!
-### اضبط التذكيرات!
-
-Add these to your phone:
-- 📱 "Git Pull - M110" every Sunday at 8:00 AM
-- 📱 "Git Pull - M110" every Thursday at 8:00 AM
-
-أضف هذه إلى هاتفك:
-- 📱 "Git Pull - M110" كل أحد الساعة 8:00 صباحًا
-- 📱 "Git Pull - M110" كل خميس الساعة 8:00 صباحًا
+أضف تذكيرًا يناسب إيقاع دراستك:
+- 📱 "Git Pull - M110" في بداية كل جلسة دراسة
 
 ---
 
@@ -178,7 +154,7 @@ nothing to commit, working tree clean
 ⚠️ **Need to handle local changes first:**
 ```
 Changes not staged for commit:
-  modified: exercises/week-02/practice.py
+  modified: exercises/chapter-02-fundamentals/practice.py
 ```
 
 #### Step 4: Pull the Updates
@@ -227,9 +203,9 @@ From https://github.com/YOUR_USERNAME/python-m110
    abc123d..def456e  main -> origin/main
 Updating abc123d..def456e
 Fast-forward
- lectures/week-03/README.md      |  89 +++++++++++
- code-examples/week-03/loops.py  |  45 ++++++
- exercises/week-03/practice.py   |  32 ++++
+ lectures/chapter-03-decision-structures/README.md      |  89 +++++++++++
+ code-examples/chapter-03-decision-structures/loops.py  |  45 ++++++
+ exercises/chapter-03-decision-structures/practice.py   |  32 ++++
  3 files changed, 166 insertions(+)
 ```
 
@@ -261,7 +237,7 @@ Already up to date.
 ```bash
 $ git pull
 error: Your local changes to the following files would be overwritten by merge:
-    exercises/week-02/practice.py
+    exercises/chapter-02-fundamentals/practice.py
 Please commit your changes or stash them before you merge.
 ```
 
@@ -309,10 +285,10 @@ Best for important work you don't want to lose:
 
 ```bash
 # Copy your modified file
-cp exercises/week-02/practice.py student-playground/my_practice_backup.py
+cp exercises/chapter-02-fundamentals/practice.py student-playground/my_practice_backup.py
 
 # Discard local changes
-git checkout exercises/week-02/practice.py
+git checkout exercises/chapter-02-fundamentals/practice.py
 
 # Pull updates
 git pull
@@ -327,7 +303,7 @@ Only if you're comfortable with Git:
 
 ```bash
 # Commit your changes locally
-git add exercises/week-02/practice.py
+git add exercises/chapter-02-fundamentals/practice.py
 git commit -m "My solution to exercise 2"
 
 # Pull and merge
@@ -348,7 +324,7 @@ To avoid ALL conflicts, do your work in `student-playground/`:
 
 ```bash
 # Copy exercise to your playground
-cp exercises/week-02/practice.py student-playground/my_practice.py
+cp exercises/chapter-02-fundamentals/practice.py student-playground/my_practice.py
 
 # Work on your copy
 code student-playground/my_practice.py
@@ -371,11 +347,11 @@ This means Git completely ignores this folder!
 
 ---
 
-## Weekly Workflow Routine
-## روتين سير العمل الأسبوعي
+## Starting a Study Session
+## بدء جلسة دراسة
 
-### Sunday Morning Routine
-### روتين صباح الأحد
+### The Routine
+### الروتين
 
 ```bash
 # 1. Morning coffee ☕
@@ -388,33 +364,14 @@ cd ~/Documents/AOU/python-m110
 git status
 git pull
 
-# 4. See what's new
+# 4. See what's new (if anything)
 git log --oneline -3
-ls lectures/  # See new lecture folder
+ls lectures/  # See what's there
 
 # 5. Open in VS Code
 code .
 
-# 6. Review new materials before class!
-```
-
-### Thursday Morning Routine
-### روتين صباح الخميس
-
-```bash
-# 1. Before lab
-cd ~/Documents/AOU/python-m110
-
-# 2. Pull lab materials
-git pull
-
-# 3. Check lab folder
-ls labs/
-
-# 4. Open specific lab
-code labs/lab-01-week06/
-
-# 5. Read instructions first!
+# 6. Pick a chapter and start studying!
 ```
 
 ---
@@ -490,7 +447,7 @@ fatal: unable to access 'https://github.com/...': Connection timeout
 ### المشكلة 3: "Merge conflict"
 
 ```bash
-CONFLICT (content): Merge conflict in exercises/week-02/practice.py
+CONFLICT (content): Merge conflict in exercises/chapter-02-fundamentals/practice.py
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
@@ -500,7 +457,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 git merge --abort
 
 # Save your work elsewhere
-cp exercises/week-02/practice.py student-playground/backup.py
+cp exercises/chapter-02-fundamentals/practice.py student-playground/backup.py
 
 # Reset to clean state
 git reset --hard origin/main
@@ -517,7 +474,7 @@ git reset --hard origin/main
 git status
 
 # Undo changes to specific file
-git checkout -- lectures/week-02/README.md
+git checkout -- lectures/chapter-02-fundamentals/README.md
 
 # Or undo ALL changes (careful!)
 git checkout -- .
@@ -570,30 +527,30 @@ update   # Pulls and shows what's new
 ### Tip 4: Check Before Sleeping
 ### النصيحة 4: تحقق قبل النوم
 
-Sunday & Thursday nights: Quick pull before bed ensures you're ready for next day!
+Before bed after a study session: a quick pull ensures you're ready to pick up where you left off!
 
-ليالي الأحد والخميس: سحب سريع قبل النوم يضمن أنك جاهز لليوم التالي!
+قبل النوم بعد جلسة دراسة: سحب سريع يضمن أنك جاهز لمتابعة ما تركته!
 
 ---
 
 ## Practice Exercises
 ## تمارين الممارسة
 
-### Exercise 1: Simulate Weekly Routine
-### التمرين 1: حاكي الروتين الأسبوعي
+### Exercise 1: Simulate the Routine
+### التمرين 1: حاكي الروتين
 
 Practice the commands even when no updates:
 
 مارس الأوامر حتى عند عدم وجود تحديثات:
 
 ```bash
-# Monday practice
+# Session 1 practice
 cd ~/Documents/AOU/python-m110
 git fetch
 git status
 git log --oneline -3
 
-# Tuesday practice
+# Session 2 practice
 git pull
 ls lectures/
 ls exercises/
@@ -612,7 +569,7 @@ ls exercises/
 ### Exercise 3: Set Up Your Routine
 ### التمرين 3: أعد روتينك
 
-1. Add phone reminders for Sunday & Thursday
+1. Add a phone reminder for your study sessions
 2. Create a checklist note
 3. Practice the workflow 3 times
 
@@ -627,8 +584,8 @@ Print and keep this handy:
 
 ```
 ┌─────────────────────────────────────┐
-│     WEEKLY GIT PULL CHECKLIST       │
-│    قائمة تحقق السحب الأسبوعية      │
+│         GIT PULL CHECKLIST          │
+│         قائمة تحقق السحب            │
 ├─────────────────────────────────────┤
 │ ☐ Open terminal/VS Code             │
 │ ☐ Navigate to python-m110           │
@@ -661,18 +618,18 @@ Now learn the complete student workflow for the course:
 ## الملخص
 
 You've learned:
-- 📅 **When to pull:** Sundays & Thursdays minimum
+- 📅 **When to pull:** Before each study session, at your own pace
 - 🔄 **How to pull:** `git status` then `git pull`
 - 💾 **Handling conflicts:** Stash or save elsewhere
 - 🎯 **Best practice:** Work in student-playground/
-- ⏰ **Routine:** Set reminders and stick to schedule
+- ⏰ **Routine:** Set a reminder that fits your pace
 
 لقد تعلمت:
-- 📅 **متى تسحب:** الأحد والخميس كحد أدنى
+- 📅 **متى تسحب:** قبل كل جلسة دراسة، بالسرعة التي تناسبك
 - 🔄 **كيف تسحب:** `git status` ثم `git pull`
 - 💾 **معالجة التعارضات:** خزّن أو احفظ في مكان آخر
 - 🎯 **أفضل الممارسات:** اعمل في student-playground/
-- ⏰ **الروتين:** اضبط التذكيرات والتزم بالجدول
+- ⏰ **الروتين:** اضبط تذكيرًا يناسب سرعتك
 
 ---
 

@@ -243,6 +243,8 @@ Let's practice opening your course repository in VS Code.
 3. Select the entire `python-m110` folder
 4. Click "Select Folder" or "Open"
 
+<!-- -->
+
 1. انقر على **File → Open Folder** (ويندوز/لينكس) أو **File → Open** (ماك)
 2. انتقل إلى حيث قمت باستنساخ `python-m110`
 3. حدد مجلد `python-m110` بأكمله
@@ -254,6 +256,8 @@ Let's practice opening your course repository in VS Code.
 1. Find the `python-m110` folder in your file explorer
 2. Drag it onto the VS Code window
 3. VS Code will open it automatically
+
+<!-- -->
 
 1. ابحث عن مجلد `python-m110` في مستكشف الملفات
 2. اسحبه إلى نافذة VS Code
@@ -267,10 +271,9 @@ In the Explorer (Side Bar), you should see:
 python-m110/
 ├── 📁 code-examples/
 ├── 📁 exercises/
-├── 📁 labs/
 ├── 📁 lectures/
-├── 📁 projects/
 ├── 📁 resources/
+├── 📁 slides-official/
 ├── 📁 venv/
 ├── 📄 README.md
 └── 📄 requirements.txt
@@ -281,10 +284,9 @@ python-m110/
 python-m110/
 ├── 📁 code-examples/
 ├── 📁 exercises/
-├── 📁 labs/
 ├── 📁 lectures/
-├── 📁 projects/
 ├── 📁 resources/
+├── 📁 slides-official/
 ├── 📁 venv/
 ├── 📄 README.md
 └── 📄 requirements.txt
@@ -310,6 +312,8 @@ Make VS Code comfortable for your eyes and preferences.
 2. Or go to **File → Preferences → Theme → Color Theme**
 3. Use arrow keys to preview themes
 4. Press `Enter` to select
+
+<!-- -->
 
 1. اضغط `Ctrl+K` ثم `Ctrl+T` (ويندوز/لينكس) أو `Cmd+K` ثم `Cmd+T` (ماك)
 2. أو اذهب إلى **File → Preferences → Theme → Color Theme**
@@ -409,14 +413,16 @@ Let's practice what you've learned!
 1. Open VS Code
 2. Open the `python-m110` folder
 3. Click on each Activity Bar icon and observe the Side Bar
-4. Open the file `code-examples/week-02-fundamentals/01_hello_world.py`
+4. Open the file `code-examples/chapter-02-fundamentals/01_hello_world.py`
 5. Toggle the terminal panel with `` Ctrl+` ``
 6. Look at the Status Bar - what information do you see?
+
+<!-- -->
 
 1. افتح VS Code
 2. افتح مجلد `python-m110`
 3. انقر على كل أيقونة في شريط الأنشطة ولاحظ الشريط الجانبي
-4. افتح الملف `code-examples/week-02-fundamentals/01_hello_world.py`
+4. افتح الملف `code-examples/chapter-02-fundamentals/01_hello_world.py`
 5. أظهر/أخف لوحة الطرفية باستخدام `` Ctrl+` ``
 6. انظر إلى شريط الحالة - ما المعلومات التي تراها؟
 
@@ -427,6 +433,8 @@ Let's practice what you've learned!
 2. Adjust the font size to your comfort
 3. Open two files side by side (right-click a tab → "Split Right")
 4. Close all open files (right-click a tab → "Close All")
+
+<!-- -->
 
 1. جرب 3 مظاهر ألوان مختلفة
 2. اضبط حجم الخط لراحتك

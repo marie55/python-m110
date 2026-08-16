@@ -9,7 +9,7 @@
 2. [How to Use This Guide | كيفية استخدام هذا الدليل](#how-to-use-this-guide)
 3. [Learning Tips | نصائح التعلم](#learning-tips)
 4. [Recommended Channels | القنوات الموصى بها](#recommended-channels)
-5. [Week-by-Week Video Resources | المصادر الأسبوعية](#week-by-week-video-resources)
+5. [Chapter-by-Chapter Video Resources | المصادر حسب الفصل](#chapter-by-chapter-video-resources)
 6. [Best Practices | أفضل الممارسات](#best-practices)
 7. [Additional Resources | مصادر إضافية](#additional-resources)
 
@@ -31,7 +31,7 @@ This guide provides curated video tutorials to complement your M110 Python Progr
 
 ### Strategy for Success | استراتيجية النجاح
 
-1. **First**: Review the official lecture slides for the week
+1. **First**: Review the official lecture slides for the chapter
 2. **Second**: Watch the recommended videos to see practical examples
 3. **Third**: Try the code examples from the videos yourself
 4. **Fourth**: Complete the exercises provided in this repository
@@ -39,7 +39,7 @@ This guide provides curated video tutorials to complement your M110 Python Progr
 
 ---
 
-1. **أولاً**: راجع شرائح المحاضرة الرسمية للأسبوع
+1. **أولاً**: راجع شرائح المحاضرة الرسمية للفصل
 2. **ثانياً**: شاهد الفيديوهات الموصى بها لرؤية أمثلة عملية
 3. **ثالثاً**: جرب أمثلة الأكواد من الفيديوهات بنفسك
 4. **رابعاً**: أكمل التمارين المتوفرة في هذا المستودع
@@ -283,10 +283,10 @@ Don't be a passive learner. To get the most from videos:
 
 ---
 
-## Week-by-Week Video Resources | المصادر الأسبوعية
+## Chapter-by-Chapter Video Resources | المصادر حسب الفصل
 
-### Week 1: Algorithms - Flowcharts & Pseudocodes
-### الأسبوع 1: الخوارزميات - المخططات الانسيابية والشفرة الوهمية
+### Chapter 1: Algorithms - Flowcharts & Pseudocodes
+### الفصل 1: الخوارزميات - المخططات الانسيابية والشفرة الوهمية
 
 #### English Resources
 
@@ -326,8 +326,8 @@ Don't be a passive learner. To get the most from videos:
 
 ---
 
-### Week 2: Fundamentals of Python Programming
-### الأسبوع 2: أساسيات برمجة بايثون
+### Chapter 2: Fundamentals of Python Programming
+### الفصل 2: أساسيات برمجة بايثون
 
 #### English Resources
 
@@ -375,8 +375,8 @@ After watching videos, practice:
 
 ---
 
-### Week 3: Decision Structures and Boolean Logic
-### الأسبوع 3: هياكل القرار والمنطق البوليني
+### Chapter 3: Decision Structures and Boolean Logic
+### الفصل 3: هياكل القرار والمنطق البوليني
 
 #### English Resources
 
@@ -423,8 +423,8 @@ After watching videos, practice:
 
 ---
 
-### Week 4: Repetition Structures (Loops)
-### الأسبوع 4: هياكل التكرار (الحلقات)
+### Chapter 4: Repetition Structures (Loops)
+### الفصل 4: هياكل التكرار (الحلقات)
 
 #### English Resources
 
@@ -475,8 +475,8 @@ After watching videos, practice:
 
 ---
 
-### Week 5: Collection Data Types - Lists & Tuples
-### الأسبوع 5: أنواع البيانات التجميعية - القوائم والصفوف
+### Chapter 7: Collection Data Types - Lists & Tuples
+### الفصل 7: أنواع البيانات التجميعية - القوائم والصفوف
 
 #### English Resources
 
@@ -526,8 +526,8 @@ After watching videos, practice:
 
 ---
 
-### Week 7: Functions
-### الأسبوع 7: الدوال
+### Chapter 5: Functions
+### الفصل 5: الدوال
 
 #### English Resources
 
@@ -579,8 +579,8 @@ After watching videos, practice:
 
 ---
 
-### Week 8: Files and Exceptions
-### الأسبوع 8: الملفات والاستثناءات
+### Chapter 6: Files and Exceptions
+### الفصل 6: الملفات والاستثناءات
 
 #### English Resources
 
@@ -633,8 +633,8 @@ After watching videos, practice:
 
 ---
 
-### Week 10: Classes and Object-Oriented Programming (OOP)
-### الأسبوع 10: الفئات والبرمجة الكائنية
+### Chapter 10: Classes and Object-Oriented Programming (OOP)
+### الفصل 10: الفئات والبرمجة الكائنية
 
 #### English Resources
 
@@ -688,8 +688,8 @@ After watching videos, practice:
 
 ---
 
-### Week 11: GUI Programming with Tkinter
-### الأسبوع 11: برمجة الواجهات الرسومية باستخدام Tkinter
+### Chapter 13: GUI Programming with Tkinter
+### الفصل 13: برمجة الواجهات الرسومية باستخدام Tkinter
 
 #### English Resources
 
@@ -884,13 +884,13 @@ After watching videos, practice:
 Create a notebook (physical or digital) with:
 - Key concepts from each video
 - Code snippets and examples
-- Questions to ask instructor
+- Questions to ask Dr. Laila
 - Personal observations and "aha!" moments
 
 أنشئ دفتر ملاحظات (ورقي أو رقمي) يحتوي على:
 - المفاهيم الأساسية من كل فيديو
 - مقتطفات أكواد وأمثلة
-- أسئلة لطرحها على المدرس
+- أسئلة لطرحها على الدكتورة ليلى
 - ملاحظاتك الشخصية ولحظات "آها!"
 
 ---
@@ -939,7 +939,7 @@ If you find a concept difficult:
 2. **Slow down the video**: Use 0.75x or 0.5x speed
 3. **Pause and practice**: Code along with every example
 4. **Search for simpler tutorials**: Look for "Python [topic] for absolute beginners"
-5. **Ask for help**: Instructor, classmates, online forums
+5. **Ask for help**: Dr. Laila, online forums, or a GitHub issue
 
 ---
 
@@ -947,7 +947,7 @@ If you find a concept difficult:
 2. **أبطئ الفيديو**: استخدم سرعة 0.75x أو 0.5x
 3. **أوقف ومارس**: برمج مع كل مثال
 4. **ابحث عن دروس أبسط**: ابحث عن "بايثون [الموضوع] للمبتدئين التامين"
-5. **اطلب المساعدة**: المدرس، زملاء، منتديات إلكترونية
+5. **اطلب المساعدة**: الدكتورة ليلى، منتديات إلكترونية، أو GitHub issue
 
 ---
 
@@ -1060,19 +1060,19 @@ Remember that videos are supplements, not replacements:
 
 تذكر أن الفيديوهات مكملات، وليست بدائل:
 
-1. **Attend lectures**: Nothing replaces live instruction
-2. **Read textbooks**: Written materials offer different perspective
+1. **Read the official slides**: They're the source of truth for this course
+2. **Ask Dr. Laila**: She can walk you through anything a video skipped
 3. **Do exercises**: Practice is essential for programming
 4. **Build projects**: Apply knowledge to real problems
-5. **Ask questions**: Seek clarification from your instructor
+5. **Ask questions**: Open a GitHub issue if you're stuck
 
 ---
 
-1. **احضر المحاضرات**: لا شيء يحل محل التدريس المباشر
-2. **اقرأ الكتب**: المواد المكتوبة تقدم منظور مختلف
+1. **اقرأ الشرائح الرسمية**: هي المصدر الموثوق لهذا المقرر
+2. **اسأل الدكتورة ليلى**: يمكنها أن تشرح لك أي شيء فاتك في الفيديو
 3. **حل التمارين**: الممارسة أساسية للبرمجة
 4. **ابنِ مشاريع**: طبق المعرفة على مشاكل حقيقية
-5. **اطرح أسئلة**: اطلب التوضيح من مدرسك
+5. **اطرح أسئلة**: افتح GitHub issue إذا واجهت مشكلة
 
 ---
 
@@ -1094,11 +1094,8 @@ Video tutorials are powerful learning tools when used correctly. They provide vi
 
 ---
 
-**Course Instructor:** Mohammad Al-Marie
-**المدرس:** محمد المعرية
-
-**Contact:** [Add office hours and contact information]
-**التواصل:** [أضف ساعات المكتب ومعلومات التواصل]
+**Questions about this course?** Ask Dr. Laila, or open a GitHub issue on the course repository.
+**أسئلة حول هذا المقرر؟** اسأل الدكتورة ليلى، أو افتح GitHub issue على مستودع المقرر.
 
 **Last Updated:** October 2025
 **آخر تحديث:** أكتوبر 2025

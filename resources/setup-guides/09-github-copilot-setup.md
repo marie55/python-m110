@@ -906,8 +906,8 @@ You're all set with GitHub Copilot!
 Now:
 الآن:
 
-1. **Practice with examples** - Try it on Week 1 code
-   **تدرب مع الأمثلة** - جربه على كود الأسبوع 1
+1. **Practice with examples** - Try it on Chapter 1 code
+   **تدرب مع الأمثلة** - جربه على كود الفصل الأول
 
 2. **Use @learning-assistant** - Ask about Python concepts
    **استخدم @learning-assistant** - اسأل عن مفاهيم Python

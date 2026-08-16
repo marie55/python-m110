@@ -607,6 +607,8 @@ To change: Click dropdown arrow next to + button → Select Default Profile
 2. Search: "terminal font size"
 3. Adjust "Terminal › Integrated: Font Size"
 
+<!-- -->
+
 1. افتح الإعدادات: `Ctrl+,` (Mac: `Cmd+,`)
 2. ابحث: "terminal font size"
 3. اضبط "Terminal › Integrated: Font Size"
@@ -617,6 +619,8 @@ To change: Click dropdown arrow next to + button → Select Default Profile
 1. Open Settings
 2. Search: "terminal color"
 3. Modify colors or choose a theme
+
+<!-- -->
 
 1. افتح الإعدادات
 2. ابحث: "terminal color"
@@ -796,6 +800,8 @@ type my_requirements.txt  # Windows
 3. In Terminal 2: Navigate to `exercises` folder
 4. In Terminal 3: List pip packages
 5. Switch between them using the dropdown
+
+<!-- -->
 
 1. أنشئ 3 طرفيات باستخدام زر +
 2. في الطرفية 1: شغّل `python` للوضع التفاعلي

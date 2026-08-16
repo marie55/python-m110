@@ -27,7 +27,7 @@ graph LR
 | Command | Purpose | Example |
 |---------|---------|---------|
 | **Clone repository** / **نسخ المستودع** | | |
-| `git clone <url>` | Get course materials / الحصول على مواد المقرر | `git clone https://github.com/instructor/python-m110.git` |
+| `git clone <url>` | Get course materials / الحصول على مواد المقرر | `git clone https://github.com/marie55/python-m110.git` |
 | | | Creates folder `python-m110/` |
 | **Check status** / **فحص الحالة** | | |
 | `git status` | See what's changed / رؤية التغييرات | Shows modified/new files |
@@ -40,7 +40,7 @@ graph LR
 | Command | Purpose | When to Use |
 |---------|---------|-------------|
 | **Pull updates** / **سحب التحديثات** | | |
-| `git pull origin main` | Get latest from instructor / احصل على آخر التحديثات من المدرس | Every week before class / كل أسبوع قبل الحصة |
+| `git pull origin main` | Get the latest updates / احصل على أحدث التحديثات | Whenever you like / كلما أردت |
 | `git pull` | Same (if configured) / نفس الأمر (إذا تم التكوين) | Shorter version / نسخة مختصرة |
 
 ⚠️ **Important**: Always pull before starting work!
@@ -55,7 +55,7 @@ graph LR
 |---------|---------|----------------|
 | **View commits** / **عرض الالتزامات** | | |
 | `git log` | See full history / عرض السجل الكامل | Detailed commit info |
-| `git log --oneline` | Compact history / سجل مختصر | `a1b2c3d Added week 3 exercises` |
+| `git log --oneline` | Compact history / سجل مختصر | `a1b2c3d Added chapter 3 exercises` |
 | `git log -3` | Last 3 commits / آخر 3 التزامات | Shows recent changes |
 | **See changes** / **رؤية التغييرات** | | |
 | `git diff` | What changed? / ما الذي تغير؟ | Shows line-by-line changes |
@@ -104,7 +104,7 @@ git pull origin main
 ### Problem 2: "Merge conflicts"
 ### المشكلة 2: "تضارب الدمج"
 ```bash
-# Option 1: Keep instructor's version / احتفظ بنسخة المدرس
+# Option 1: Keep the upstream version / احتفظ بالنسخة البعيدة
 git checkout --theirs <file>
 git add <file>
 git commit -m "Resolved conflict"
@@ -148,7 +148,7 @@ git commit --amend -m "New message"
 | `ls` | See files / رؤية الملفات | Shows all files/folders |
 | `ls -la` | Detailed list / قائمة مفصلة | Shows hidden files too |
 | **Change directory** / **تغيير المجلد** | | |
-| `cd <folder>` | Enter folder / دخول المجلد | `cd exercises/week-03` |
+| `cd <folder>` | Enter folder / دخول المجلد | `cd exercises/chapter-03-decision-structures` |
 | `cd ..` | Go back / الرجوع | Up one level |
 | `cd ~` | Home directory / المجلد الرئيسي | Your user folder |
 
@@ -176,16 +176,16 @@ git config --list
 ```bash
 # 1. First time: Clone the course repository
 # المرة الأولى: نسخ مستودع المقرر
-git clone https://github.com/instructor/python-m110.git
+git clone https://github.com/marie55/python-m110.git
 cd python-m110
 
-# 2. Every week: Get updates
-# كل أسبوع: احصل على التحديثات
+# 2. Whenever you like: Get updates
+# كلما أردت: احصل على التحديثات
 git pull origin main
 
 # 3. Work on exercises
 # اعمل على التمارين
-cd exercises/week-03
+cd exercises/chapter-03-decision-structures
 python exercise1.py
 
 # 4. (Optional) Save your work
@@ -207,7 +207,7 @@ git log --oneline
 | Task | Command |
 |------|---------|
 | **Get course materials** / **احصل على مواد المقرر** | `git clone <url>` |
-| **Get weekly updates** / **احصل على التحديثات الأسبوعية** | `git pull origin main` |
+| **Get updates** / **احصل على التحديثات** | `git pull origin main` |
 | **Check what changed** / **تحقق من التغييرات** | `git status` |
 | **View history** / **عرض السجل** | `git log --oneline` |
 | **See differences** / **رؤية الاختلافات** | `git diff` |
@@ -217,8 +217,8 @@ git log --oneline
 ## ✅ Best Practices for Students
 ## ✅ أفضل الممارسات للطلاب
 
-- 📥 **Pull frequently**: Get updates before each class
-  **اسحب بكثرة**: احصل على التحديثات قبل كل حصة
+- 📥 **Pull frequently**: Get updates before each study session
+  **اسحب بكثرة**: احصل على التحديثات قبل كل جلسة دراسة
 
 - 📝 **Make copies**: Work on copies of exercise files
   **اصنع نسخ**: اعمل على نسخ من ملفات التمارين
@@ -240,8 +240,8 @@ git log --oneline
 - **Git documentation**: https://git-scm.com/doc
 - **GitHub guides**: https://guides.github.com
 - **Interactive tutorial**: https://learngitbranching.js.org
-- **Ask instructor during office hours!**
-  **اسأل المدرس خلال الساعات المكتبية!**
+- **Ask Dr. Laila, or open a GitHub issue!**
+  **اسأل الدكتورة ليلى، أو افتح GitHub issue!**
 
 ---
 

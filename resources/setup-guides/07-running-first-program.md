@@ -112,8 +112,8 @@ Before running your first program:
 
 ---
 
-## Part 2: Navigating to Week 1 Examples
-## الجزء 2: الانتقال إلى أمثلة الأسبوع 1
+## Part 2: Navigating to Chapter 2 Examples
+## الجزء 2: الانتقال إلى أمثلة الفصل الثاني
 
 ### Step 1: Open the Explorer
 ### الخطوة 1: فتح المستكشف
@@ -127,14 +127,14 @@ Before running your first program:
 2. You'll see the folder structure
    سترى بنية المجلدات
 
-### Step 2: Navigate to Week 1
-### الخطوة 2: الانتقال إلى الأسبوع 1
+### Step 2: Navigate to Chapter 2
+### الخطوة 2: الانتقال إلى الفصل الثاني
 
 1. Expand the `code-examples` folder (click the arrow ▶)
    وسّع مجلد `code-examples` (انقر السهم ▶)
 
-2. Expand `week-01-algorithms`
-   وسّع `week-01-algorithms`
+2. Expand `chapter-02-fundamentals`
+   وسّع `chapter-02-fundamentals`
 
 3. You'll see Python files (.py) inside
    سترى ملفات بايثون (.py) بالداخل
@@ -151,34 +151,38 @@ Before running your first program:
 3. You should see colorful syntax highlighting!
    يجب أن ترى تلوين كود ملون!
 
-📸 **Screenshot location:** VS Code Explorer with week-01 folder expanded
+📸 **Screenshot location:** VS Code Explorer with chapter-02-fundamentals folder expanded
 
 ---
 
 ## Part 3: Understanding the Code
 ## الجزء 3: فهم الكود
 
-Let's look at the `hello_world.py` file:
-دعنا ننظر إلى ملف `hello_world.py`:
+Let's look at the `01_hello_world.py` file:
+دعنا ننظر إلى ملف `01_hello_world.py`:
 
 ```python
 """
-Hello World - Your First Python Program
-مرحبا بالعالم - أول برنامج بايثون لك
+M110 - Python Programming
+Chapter 2: Fundamentals of Python Programming
+Topic: Your First Program
+الفصل 2: أساسيات برمجة بايثون
+الموضوع: برنامجك الأول
 
-This program prints a greeting message to the console.
-يطبع هذا البرنامج رسالة ترحيب إلى وحدة التحكم.
+This is the traditional first program every programmer writes.
+هذا هو البرنامج الأول التقليدي الذي يكتبه كل مبرمج.
+
+It demonstrates the print() function, which displays text on the screen.
+يوضح دالة print() التي تعرض النص على الشاشة.
 """
 
-# Print a greeting in English / طباعة تحية بالإنجليزية
+# Display a greeting / عرض تحية
 print("Hello, World!")
-
-# Print a greeting in Arabic / طباعة تحية بالعربية
 print("مرحباً بالعالم!")
 
-# Print your name / طباعة اسمك
-print("Welcome to M110 Python Programming!")
-print("مرحباً بك في برمجة بايثون M110!")
+# Display a message about the course / عرض رسالة عن المقرر
+print("Welcome to M110 - Python Programming")
+print("أهلاً بك في M110 - برمجة بايثون")
 ```
 
 ### Code Breakdown
@@ -234,8 +238,8 @@ Now let's run this program! There are several ways.
    ```
    Hello, World!
    مرحباً بالعالم!
-   Welcome to M110 Python Programming!
-   مرحباً بك في برمجة بايثون M110!
+   Welcome to M110 - Python Programming
+   أهلاً بك في M110 - برمجة بايثون
    ```
 
 🎉 **Congratulations! You just ran your first Python program!**
@@ -346,7 +350,7 @@ Understanding how to run Python from the terminal is important for professional 
    اكتب:
 
    ```bash
-   cd code-examples/week-01-algorithms
+   cd code-examples/chapter-02-fundamentals
    ```
 
 2. Press **Enter**
@@ -393,8 +397,8 @@ Understanding how to run Python from the terminal is important for professional 
    ```
    Hello, World!
    مرحباً بالعالم!
-   Welcome to M110 Python Programming!
-   مرحباً بك في برمجة بايثون M110!
+   Welcome to M110 - Python Programming
+   أهلاً بك في M110 - برمجة بايثون
    ```
 
 📸 **Screenshot location:** Terminal showing the python command and output
@@ -414,12 +418,12 @@ You might see something like this in the terminal:
 قد ترى شيئاً مثل هذا في الطرفية:
 
 ```
-(venv) PS C:\Users\YourName\python-m110\code-examples\week-01-algorithms> python 01_hello_world.py
+(venv) PS C:\Users\YourName\python-m110\code-examples\chapter-02-fundamentals> python 01_hello_world.py
 Hello, World!
 مرحباً بالعالم!
-Welcome to M110 Python Programming!
-مرحباً بك في برمجة بايثون M110!
-(venv) PS C:\Users\YourName\python-m110\code-examples\week-01-algorithms>
+Welcome to M110 - Python Programming
+أهلاً بك في M110 - برمجة بايثون
+(venv) PS C:\Users\YourName\python-m110\code-examples\chapter-02-fundamentals>
 ```
 
 **Breakdown:**
@@ -428,8 +432,8 @@ Welcome to M110 Python Programming!
 1. **(venv)** - Virtual environment is active
    **(venv)** - البيئة الافتراضية نشطة
 
-2. **PS C:\...\week-01-algorithms>** - Current directory (prompt)
-   **PS C:\...\week-01-algorithms>** - المجلد الحالي (موجه الأوامر)
+2. **PS C:\...\chapter-02-fundamentals>** - Current directory (prompt)
+   **PS C:\...\chapter-02-fundamentals>** - المجلد الحالي (موجه الأوامر)
 
 3. **python 01_hello_world.py** - The command you typed
    **python 01_hello_world.py** - الأمر الذي كتبته
@@ -473,7 +477,7 @@ Now let's modify the program to make it your own!
    في المحرر، ابحث عن هذا السطر:
 
    ```python
-   print("Welcome to M110 Python Programming!")
+   print("Welcome to M110 - Python Programming")
    ```
 
 2. Change it to print your name:
@@ -538,20 +542,20 @@ Now let's modify the program to make it your own!
 ## Part 8: Exploring Other Examples
 ## الجزء 8: استكشاف أمثلة أخرى
 
-The `week-01-algorithms` folder has more examples to try!
-مجلد `week-01-algorithms` به أمثلة أكثر لتجربتها!
+Ready for more? The `code-examples/chapter-01-algorithms` folder has more examples to try - covering the algorithm building blocks (sequence, decision, and repetition) from Chapter 1.
+مستعد للمزيد؟ يحتوي مجلد `code-examples/chapter-01-algorithms` على أمثلة أكثر لتجربتها - تغطي لبنات الخوارزميات الأساسية (التسلسل والقرار والتكرار) من الفصل الأول.
 
 ### Available Examples
 ### الأمثلة المتاحة
 
-1. **02_variables.py** - Learn about variables
-   **02_variables.py** - تعلّم عن المتغيرات
+1. **01_sequence_average.py** - Calculate an average (sequence structure)
+   **01_sequence_average.py** - احسب متوسطاً (بنية التسلسل)
 
-2. **03_user_input.py** - Get input from users
-   **03_user_input.py** - احصل على إدخال من المستخدمين
+2. **02_decision_even_odd.py** - Check even or odd numbers (decision structure)
+   **02_decision_even_odd.py** - افحص الأرقام الزوجية والفردية (بنية القرار)
 
-3. **04_simple_calculator.py** - Build a basic calculator
-   **04_simple_calculator.py** - ابنِ آلة حاسبة أساسية
+3. **05_grade_calculator_complete.py** - A complete grade calculator (all three structures)
+   **05_grade_calculator_complete.py** - حاسبة درجات كاملة (التراكيب الثلاثة كلها)
 
 ### Try Each One!
 ### جرب كل واحد!
@@ -615,8 +619,8 @@ The `week-01-algorithms` folder has more examples to try!
    cd   # Windows
    ```
 
-2. Make sure you're in `code-examples/week-01-algorithms/`
-   تأكد من أنك في `code-examples/week-01-algorithms/`
+2. Make sure you're in `code-examples/chapter-02-fundamentals/`
+   تأكد من أنك في `code-examples/chapter-02-fundamentals/`
 
 3. Check the exact file name (case-sensitive on Mac/Linux!)
    تحقق من اسم الملف الدقيق (حساس لحالة الأحرف على ماك/لينكس!)
@@ -832,14 +836,14 @@ Excellent work! You've successfully run your first Python program! 🎉
 Now you can:
 الآن يمكنك:
 
-1. **Explore more examples** in `code-examples/week-01-algorithms/`
-   **استكشف أمثلة أكثر** في `code-examples/week-01-algorithms/`
+1. **Explore more examples** in `code-examples/chapter-01-algorithms/`
+   **استكشف أمثلة أكثر** في `code-examples/chapter-01-algorithms/`
 
-2. **Start Week 1 lectures** - Check `lectures/week-01/`
-   **ابدأ محاضرات الأسبوع 1** - راجع `lectures/week-01/`
+2. **Read the Chapter 1 notes** - Check `lectures/chapter-01-algorithms/`
+   **اقرأ ملاحظات الفصل الأول** - راجع `lectures/chapter-01-algorithms/`
 
-3. **Try the exercises** - Go to `exercises/week-01/`
-   **جرب التمارين** - اذهب إلى `exercises/week-01/`
+3. **Try the exercises** - Go to `exercises/chapter-01-algorithms/`
+   **جرب التمارين** - اذهب إلى `exercises/chapter-01-algorithms/`
 
 4. **Optional: Set up AI assistants** - [08-claude-code-extension-setup.md](08-claude-code-extension-setup.md)
    **اختياري: إعداد مساعدي الذكاء الاصطناعي** - [08-claude-code-extension-setup.md](08-claude-code-extension-setup.md)
@@ -861,8 +865,8 @@ Now you can:
 - 💬 **Read error messages** - They usually tell you what's wrong
 - 💬 **اقرأ رسائل الأخطاء** - عادة ما تخبرك بما هو خاطئ
 
-- 🙋 **Ask for help** - Instructors and classmates are there for you
-- 🙋 **اطلب المساعدة** - المدرسون والزملاء موجودون من أجلك
+- 🙋 **Ask for help** - Dr. Laila is there for you, or open a GitHub issue
+- 🙋 **اطلب المساعدة** - الدكتورة ليلى موجودة من أجلك، أو افتح GitHub issue
 
 - 🎯 **Practice daily** - Even 15 minutes makes a difference
 - 🎯 **تدرب يومياً** - حتى 15 دقيقة تحدث فرقاً

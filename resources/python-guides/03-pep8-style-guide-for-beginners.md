@@ -87,8 +87,8 @@ max_students = 30    # Looks like a variable
 MaxStudents = 30     # Wrong style
 ```
 
-#### Class Names: `PascalCase` (Week 10)
-#### أسماء الفئات: `PascalCase` (الأسبوع 10)
+#### Class Names: `PascalCase` (Chapter 10)
+#### أسماء الفئات: `PascalCase` (الفصل 10)
 ```python
 # ✅ Good
 class Student:

@@ -22,8 +22,8 @@ This guide covers solutions to common problems you might encounter while setting
 2. **Try the solutions** - Follow steps in order
    **جرب الحلول** - اتبع الخطوات بالترتيب
 
-3. **Still stuck?** - Contact your instructor
-   **لا تزال عالقاً؟** - اتصل بمدرسك
+3. **Still stuck?** - Ask Dr. Laila, or open a GitHub issue
+   **لا تزال عالقاً؟** - اسأل الدكتورة ليلى، أو افتح GitHub issue
 
 ---
 
@@ -1121,8 +1121,8 @@ chmod -R 755 directory/
 ### When to Ask for Help
 ### متى تطلب المساعدة
 
-Ask your instructor if:
-اسأل مدرسك إذا:
+Ask Dr. Laila or open a GitHub issue if:
+اسأل الدكتورة ليلى أو افتح GitHub issue إذا:
 
 - You tried all solutions here
 - جربت جميع الحلول هنا
@@ -1145,8 +1145,8 @@ When asking for help, provide:
 1. **What you were trying to do**
    **ما كنت تحاول فعله**
 
-   - "I was trying to run my Week 1 exercise"
-   - "كنت أحاول تشغيل تمرين الأسبوع 1"
+   - "I was trying to run my Chapter 1 exercise"
+   - "كنت أحاول تشغيل تمرين الفصل الأول"
 
 2. **Exact error message**
    **رسالة الخطأ الدقيقة**

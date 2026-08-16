@@ -213,8 +213,8 @@ Skip to the examples section—they're usually at the bottom:
 - **ابدأ بـ:** المسائل "السهلة" فقط
 - Filter by "Python" and "Easy"
 - صنّف حسب "Python" و"Easy"
-- More advanced (use after week 8)
-- أكثر تقدماً (استخدم بعد الأسبوع 8)
+- More advanced (use once you've covered functions and file handling)
+- أكثر تقدماً (استخدم بعد أن تغطي الدوال والتعامل مع الملفات)
 
 #### 4. **Python Exercises**
 - **Link:** [w3resource.com/python-exercises](https://www.w3resource.com/python-exercises/)
@@ -369,31 +369,31 @@ Example: "Python functions for beginners"
 # Tomorrow I will:
 ```
 
-### Personal Projects Ideas (By Week):
-### أفكار مشاريع شخصية (حسب الأسبوع):
+### Personal Projects Ideas (By Stage):
+### أفكار مشاريع شخصية (حسب المرحلة):
 
-**Weeks 1-2: Super Simple**
+**Stage 1: Super Simple**
 ```python
 # 1. Personal greeting program
 # 2. Age calculator
 # 3. Temperature converter
 ```
 
-**Weeks 3-4: Using Conditions**
+**Stage 2: Using Conditions**
 ```python
 # 1. Simple quiz game
 # 2. Grade calculator
 # 3. Password strength checker
 ```
 
-**Weeks 5-6: Lists and Loops**
+**Stage 3: Lists and Loops**
 ```python
 # 1. Shopping list manager
 # 2. Student grades tracker
 # 3. Number guessing game
 ```
 
-**Weeks 7-8: Functions and Files**
+**Stage 4: Functions and Files**
 ```python
 # 1. Contact book
 # 2. Expense tracker
@@ -428,10 +428,10 @@ Example: "Python functions for beginners"
 ## Creating Your Learning Path
 ## إنشاء مسار التعلم الخاص بك
 
-### Week-by-Week Resource Guide:
-### دليل الموارد أسبوع بأسبوع:
+### Stage-by-Stage Resource Guide:
+### دليل الموارد حسب المرحلة:
 
-**Week 1-2 (Basics):**
+**Stage 1 (Basics):**
 - Watch: Mosh's Python for Beginners (first 2 hours)
 - شاهد: Mosh's Python للمبتدئين (أول ساعتين)
 - Practice: W3Schools exercises
@@ -439,17 +439,17 @@ Example: "Python functions for beginners"
 - Read: Python.org tutorial (chapters 1-3)
 - اقرأ: دليل Python.org (الفصول 1-3)
 
-**Week 3-4 (Conditions & Loops):**
+**Stage 2 (Conditions & Loops):**
 - Watch: Corey Schafer's conditionals and loops
 - Practice: HackerRank Introduction challenges
 - Try: Build a simple calculator
 
-**Week 5-6 (Data Structures):**
+**Stage 3 (Data Structures):**
 - Watch: Lists and tuples tutorials
 - Practice: W3Resource list exercises
 - Project: Create a grade management system
 
-**Week 7-8 (Functions & Files):**
+**Stage 4 (Functions & Files):**
 - Read: "Automate the Boring Stuff" chapters on functions
 - Practice: CodeWars 8-7 kyu problems
 - Project: Build a contact manager with file storage
@@ -531,7 +531,7 @@ Example: "Python functions for beginners"
 │   └── Current course playlist
 ├── 💪 Practice
 │   ├── HackerRank
-│   └── Current week exercises
+│   └── Current chapter exercises
 ├── 🆘 Help
 │   ├── Stack Overflow
 │   └── r/learnpython
@@ -544,8 +544,8 @@ Example: "Python functions for beginners"
 ## Practice Challenge
 ## تحدي الممارسة
 
-**This Week's Challenge:**
-**تحدي هذا الأسبوع:**
+**Your Starter Challenge:**
+**تحدي البداية الخاص بك:**
 
 1. Find and bookmark 3 resources from this guide
    اعثر على 3 موارد من هذا الدليل واحفظها

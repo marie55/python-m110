@@ -339,6 +339,8 @@ Your GitHub profile can showcase your work to future employers!
 3. **Backup** - Code is never lost
 4. **Experimentation** - Can try new features safely
 
+<!-- -->
+
 1. **التعاون الجماعي** - يمكن لعدة مطورين العمل معًا
 2. **تاريخ الكود** - يمكن رؤية من غيّر ماذا ولماذا
 3. **النسخ الاحتياطي** - لا يضيع الكود أبدًا
@@ -362,6 +364,8 @@ Think about a time when you wished you could "undo" changes to a document or pro
 1. What's one thing about Git that excites you?
 2. What's one thing that seems challenging?
 3. How might Git skills help in your future career?
+
+<!-- -->
 
 1. ما الشيء الوحيد حول Git الذي يثير حماسك؟
 2. ما الشيء الوحيد الذي يبدو صعبًا؟

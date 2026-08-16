@@ -137,8 +137,8 @@ If cost is a concern, consider:
 - ChatGPT Free (web-based, not integrated with VS Code)
 - ChatGPT مجاني (على الويب، غير مدمج مع VS Code)
 
-- Ask your instructor during office hours
-- اسأل مدرسك خلال الساعات المكتبية
+- Ask Dr. Laila, or open a GitHub issue
+- اسأل الدكتورة ليلى، أو افتح GitHub issue
 
 ---
 
@@ -459,8 +459,8 @@ Dr. Laila is a custom configuration designed specifically for M110 students.
 ### What Makes Dr. Laila Special?
 ### ما الذي يجعل الدكتورة ليلى خاصة؟
 
-- Knows the M110 curriculum and weekly topics
-- تعرف منهج M110 والمواضيع الأسبوعية
+- Knows the M110 curriculum and every chapter's topics
+- تعرف منهج M110 ومواضيع كل فصل
 
 - Explains at beginner-friendly level
 - تشرح على مستوى مناسب للمبتدئين
@@ -751,17 +751,14 @@ See [09-github-copilot-setup.md](09-github-copilot-setup.md)
 - Copy/paste code
 - انسخ/الصق الكود
 
-### 3. Office Hours with Instructor
-### 3. الساعات المكتبية مع المدرس
+### 3. GitHub Issues
+### 3. GitHub Issues
 
-- Free and personalized
-- مجاني ومخصص
+- Free, and the answers can help other students too
+- مجاني، والإجابات قد تساعد طلاباً آخرين أيضاً
 
-- Best for assignment help
-- الأفضل للمساعدة في الواجبات
-
-- Builds relationship with instructor
-- يبني علاقة مع المدرس
+- Best for questions about the course repository itself
+- الأفضل للأسئلة حول مستودع المقرر نفسه
 
 ---
 

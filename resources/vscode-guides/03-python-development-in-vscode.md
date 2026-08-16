@@ -70,6 +70,8 @@ The Python extension transforms VS Code into a powerful Python IDE.
 1. Click the Extensions icon in Activity Bar (🧩)
 2. Or press `Ctrl+Shift+X` (Mac: `Cmd+Shift+X`)
 
+<!-- -->
+
 1. انقر على أيقونة الإضافات في شريط الأنشطة (🧩)
 2. أو اضغط `Ctrl+Shift+X` (Mac: `Cmd+Shift+X`)
 
@@ -80,6 +82,8 @@ The Python extension transforms VS Code into a powerful Python IDE.
 2. Look for **"Python"** by Microsoft (has millions of downloads)
 3. Click the blue **"Install"** button
 4. Wait for installation to complete (about 30 seconds)
+
+<!-- -->
 
 1. اكتب "Python" في صندوق البحث
 2. ابحث عن **"Python"** من Microsoft (لديها ملايين التحميلات)
@@ -136,6 +140,8 @@ Your computer might have multiple Python versions:
 3. A list appears at the top
 4. Select: **`./venv/bin/python`** (Mac/Linux) or **`.\venv\Scripts\python.exe`** (Windows)
 
+<!-- -->
+
 1. انظر إلى شريط الحالة السفلي الأيمن
 2. انقر على إصدار بايثون المعروض (مثل "Python 3.11.2")
 3. تظهر قائمة في الأعلى
@@ -148,6 +154,8 @@ Your computer might have multiple Python versions:
 2. Type "Python: Select Interpreter"
 3. Press `Enter`
 4. Choose the one with **`venv`** in the path
+
+<!-- -->
 
 1. اضغط `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`)
 2. اكتب "Python: Select Interpreter"
@@ -197,6 +205,8 @@ IntelliSense مثل وجود خبير بايثون يجلس بجانبك!
 2. IntelliSense shows suggestions
 3. Use arrow keys to select
 4. Press `Tab` or `Enter` to accept
+
+<!-- -->
 
 1. ابدأ بالكتابة: `prin`
 2. يظهر IntelliSense الاقتراحات
@@ -306,6 +316,8 @@ x=5+3             # 💚 Missing whitespace around operator
 2. Or click "Problems" tab in the panel
 3. Click any problem to jump to that line
 
+<!-- -->
+
 1. اضغط `Ctrl+Shift+M` (Mac: `Cmd+Shift+M`)
 2. أو انقر على تبويب "Problems" في اللوحة
 3. انقر على أي مشكلة للقفز لذلك السطر
@@ -369,6 +381,8 @@ Python Enhancement Proposal 8 - دليل أسلوب بايثون الرسمي:
 2. Search for "format on save"
 3. Check the box for "Editor: Format On Save"
 4. Now your code formats automatically when you save!
+
+<!-- -->
 
 1. افتح الإعدادات: `Ctrl+,` (Mac: `Cmd+,`)
 2. ابحث عن "format on save"
@@ -446,6 +460,8 @@ VS Code يوفر طرق متعددة لتشغيل كود بايثون. اختر 
 2. Click the ▶️ button in top-right
 3. Output appears in terminal
 
+<!-- -->
+
 1. افتح ملف `.py`
 2. انقر على زر ▶️ في الأعلى الأيمن
 3. يظهر الإخراج في الطرفية
@@ -462,6 +478,8 @@ Press `Ctrl+F5` (Mac: `Cmd+F5`) to run without debugging.
 
 1. Right-click in the editor
 2. Select "Run Python File in Terminal"
+
+<!-- -->
 
 1. انقر بزر الماوس الأيمن في المحرر
 2. اختر "Run Python File in Terminal"
@@ -488,6 +506,8 @@ python3 your_file.py  # ماك/لينكس
 2. Press `Shift+Enter`
 3. Code runs in Python interactive window
 
+<!-- -->
+
 1. حدد الكود الذي تريد تشغيله
 2. اضغط `Shift+Enter`
 3. يعمل الكود في نافذة بايثون التفاعلية
@@ -497,14 +517,14 @@ python3 your_file.py  # ماك/لينكس
 
 When you run code, the terminal shows:
 ```
-(venv) PS C:\python-m110> python code-examples/week-02/hello.py
+(venv) PS C:\python-m110> python code-examples/chapter-02-fundamentals/01_hello_world.py
 Hello, World!
 (venv) PS C:\python-m110>
 ```
 
 عندما تشغل الكود، تظهر الطرفية:
 ```
-(venv) PS C:\python-m110> python code-examples/week-02/hello.py
+(venv) PS C:\python-m110> python code-examples/chapter-02-fundamentals/01_hello_world.py
 Hello, World!
 (venv) PS C:\python-m110>
 ```
@@ -610,6 +630,8 @@ print("Hello")  # ❌ Needs indentation
 4. **Check the line above** - Sometimes the error is there
 5. **Google the error** - Someone else had this problem too!
 
+<!-- -->
+
 1. **اقرأ نوع الخطأ أولاً** (NameError، SyntaxError، إلخ.)
 2. **انظر إلى رقم السطر** - انقر للقفز إليه
 3. **اقرأ رسالة الخطأ** - عادة تخبرك بالضبط ما الخطأ
@@ -631,6 +653,8 @@ Debugging lets you run code line by line to find bugs. It's like slow-motion for
 1. Click to the left of a line number
 2. A red dot appears (breakpoint)
 3. Code will pause here when debugging
+
+<!-- -->
 
 1. انقر على يسار رقم السطر
 2. تظهر نقطة حمراء (نقطة توقف)
@@ -694,6 +718,8 @@ else:
 ```
 3. Run it with the ▶️ button
 4. Verify you see "✅ Using virtual environment!"
+
+<!-- -->
 
 1. أنشئ ملفًا جديدًا: `test_setup.py`
 2. اكتب هذا الكود:
