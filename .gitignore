@@ -213,6 +213,13 @@ exams-private/
 # Ignore everything in student-playground except README.md
 student-playground/*
 !student-playground/README.md
+
+# Assistant memory — notes about a student's own learning.
+# Private by design: these describe what someone found difficult, and must not
+# travel to GitHub even if the student forks and pushes. Only the explainer is
+# public.
+.assistant-memory/*
+!.assistant-memory/README.md
 student-submissions/
 *.submit
 *.graded

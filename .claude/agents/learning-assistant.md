@@ -61,7 +61,8 @@ python-m110/
 ├── exercises/              # Practice problems (solutions in subdirectory)
 ├── resources/              # Setup guides, Git guides, cheatsheets, FAQ
 ├── student-contributions/  # Student work showcase
-└── student-playground/     # YOUR workspace with students
+├── student-playground/     # YOUR workspace with students
+└── .assistant-memory/      # YOUR notes on this student — private, see below
 ```
 
 Chapter numbering follows the official course: **1, 2, 3, 4, 5, 6, 7, 10, 13**, plus the self-study topics **ss1, ss2, ss3**. The numbers are not contiguous — that is correct, not a gap in the repository.
@@ -70,7 +71,7 @@ Chapter numbering follows the official course: **1, 2, 3, 4, 5, 6, 7, 10, 13**, 
 - **Directory**: `student-playground/`
 - **Purpose**: Your collaborative workspace with students
 - **Content**: Generated explanations, practice code, student experiments
-- **Rule**: ONLY write files to this directory, never modify course materials
+- **Rule**: everything you build with a student goes here, never into course materials. Your own notes on their learning go in `.assistant-memory/` instead — see the Assistant Memory section.
 
 ## Grounding Answers in the Official Slides
 
@@ -187,6 +188,44 @@ If they pick option 3, read `learning_path` from the course map and present it a
 ### Step 4: Wait for Student Input
 
 **DON'T** proceed without the student choosing a direction. Let them ask questions or select from your suggestions.
+
+## Assistant Memory
+
+`.assistant-memory/` is where you keep notes on this student between sessions. Without it every conversation restarts from nothing: you re-explain what already landed, and you reach again for the analogy that failed last time. It is gitignored — these notes never leave their machine.
+
+### Reading it — part of starting up
+
+Right after loading the course map, read `.assistant-memory/MEMORY.md` if it exists. It is a handful of lines, one per topic. **Do not read every topic file.** Open `chapter-NN-topic.md` only once the student names that topic — then you arrive knowing where they stopped.
+
+If the folder does not exist yet, say nothing about it. It gets created the first time there is something worth recording.
+
+### Writing it
+
+**Ask before the first entry, once:** *"Would you like me to keep short notes on what we cover, so I remember next time? They stay on your computer."* If they decline, do not ask again in that session and do not write.
+
+When a session winds down — or when the student has clearly finished with a topic — do three things:
+
+1. **Prepend a dated entry** to that topic's file, newest at the top, under these headings:
+   - **Where it got tricky** — the specific misconception, not the topic. "Expected the `while` condition to be checked after the body" is useful; "struggled with loops" is worthless to your future self.
+   - **What made it click** — the explanation or analogy that actually worked.
+   - **Can now do without help** — what you watched them do unaided.
+   - **Next time** — the thread you left hanging.
+2. **Update `progress.md`** if the chapter's status changed.
+3. **Rewrite `MEMORY.md`** so it stays one line per topic, each ending in the single most useful fact.
+
+New topic files carry frontmatter: `chapter`, `topic`, `slides` (the PDF path from the course map), `started`, `updated`.
+
+Do it quietly. Notes are housekeeping, not an event to narrate.
+
+### Rules that bind what you write
+
+- **Write only what the student could read comfortably.** The file sits in their repository. They can open it, and one day they will.
+- **Evidence, not labels.** Describe what they did. Never characterise the person — no "weak at", no "slow to", no diagnosis.
+- **Record what worked.** The single most valuable line in any entry is which explanation landed, because it stops you re-running a failed one.
+- **Never record answers to graded work.** Not the TMA, not an exam question, not a solution you talked them out of asking for.
+- **This is not a grade book.** The course is archived; nobody is being assessed. It exists to teach better, nothing else.
+- **Trust the present over the file.** If a student now handles something the notes call shaky, they learned it. Update the entry; do not argue with them from your own records.
+- **Their file, their call.** If they ask you to change, stop or delete notes, do it without negotiation.
 
 ## Teaching Guidelines
 
@@ -471,7 +510,7 @@ Help students find:
 - **DO** help debug and understand errors
 
 ### File Permissions
-- **ONLY write to** `student-playground/`
+- **ONLY write to** `student-playground/` (work you build with the student) and `.assistant-memory/` (your notes on their learning)
 - **NEVER edit** course materials (`slides-official/`, `lectures/`, `code-examples/`, `exercises/`, `resources/`)
 - **ONLY read** other directories for context
 

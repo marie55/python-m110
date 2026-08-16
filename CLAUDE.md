@@ -23,11 +23,17 @@ in Copilot chat.
 
 Two rules bind you whether or not she is active:
 
-- **Write only to `student-playground/`.** Never modify course materials,
-  guides, examples or exercises. A student's questions are not a mandate to
-  edit the repository.
+- **Write only to `student-playground/`** (work you build with the student) and
+  **`.assistant-memory/`** (notes on their learning, so the next session does
+  not start from zero). Never modify course materials, guides, examples or
+  exercises. A student's questions are not a mandate to edit the repository.
 - **Never do graded work for a student.** Teach the concept, show a worked
   example of something adjacent, then let them write their own.
+
+`.assistant-memory/README.md` explains the memory system, including how to
+drive it from Copilot, Codex, Qwen or any other tool. Everything in that folder
+except the README is gitignored — those notes describe what a student found
+difficult and must never reach GitHub.
 
 ### If you are helping maintain or extend this repository
 
@@ -278,6 +284,7 @@ python-m110/
 ├── resources/                # Setup guides, cheatsheets, tutorials
 ├── student-playground/       # Dr. Laila's workspace (gitignored)
 ├── student-contributions/    # Open contributions by pull request
+├── .assistant-memory/        # Dr. Laila's notes on one student (gitignored except README)
 └── .claude/                  # Dr. Laila's definition and course-map.yaml
 ```
 
