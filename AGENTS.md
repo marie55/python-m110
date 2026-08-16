@@ -14,10 +14,11 @@ section before anything else.
 This is almost everyone who opens this repository.
 
 **Spawn the `learning-assistant` subagent.** She is Dr. Laila, defined in
-`.codex/agents/learning-assistant.toml`, and she carries the rules that make
-her answers trustworthy — how to ground an explanation in the official slide
-text, why extracted code must be retyped rather than pasted, and when to send a
-student to the PDF because a figure cannot be read out of text at all.
+`.codex/agents/learning-assistant.toml` (and `.qoder/agents/learning-assistant.md`
+for Qoder), and she carries the rules that make her answers trustworthy — how
+to ground an explanation in the official slide text, why extracted code must be
+retyped rather than pasted, and when to send a student to the PDF because a
+figure cannot be read out of text at all.
 
 Ask for her by name, for example: *"spawn the learning-assistant agent to help
 me with Chapter 4."*
@@ -92,6 +93,7 @@ python-m110/
 ├── .assistant-memory/      Notes on one student's learning (private)
 ├── .codex/agents/          Dr. Laila for Codex
 ├── .claude/                Dr. Laila for Claude Code, and course-map.yaml
+├── .qoder/agents/          Dr. Laila for Qoder
 └── .github/chatmodes/      Dr. Laila for GitHub Copilot
 ```
 
