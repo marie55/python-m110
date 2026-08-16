@@ -285,8 +285,18 @@ python-m110/
 ├── student-playground/       # Dr. Laila's workspace (gitignored)
 ├── student-contributions/    # Open contributions by pull request
 ├── .assistant-memory/        # Dr. Laila's notes on one student (gitignored except README)
-└── .claude/                  # Dr. Laila's definition and course-map.yaml
+├── .claude/                  # Dr. Laila for Claude Code, and course-map.yaml
+├── .codex/agents/            # Dr. Laila for Codex (TOML)
+├── .github/chatmodes/        # Dr. Laila for GitHub Copilot
+├── AGENTS.md                 # Agent routing for Codex (this file's counterpart)
+└── CLAUDE.md                 # This file — routing plus authoring conventions
 ```
+
+Dr. Laila exists in three tool-specific forms. `.claude/agents/learning-assistant.md`
+is the **canonical** one; the Copilot chatmode mirrors it in full, and the Codex
+TOML carries the safety-critical rules inline and points at the canonical file
+for the rest. When you change her behaviour, change the canonical file first,
+then propagate — and check that the three still agree.
 
 **When asked to create materials**:
 - Identify correct directory based on content type

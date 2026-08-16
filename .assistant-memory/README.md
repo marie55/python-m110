@@ -105,14 +105,19 @@ Older entries sit below, so the top of the file is always the current picture.
 ## Using this with other AI tools
 ## استخدام هذا مع أدوات ذكاء اصطناعي أخرى
 
-Dr. Laila maintains this folder automatically in Claude Code and in GitHub
-Copilot. If you use something else — Codex, Qwen, Gemini, a local model — the
-folder still works. It is only Markdown. Paste this into your assistant at the
-start of a session:
+Dr. Laila maintains this folder automatically in **Claude Code**, **GitHub
+Copilot** and **Codex** — she is configured for all three, and no setup is
+needed beyond opening the repository.
 
-تحافظ د. ليلى على هذا المجلد تلقائياً في Claude Code وفي GitHub Copilot. وإذا
-استخدمت أداة أخرى — Codex أو Qwen أو Gemini أو نموذجاً محلياً — فالمجلد يعمل
-كذلك، فهو مجرد Markdown. الصق ما يلي في مساعدك عند بداية الجلسة:
+تحافظ د. ليلى على هذا المجلد تلقائياً في **Claude Code** و**GitHub Copilot**
+و**Codex** — فهي مُهيّأة للثلاثة، ولا يلزم أي إعداد سوى فتح المستودع.
+
+If you use something else — Qwen, Gemini, a local model — the folder still
+works. It is only Markdown. Paste this into your assistant at the start of a
+session:
+
+وإذا استخدمت أداة أخرى — Qwen أو Gemini أو نموذجاً محلياً — فالمجلد يعمل كذلك،
+فهو مجرد Markdown. الصق ما يلي في مساعدك عند بداية الجلسة:
 
 > Read `.assistant-memory/MEMORY.md` before answering me. If I name a topic you
 > have notes on, read that topic's file too. At the end of our session, add a
