@@ -50,4 +50,4 @@ To modify Dr. Laila's behavior:
 - Update `course-map.yaml` if chapter content or file paths change
 - See `DR-LAILA-SETUP.md` for customization options
 
-**Note**: `CLAUDE.md` (instructor guidelines) is in root and gitignored - not shared with students.
+**Note**: `CLAUDE.md` in the repository root is public. It routes AI assistants — students to Dr. Laila, maintainers to the content-authoring conventions — and is loaded automatically by Claude Code in any clone.

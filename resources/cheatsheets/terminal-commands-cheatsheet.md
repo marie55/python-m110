@@ -147,8 +147,8 @@
 ### Task 1: Navigate to project and run Python
 ### المهمة 1: التنقل للمشروع وتشغيل بايثون
 ```bash
-cd ~/python-m110/exercises/chapter-03-decision-structures
-python exercise1.py
+cd ~/python-m110/code-examples/chapter-01-algorithms
+python3 01_sequence_average.py    # Windows: python 01_sequence_average.py
 ```
 
 ### Task 2: Create new project folder
@@ -164,7 +164,7 @@ code homework.py      # Open in VS Code
 ### المهمة 3: نسخ تمرين للممارسة
 ```bash
 cp exercise.py my-solution.py     # or: copy exercise.py my-solution.py (Windows)
-python my-solution.py
+python3 my-solution.py            # Windows: python my-solution.py
 ```
 
 ### Task 4: Find all Python files

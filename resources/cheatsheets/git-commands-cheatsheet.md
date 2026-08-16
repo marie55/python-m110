@@ -183,15 +183,15 @@ cd python-m110
 # كلما أردت: احصل على التحديثات
 git pull origin main
 
-# 3. Work on exercises
-# اعمل على التمارين
-cd exercises/chapter-03-decision-structures
-python exercise1.py
+# 3. Try an example
+# جرّب مثالاً
+cd code-examples/chapter-01-algorithms
+python3 01_sequence_average.py    # Windows: python 01_sequence_average.py
 
-# 4. (Optional) Save your work
+# 4. (Optional) Save your own work
 # (اختياري) احفظ عملك
-git add exercise1.py
-git commit -m "Completed exercise 1"
+git add my-solution.py
+git commit -m "My solution for Chapter 1"
 
 # 5. Check what you've done
 # تحقق مما فعلته

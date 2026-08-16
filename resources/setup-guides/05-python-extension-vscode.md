@@ -338,9 +338,9 @@ Once the terminal is open:
    يمكنك تشغيل أي أمر بايثون:
 
    ```bash
-   python --version
+   python3 --version        # Windows: python --version
    pip list
-   python myfile.py
+   python3 myfile.py        # Windows: python myfile.py
    ```
 
 ### Terminal Tips
@@ -763,10 +763,10 @@ pip install pylint
 pip install black
 
 # Run Python file / تشغيل ملف Python
-python filename.py
+python3 filename.py       # Windows: python filename.py
 
 # Check Python version / التحقق من إصدار Python
-python --version
+python3 --version         # Windows: python --version
 ```
 
 ---

@@ -202,7 +202,8 @@ $RECYCLE.BIN/
 ################################
 
 # Private instructor materials
-CLAUDE.md
+# (CLAUDE.md is deliberately NOT here — it is public, and Claude Code loads it
+#  in every clone to route assistants to Dr. Laila.)
 instructor-notes/
 grading/
 solutions-private/

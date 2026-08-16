@@ -245,7 +245,6 @@ In the agent files, you can add:
 - ✅ User guide (`HOW-TO-USE-DR-LAILA.md`)
 
 ### What's NOT Shared (in .gitignore):
-- ❌ `CLAUDE.md` (instructor-only guidelines)
 - ❌ `student-playground/` (student work stays private)
 - ❌ `venv/` (virtual environment)
 
